@@ -1,6 +1,6 @@
 [submodule "pazpar2"]
 	path = pazpar2
-	url = git://github.com/subugoe/pazpar2.git
+	url = git://git.indexdata.com/pazpar2.git
 [submodule "pazpar2-etc"]
 	path = pazpar2-etc
 	url = git://github.com/subugoe/pazpar2-etc.git
