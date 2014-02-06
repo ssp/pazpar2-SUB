@@ -27,11 +27,11 @@
 					<xsl:value-of select="normalize-space(substring-before($list, $separator))"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select="$list"/>
+					<xsl:value-of select="normalize-space($list)"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-
+		
 		<xsl:variable name="remainingItems" select="substring-after($list, $separator)"/>
 		
 		
