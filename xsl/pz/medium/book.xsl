@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Remove all pz:metadata elements and insert one of type »electronic«.
-	
-	2011-2014: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	Remove all pz:metadata elements and insert one of type »book«.
+
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 <xsl:stylesheet
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -20,9 +20,9 @@
 
 	<xsl:template match="pz:record">
 		<xsl:copy>
-			<pz:metadata type="medium">electronic</pz:metadata>	
+			<pz:metadata type="medium">book</pz:metadata>
 			<xsl:apply-templates select="@*|pz:metadata[@type!='medium']"/>
 		</xsl:copy>
 	</xsl:template>
-	
+
 </xsl:stylesheet>

@@ -36,7 +36,7 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 
-	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/newspaper.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/medium/newspaper-to-journal.xsl,xsl/pz/final/finalise.xsl"/>
 
 
 	<!-- Catalogue URLs -->

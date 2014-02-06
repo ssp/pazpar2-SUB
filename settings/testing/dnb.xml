@@ -42,7 +42,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/convert/MarcXML2TurboMarc.xsl,xsl/convert/tmarc.xsl,xsl/pz/medium/newspaper.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/MarcXML2TurboMarc.xsl,xsl/convert/tmarc.xsl,xsl/pz/medium/newspaper-to-journal.xsl,xsl/pz/final/finalise.xsl"/>
 
 
 	<!-- Catalogue URLs -->
