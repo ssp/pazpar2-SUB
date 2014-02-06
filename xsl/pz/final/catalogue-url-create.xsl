@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Creates the pz:metadata field of type 'catalogue-url' by concatenating
+	Creates the pz:metadata field of type »catalogue-url« by concatenating
 		the $catalogueURLHintPrefix and $catalogueURLHintPostfix parameters
-		with the 'id' pz:metadata field.
+		with the »id« pz:metadata field.
 
-	July 2011
-	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 <xsl:stylesheet
 	version="1.0"
@@ -31,15 +30,17 @@
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
 
-		<pz:metadata>
-			<xsl:attribute name="type">
-				<xsl:value-of select="concat(substring-before(@type, 'id'), 'catalogue-url')"/>
-			</xsl:attribute>
-			<xsl:value-of select="$catalogueURLHintPrefix"/>
-			<xsl:value-of select="."/>
-			<xsl:value-of select="$catalogueURLHintPostfix"/>
-		</pz:metadata>
-
+		<xsl:if test="string-length(concat($catalogueURLHintPrefix, $catalogueURLHintPostfix)) &gt; 0">
+			<pz:metadata>
+				<xsl:attribute name="type">
+					<xsl:value-of select="concat(substring-before(@type, 'id'), 'catalogue-url')"/>
+				</xsl:attribute>
+				<xsl:value-of select="$catalogueURLHintPrefix"/>
+				<xsl:value-of select="."/>
+				<xsl:value-of select="$catalogueURLHintPostfix"/>
+			</pz:metadata>
+		</xsl:if>
+		
 	</xsl:template>
 
 </xsl:stylesheet>
