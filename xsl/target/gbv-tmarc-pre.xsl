@@ -2,7 +2,7 @@
 <!--
 	Slight cleanup for GBV MARC Data.
 
-	2010-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 <xsl:stylesheet
@@ -110,8 +110,7 @@
 			be URNs which are not linkable in the browser.
 		Thus remove all 856 fields whose i1 is not 4 or 1.
 	-->
-	<xsl:template match="tmarc:d856[@i1!='4' and @i1!='1']">
-	</xsl:template>
+	<xsl:template match="tmarc:d856[@i1!='4' and @i1!='1']"/>
 
 
 
@@ -144,10 +143,24 @@
 
 
 	<!--
-		Kill 900 and 954 fields with library information.
-		There tend to be many of those and we don't use them.
+		Extract library and shelf mark information from 900.
 	-->
-	<xsl:template match="tmarc:d900|tmarc:d954"></xsl:template>
+	<xsl:template match="tmarc:d900">
+		<pz:metadata type="library">
+			<xsl:attribute name="shelf-mark">
+				<xsl:value-of select="tmarc:sd"/>
+			</xsl:attribute>
+			
+			<xsl:choose>
+				<xsl:when test="contains(tmarc:sb, ' &lt;')">
+					<xsl:value-of select="substring-before(tmarc:sb, ' &lt;')"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="tmarc:sb"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</pz:metadata>
+	</xsl:template>
 
 
 </xsl:stylesheet>
