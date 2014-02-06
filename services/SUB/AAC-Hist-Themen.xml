@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="AAC-Hist-Themen">
+<!--
+	Targets used for Lib AAC History Subject Search at:
+	http://aac.sub.uni-goettingen.de/geschichte/themen/
+	http://aac.sub.uni-goettingen.de/en/history/subjects/
+
+	* GBV Databases (SRU):
+		* Göttingen Opac
+	* SUB Solr Indexes (SSGFI1):
+		* History Guide
+
+	2010-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/gbv-sru.xml"/>
+	<settings>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
+	</settings>
+
+
+	<settings src="settings/sub-guides-solr.xml"/>
+	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History Guide"/>
+	</settings>
+
+
+
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

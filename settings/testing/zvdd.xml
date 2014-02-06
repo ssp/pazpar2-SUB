@@ -47,7 +47,6 @@
 
 	<!--
 		Passed to solr as the fl parameter: all fields we want solr to return.
-		We need to map these to the approriate pz:metadata fields in solr-postprocess.xsl.
 	-->
 	<set name="pz:elements" value="*"/>
 
@@ -60,7 +59,7 @@
 	-->
 	<set name="pz:extra_args" value="&amp;wt=xslt&amp;tr=xmlpassthrough.xsl"/>
 
-	<set name="pz:xslt" value="../metaproxy-SUB/conf/zvdd/zvdd-solr-to-mods.xsl,../metaproxy-SUB/conf/zvdd/zvdd-mods-replace-id.xsl,../metaproxy-SUB/xsl/MODS3-4_MARC21slim_XSLT1-0.xsl,../metaproxy-SUB/xsl/marcxml-sort.xsl,../metaproxy-SUB/xsl/marcxml-cleaner.xsl,xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/medium-electronic.xsl,xsl/catalogue-url-hint+id.xsl"/>
+	<set name="pz:xslt" value="../metaproxy-SUB/conf/zvdd/zvdd-solr-to-mods.xsl,../metaproxy-SUB/conf/zvdd/zvdd-mods-replace-id.xsl,../metaproxy-SUB/xsl/MODS3-4_MARC21slim_XSLT1-0.xsl,../metaproxy-SUB/xsl/marcxml-sort.xsl,../metaproxy-SUB/xsl/marcxml-cleaner.xsl,xsl/convert/MarcXML2TurboMarc.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
 
 	<set name="catalogueURLHintPrefix" value="http://www.zvdd.de/dms/load/met/?PPN="/>
 

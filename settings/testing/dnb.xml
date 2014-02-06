@@ -42,11 +42,12 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/medium-newspaper.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl,xsl/medium-strip-electronic.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/MarcXML2TurboMarc.xsl,xsl/convert/tmarc.xsl,xsl/pz/medium/newspaper.xsl,xsl/pz/final/finalise.xsl"/>
 
 
 	<!-- Catalogue URLs -->
-	<set name="catalogueURLHintPrefix" target="services.d-nb.de/sru/zdb" value="http://dispatch.opac.d-nb.de/DB=1.1/PRS=HOL/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="services.d-nb.de/sru/zdb"
+		value="http://dispatch.opac.d-nb.de/DB=1.1/PRS=HOL/PPNSET?PPN="/>
+
 
 </settings>
-

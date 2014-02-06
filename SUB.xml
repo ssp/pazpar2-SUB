@@ -13,43 +13,42 @@
 		<proxy host="localhost" port="80"/>
 
 		<!-- Lib AAC -->
-		<xi:include href="services/AAC.xml"/>
-		<xi:include href="services/AAC-Neuerwerbungen.xml"/>
-		<xi:include href="services/AAC-Zeitungen.xml"/>
-		<xi:include href="services/AAC-Lit-Themen.xml"/>
-		<xi:include href="services/Guide-Literature.xml"/>
-		<xi:include href="services/AAC-Hist-Themen.xml"/>
-		<xi:include href="services/Guide-History.xml"/>
+		<xi:include href="services/SUB/AAC.xml"/>
+		<xi:include href="services/SUB/AAC-Neuerwerbungen.xml"/>
+		<xi:include href="services/SUB/AAC-Zeitungen.xml"/>
+		<xi:include href="services/SUB/AAC-Lit-Themen.xml"/>
+		<xi:include href="services/SUB/Guide-Literature.xml"/>
+		<xi:include href="services/SUB/AAC-Hist-Themen.xml"/>
+		<xi:include href="services/SUB/Guide-History.xml"/>
 
 		<!-- GEO-LEO -->
-		<xi:include href="services/GEO-LEO.xml"/>
-		<xi:include href="services/GEO-LEO-Themen.xml"/>
-		<xi:include href="services/Guide-Geo.xml"/>
+		<xi:include href="services/SUB/GEO-LEO.xml"/>
+		<xi:include href="services/SUB/GEO-LEO-Themen.xml"/>
+		<xi:include href="services/SUB/Guide-Geo.xml"/>
 
 		<!-- vifamath -->
-		<xi:include href="services/Math.xml"/>
-		<xi:include href="services/Math-historisch.xml"/>
-		<xi:include href="services/Math-Neuerwerbungen.xml"/>
-		<xi:include href="services/Math-Themen.xml"/>
+		<xi:include href="services/SUB/Math.xml"/>
+		<xi:include href="services/SUB/Math-historisch.xml"/>
+		<xi:include href="services/SUB/Math-Neuerwerbungen.xml"/>
+		<xi:include href="services/SUB/Math-Themen.xml"/>
 
 		<!-- SUB Site -->
-		<xi:include href="services/SUB.xml"/>
-		<xi:include href="services/Neuerwerbungen.xml"/>
+		<xi:include href="services/SUB/SUB.xml"/>
+		<xi:include href="services/SUB/Neuerwerbungen.xml"/>
 
 		<!-- Testing -->
-		<xi:include href="services/testing/test.xml"/>
-		<xi:include href="services/testing/all.xml"/>
-		<xi:include href="services/testing/GVK.xml"/>
-		<xi:include href="services/testing/ZDB.xml"/>
-		<xi:include href="services/testing/ZDB-GVK.xml"/>
-		<xi:include href="services/testing/solr.xml"/>
-		<xi:include href="services/testing/metaproxy.xml"/>
-		<xi:include href="services/testing/DSpace.xml"/>
-		<xi:include href="services/testing/harvesting.xml"/>
-		<xi:include href="services/testing/CERL.xml"/>
-		<xi:include href="services/testing/vifanord.xml"/>
-		<xi:include href="services/testing/vifapol.xml"/>
-		<xi:include href="services/testing/zvdd.xml"/>
+		<xi:include href="services/test/test.xml"/>
+		<xi:include href="services/test/all.xml"/>
+		<xi:include href="services/test/GVK.xml"/>
+		<xi:include href="services/test/ZDB.xml"/>
+		<xi:include href="services/test/ZDB-GVK.xml"/>
+		<xi:include href="services/test/solr.xml"/>
+		<xi:include href="services/test/metaproxy.xml"/>
+		<xi:include href="services/test/DSpace.xml"/>
+		<xi:include href="services/test/harvesting.xml"/>
+		<xi:include href="services/test/CERL.xml"/>
+		<xi:include href="services/test/vifapol.xml"/>
+		<xi:include href="services/test/zvdd.xml"/>
 
 
 

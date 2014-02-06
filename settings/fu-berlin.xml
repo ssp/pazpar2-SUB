@@ -30,7 +30,7 @@
 
 	<!-- Result normalisation settings -->
 	<set name="pz:nativesyntax" value="xml"/>
-	<set name="pz:xslt" value="xsl/MarcXML2TurboMarc.xsl,xsl/fu-berlin-jfk-cleaner.xsl,pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/MarcXML2TurboMarc.xsl,xsl/target/fu-berlin-jfk-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
 
 </settings>
 

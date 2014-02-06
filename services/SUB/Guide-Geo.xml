@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="Geo-Guide">
+<!--
+	Geography link database, used in GEO-LEO at:
+	http://geo-leo.de/geo-guide/
+
+	* SUB Solr Indexes (SSGFI1):
+		* Geo-Guide
+
+	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/sub-guides-solr.xml"/>
+	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
+	</settings>
+
+
+
+	<metadata name="subject" brief="yes" merge="unique"/>
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

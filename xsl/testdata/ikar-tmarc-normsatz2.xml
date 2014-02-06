@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>XXXXXnz  a22XXXXXo  4500</l>
+  <c001>040026167</c001>
+  <c003>DE-601</c003>
+  <c005>20090616161830.0</c005>
+  <c008>990101n||aznnnabbn           | anc    |c</c008>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-601)040026167</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>DE-1</sa>
+    <s9>r:DE-601</s9>
+    <sb>ger</sb>
+    <sd>0001</sd>
+    <se>rakwb</se>
+    <sf>rswk</sf>
+  </d040>
+  <d043 i1=" " i2=" ">
+    <sc>XK</sc>
+  </d043>
+  <d065 i1=" " i2=" ">
+    <sa>19.3</sa>
+    <s2>sswd</s2>
+  </d065>
+  <d079 i1=" " i2=" ">
+    <sa>g</sa>
+    <sb>s</sb>
+    <sc>6</sc>
+    <sq>f</sq>
+    <su>r</su>
+  </d079>
+  <d150 i1=" " i2=" ">
+    <sa>Atlantischer Ozean</sa>
+  </d150>
+  <d678 i1=" " i2=" ">
+    <sb>N:14/10/91  BEARB.:OFF      K:06/06/94  BEARB.:1a</sb>
+  </d678>
+  <d750 i1=" " i2="4">
+    <sa>Geo-Duden</sa>
+  </d750>
+  <d750 i1=" " i2="4">
+    <sa>M, B 1986</sa>
+  </d750>
+</r>

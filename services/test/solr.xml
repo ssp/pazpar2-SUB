@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="solr">
+<!--
+	Service for testing Solr targets.
+
+	2011-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/sub-guides-solr.xml"/>
+	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/forst" name="pz:name" value="Forestry-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math-Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Mathematik Digitalisate"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Mathematik Dissertationen"/>
+	</settings>
+
+	<settings src="settings/sub-harvest-solr.xml"/>
+	<settings>
+<!--		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/adw" name="pz:name" value="AdW"/> -->
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/gdz" name="pz:name" value="GDZ"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/test" name="pz:name" value="Test"/>
+	</settings>
+
+	<settings src="settings/testing/gbv-solr.xml"/>
+
+
+
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

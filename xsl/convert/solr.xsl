@@ -1,0 +1,1 @@
+../../pazpar2-etc/solr-pz2.xsl

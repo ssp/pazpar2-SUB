@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="all">
+<!--
+	Try to test all targets we have configuration files for.
+
+	2011-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<!-- GBV -->
+	<settings src="settings/gbv-sru.xml"/>
+	<settings>
+		<set target="sru.gbv.de/gvk" name="pz:name" value="GVK"/>
+		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
+		<set target="sru.gbv.de/zdb-1-eai" name="pz:name" value="Early American Imprints"/>
+		<set target="sru.gbv.de/zdb-1-eeb" name="pz:name" value="Early English Books"/>
+		<set target="sru.gbv.de/zdb-1-ecc" name="pz:name" value="18th Century Collections"/>
+		<set target="sru.gbv.de/zdb-1-elw" name="pz:name" value="English Language Women’s Literature"/>
+		<set target="sru.gbv.de/zdb-1-mml" name="pz:name" value="Making of Modern Law"/>
+		<set target="sru.gbv.de/zdb-1-mme" name="pz:name" value="Making of the Modern World"/>
+		<set target="sru.gbv.de/zdb-1-nel" name="pz:name" value="NetLibrary"/>
+		<set target="sru.gbv.de/zdb-1-wfr" name="pz:name" value="Wales Related Fiction"/>
+		<set target="sru.gbv.de/zdb-1-cup" name="pz:name" value="Cambridge Journals"/>
+		<set target="sru.gbv.de/natliz" name="pz:name" value="Nationallizenzen Bücher"/>
+		<set target="sru.gbv.de/natlizzss" name="pz:name" value="Nationallizenzen Zeitschriften"/>
+		<set target="sru.gbv.de/amb" name="pz:name" value="meereswissenschaftliche Bibliotheken"/>
+		<set target="sru.gbv.de/fachopac-mat" name="pz:name" value="Fach Opac Mathematik"/>
+		<set target="sru.gbv.de/fachopac-ggo" name="pz:name" value="Fachkatalog Geowissenschaften"/>
+		<set target="sru.gbv.de/fachopac-ast" name="pz:name" value="Fachkatalog Astronomie"/>
+		<set target="sru.gbv.de/eromm" name="pz:name" value="EROMM"/>
+		<set target="sru.gbv.de/vd17" name="pz:name" value="VD17"/>
+
+		<!-- Somewhat restricted access -->
+		<set target="sru.gbv.de/olcssg-ang" name="pz:name" value="OLC Anglistik"/>
+		<set target="sru.gbv.de/olcssg-his" name="pz:name" value="OLC Geschichte"/>
+		<set target="sru.gbv.de/olcssg-mat" name="pz:name" value="OLC Mathe"/>
+		<set target="sru.gbv.de/olcssg-ggo" name="pz:name" value="OLC Geowissenschaften"/>
+		<set target="sru.gbv.de/olcssg-ast" name="pz:name" value="OLC Astronomie"/>
+
+		<!-- Strongly restricted access -->
+		<set target="sru.gbv.de/olc" name="pz:name" value="OLC Gesamt"/>
+		<set target="sru.gbv.de/zdb-1-pio" name="pz:name" value="Periodicals Index Online"/>
+
+	</settings>
+	<settings src="settings/testing/gbv-solr.xml"/>
+
+
+	<!-- Guides -->
+	<settings src="settings/sub-guides-solr.xml"/>
+	<settings>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/geo" name="pz:name" value="Geo Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/hist" name="pz:name" value="History Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/forst" name="pz:name" value="Forestry Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Mathe Digitalisate"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="JfM"/>
+		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Mathe Dissertationen"/>
+	</settings>
+
+
+	<!-- SWB -->
+	<settings src="settings/swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:name" value="UB Freiberg und SWB"/>
+		<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:name" value="UB Freiberg"/>
+		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
+	</settings>
+
+
+	<!-- other Libraries -->
+	<settings src="settings/nal.xml"/>
+	<settings src="settings/nebis-eth.xml"/>
+
+	<!-- ElibM SRU (FIZ) -->
+	<settings src="settings/fiz-elibm.xml"/>
+
+	<!-- DSpace -->
+	<settings src="settings/sub-dspace-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/dspace/geo-leo" name="pz:name" value="GEO-LEO e-docs"/>
+		<set target="sru.sub.uni-goettingen.de/dspace/ediss" name="pz:name" value="eDiss"/>
+	</settings>
+
+
+	<!-- Harvesting Solr -->
+	<settings src="settings/sub-harvest-solr.xml"/>
+	<settings>
+<!--		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/adw" name="pz:name" value="AdW"/> -->
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/gdz" name="pz:name" value="GDZ"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/goescholar" name="pz:name" value="GoeScholar"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/math-arxiv" name="pz:name" value="Math arXiv"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/test" name="pz:name" value="Test"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/pangaea" name="pz:name" value="Pangaea"/>
+		<set target="solr-harvest.tc.sub.uni-goettingen.de/solr/jfk-institut-zeitungen" name="pz:name" value="JFK Institut (Harvest)"/>
+	</settings>
+
+	<!-- FU Berlin, JFK Institut -->
+	<settings src="settings/fu-berlin.xml"/>
+	<settings>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:name" value="JFK Institut (FU)"/>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="pz:pqf_strftime" value="@and %% @attr 1=dc.sno 7,261"/>
+		<set target="aleph-www.ub.fu-berlin.de/fub01_usm" name="catalogueURLHintPrefix" value="http://aleph-www.ub.fu-berlin.de/F/?func=find-c&amp;ccl_term=idn%3D"/>
+	</settings>
+
+
+
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

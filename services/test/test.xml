@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="test">
+<!--
+	Set up used for testing purposes.
+
+	2010-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<settings src="settings/fi-helka.xml"/>
+
+
+	<xi:include href="../metadata/default.xml"/>
+	
+	
+</service>

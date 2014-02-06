@@ -36,12 +36,11 @@
 
 	<!--
 		Passed to solr as the fl parameter: all fields we want solr to return.
-		We need to map these to the approriate pz:metadata fields in solr-postprocess.xsl.
 	-->
 	<set name="pz:elements" value="title,author,publisher,publishDate,publishPlace,physical,isbn,issn,format_se,url,language,source"/>
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
-	<set name="pz:xslt" value="pazpar2/etc/solr-pz2.xsl,xsl/solr-gbv.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/solr.xsl,xsl/target/gbv-solr-post.xsl,xsl/pz/final/finalise.xsl"/>
 
 </settings>

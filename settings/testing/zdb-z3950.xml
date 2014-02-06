@@ -36,7 +36,7 @@
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 
-	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/zdb-number.xsl,xsl/medium-newspaper.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl,xsl/medium-strip-electronic.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/newspaper.xsl,xsl/pz/final/finalise.xsl"/>
 
 
 	<!-- Catalogue URLs -->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+		xmlns="http://www.indexdata.com/pazpar2/1.0"
+		xmlns:xi="http://www.w3.org/2001/XInclude"
+		id="metaproxy">
+<!--
+	Service for testing metaproxy targets.
+
+	2012-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+-->
+
+	<settings src="settings/sub-dspace-mp.xml"/>
+	<settings>
+		<set target="vlib.sub.uni-goettingen.de/sru/dspace/ediss" name="pz:name" value="eDiss"/>		
+		<set target="vlib.sub.uni-goettingen.de/sru/dspace/geo-leo" name="pz:name" value="GEO-LEO e-docs"/>		
+	</settings>
+
+	<settings src="settings/sub-guides-solr-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/history-guide" name="pz:name" value="History-Guide"/>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/literature-guide" name="pz:name" value="Literature-Guide"/>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/geo-guide" name="pz:name" value="Geo-Guide"/>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/forestry-guide" name="pz:name" value="Forestry-Guide"/>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/math-guide" name="pz:name" value="Math-Guide"/>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+		<set target="sru.sub.uni-goettingen.de/ssgfi/math-digreg" name="pz:name" value="Mathematik Digitalisate"/>
+	</settings>
+
+	<settings src="settings/sub-harvest-solr-mp.xml"/>
+	<settings>
+		<set target="sru.sub.uni-goettingen.de/harvest/geo-leo-artikel" name="pz:name" value="GEO Repositories"/>
+		<set target="sru.sub.uni-goettingen.de/harvest/geo-leo-digitalisate" name="pz:name" value="GEO Digitalisate"/>
+		<set target="sru.sub.uni-goettingen.de/harvest/math-arxiv" name="pz:name" value="Math arXiv"/>
+		<set target="sru.sub.uni-goettingen.de/harvest/digizeitschriften" name="pz:name" value="DigiZeitschriften"/>
+		<set target="sru.sub.uni-goettingen.de/harvest/goescholar" name="pz:name" value="Goescholar"/>
+		<set target="sru.sub.uni-goettingen.de/harvest/gdz" name="pz:name" value="GDZ"/>
+	</settings>
+
+
+	<xi:include href="../metadata/default.xml"/>
+
+</service>
