@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00727nem a2200217 i 4500</l>
+  <c007>ad ca|||</c007>
+  <c008>131127s2011    li        e     |   eng  </c008>
+  <d034 i1="0" i2=" ">
+    <sa>a</sa>
+  </d034>
+  <d040 i1=" " i2=" ">
+    <sa>ErRR</sa>
+    <sb>est</sb>
+    <sc>ErRR</sc>
+  </d040>
+  <d043 i1=" " i2=" ">
+    <sa>e-li</sa>
+  </d043>
+  <d245 i1="0" i2="0">
+    <sa>Lithuania</sa>
+    <sh>[Kaart] :</sh>
+    <sb>Dive in! : Water routes /</sb>
+    <sc>Lithuanian State Department of Tourism under the Ministry of Economy</sc>
+  </d245>
+  <d255 i1=" " i2=" ">
+    <sa>M&#xF5;&#xF5;tkava pole antud</sa>
+  </d255>
+  <d260 i1=" " i2=" ">
+    <sa>[Vilnius] :</sa>
+    <sb>VIP Vie&#x161;osios informacijos partneriai,</sb>
+    <sc>2011</sc>
+    <sf>(Arx Baltica)</sf>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>1 atlas (48 lk.) :</sa>
+    <sb>mitmev&#xE4;rv. ;</sb>
+    <sc>21 cm</sc>
+  </d300>
+  <d651 i1=" " i2="9">
+    <sa>Leedu</sa>
+  </d651>
+  <d650 i1=" " i2="9">
+    <sa>veematkad</sa>
+  </d650>
+  <d650 i1=" " i2="9">
+    <sa>siseveeteed</sa>
+  </d650>
+  <d655 i1=" " i2="9">
+    <sa>atlased</sa>
+  </d655>
+  <d655 i1=" " i2="9">
+    <sa>kaardid</sa>
+  </d655>
+  <d710 i1="2" i2=" ">
+    <sa>Lithuania.</sa>
+    <sb>State Department of Tourism under the Ministry of Economy</sb>
+  </d710>
+  <d907 i1=" " i2=" ">
+    <sa>.b30425293</sa>
+  </d907>
+</r>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="z3950.libris.kb.se/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	pazpar2 settings for the catalogues of Sweden’s national library,
+	created for vifanord.
+	
+	The database name is »libris«.
+	The Index 5001 can be used to limit the search to specific sub-databases.
+	Sub-databses are listed on the page:
+		http://libris.kb.se/deldatabas.jsp?more=hum
+	
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<!-- mappings for search -->
+	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
+
+	<set name="pz:cclmap:title" value="u=4 s=al 2=102"/>
+	<set name="pz:cclmap:person" value="u=1001 s=al"/>
+	
+	<set name="pz:cclmap:journal" value="u=5 s=al"/>
+	<set name="pz:cclmap:subject" value="u=21 s=al"/>
+	<set name="pz:cclmap:isbn" value="u=7"/>
+	<set name="pz:cclmap:issn" value="u=8"/>
+
+	<set name="pz:cclmap:date" value="u=31"/>
+	<set name="pz:cclmap:ppn" value="u=5000"/>
+	<set name="pz:cclmap:part" value="u=5001"/>
+
+	<!-- Retrieval settings -->
+	<set name="pz:requestsyntax" value="marc21"/>
+	<set name="pz:elements" value="F"/>
+	<set name="pz:queryencoding" value="utf-8"/>
+
+	<!-- Server does not support piggybacking -->
+	<set name="pz:piggyback" value="0"/>
+
+
+	<!-- Result normalization settings -->
+	<set name="pz:nativesyntax" value="txml;utf-8"/>
+	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
+
+
+	<set name="catalogueURLHintPrefix" target="z3950.libris.kb.se/*" value="http://libris.kb.se/bib/"/>
+
+	<set target="z3950.libris.kb.se/libris-nb" name="pz:name" value="Nationalbibliografin (Schweden)"/>
+	<set target="z3950.libris.kb.se/libris-nb" name="pz:pqf_prefix" value="@and @attr 1=5001 NB"/>
+	<set target="z3950.libris.kb.se/libris-nb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-col" name="pz:name" value="Äldre Svensk Tryck"/>
+	<set target="z3950.libris.kb.se/libris-col" name="pz:pqf_prefix" value="@and @or @or @attr 1=5001 COL @attr 1=5001 SB17 @attr 1=5001 SOT"/>
+	<set target="z3950.libris.kb.se/libris-col" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-shb" name="pz:name" value="Svensk historisk bibliografi (1977-) *"/>
+	<set target="z3950.libris.kb.se/libris-shb" name="pz:pqf_prefix" value="@and @attr 1=5001 SHB"/>
+	<set target="z3950.libris.kb.se/libris-shb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-slb" name="pz:name" value="Svensk litteraturvetenskaplig bibliografi"/>
+	<set target="z3950.libris.kb.se/libris-slb" name="pz:pqf_prefix" value="@and @attr 1=5001 SLB"/>
+	<set target="z3950.libris.kb.se/libris-slb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-birb" name="pz:name" value="Birgittabibliografin (ca. 1890-ca. 2001)"/>
+	<set target="z3950.libris.kb.se/libris-birb" name="pz:pqf_prefix" value="@and @attr 1=5001 BIRB"/>
+	<set target="z3950.libris.kb.se/libris-birb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-bulb" name="pz:name" value="Barn- och ungdomslitteraturbibliografin"/>
+	<set target="z3950.libris.kb.se/libris-bulb" name="pz:pqf_prefix" value="@and @attr 1=5001 BULB"/>
+	<set target="z3950.libris.kb.se/libris-bulb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-kvin" name="pz:name" value="KVINNSAM"/>
+	<set target="z3950.libris.kb.se/libris-kvin" name="pz:pqf_prefix" value="@and @attr 1=5001 KVIN"/>
+	<set target="z3950.libris.kb.se/libris-kvin" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-samb" name="pz:name" value="Svensk samisk bibliografi"/>
+	<set target="z3950.libris.kb.se/libris-samb" name="pz:pqf_prefix" value="@and @attr 1=5001 SAMB"/>
+	<set target="z3950.libris.kb.se/libris-samb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-swam" name="pz:name" value="Svenskamerikansk bibliografi"/>
+	<set target="z3950.libris.kb.se/libris-swam" name="pz:pqf_prefix" value="@and @attr 1=5001 SWAM"/>
+	<set target="z3950.libris.kb.se/libris-swam" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-nlt" name="pz:name" value="Nya Lundstedt - Tidskrifter"/>
+	<set target="z3950.libris.kb.se/libris-nlt" name="pz:pqf_prefix" value="@and @attr 1=5001 NLT"/>
+	<set target="z3950.libris.kb.se/libris-nlt" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-lob" name="pz:name" value="Bohusbibliografien"/>
+	<set target="z3950.libris.kb.se/libris-lob" name="pz:pqf_prefix" value="@and @attr 1=5001 LOB"/>
+	<set target="z3950.libris.kb.se/libris-lob" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-dala" name="pz:name" value="Dalabibliografien"/>
+	<set target="z3950.libris.kb.se/libris-dala" name="pz:pqf_prefix" value="@and @attr 1=5001 DALA"/>
+	<set target="z3950.libris.kb.se/libris-dala" name="pz:url" value="z3950.libris.kb.se/libris"/>
+
+	<set target="z3950.libris.kb.se/libris-gotl" name="pz:name" value="Gotlandica"/>
+	<set target="z3950.libris.kb.se/libris-gotl" name="pz:pqf_prefix" value="@and @attr 1=5001 GOTL"/>
+	<set target="z3950.libris.kb.se/libris-gotl" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-osgo" name="pz:name" value="Småland, Öland, Blekinge"/>
+	<set target="z3950.libris.kb.se/libris-osgo" name="pz:pqf_prefix" value="@and @attr 1=5001 OSGO"/>
+	<set target="z3950.libris.kb.se/libris-osgo" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-sah" name="pz:name" value="Suecia Antiqua et Hodierna"/>
+	<set target="z3950.libris.kb.se/libris-sah" name="pz:pqf_prefix" value="@and @attr 1=5001 SAH"/>
+	<set target="z3950.libris.kb.se/libris-sah" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-sarb" name="pz:name" value="Svensk arkivbibliografi"/>
+	<set target="z3950.libris.kb.se/libris-sarb" name="pz:pqf_prefix" value="@and @attr 1=5001 SARB"/>
+	<set target="z3950.libris.kb.se/libris-sarb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-sfbb" name="pz:name" value="Svensk folkbildningsbibliografi"/>
+	<set target="z3950.libris.kb.se/libris-sfbb" name="pz:pqf_prefix" value="@and @attr 1=5001 SFBB"/>
+	<set target="z3950.libris.kb.se/libris-sfbb" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-snub" name="pz:name" value="Svensk Numismatisk Bibliografi"/>
+	<set target="z3950.libris.kb.se/libris-snub" name="pz:pqf_prefix" value="@and @attr 1=5001 SNUB"/>
+	<set target="z3950.libris.kb.se/libris-snub" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-vstm" name="pz:name" value="Västmanlandsbibliografi"/>
+	<set target="z3950.libris.kb.se/libris-vstm" name="pz:pqf_prefix" value="@and @attr 1=5001 VSTM"/>
+	<set target="z3950.libris.kb.se/libris-vstm" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-vimo" name="pz:name" value="Vilhelm Mobergs Bibliografi"/>
+	<set target="z3950.libris.kb.se/libris-vimo" name="pz:pqf_prefix" value="@and @attr 1=5001 VIMO"/>
+	<set target="z3950.libris.kb.se/libris-vimo" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+	<set target="z3950.libris.kb.se/libris-litt" name="pz:name" value="Litteraturbanken"/>
+	<set target="z3950.libris.kb.se/libris-litt" name="pz:pqf_prefix" value="@and @attr 1=5001 LITT"/>
+	<set target="z3950.libris.kb.se/libris-litt" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	
+</settings>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+	xmlns="http://www.indexdata.com/pazpar2/1.0"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	id="vifanord">
+<!--
+	Targets for vifanord: http://vifanord.de
+
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+	<settings src="settings/gbv-sru.xml"/>
+	<settings>
+		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog ViFa Nord"/>
+		<set target="sru.gbv.de/fachopac-bal" name="pz:name" value="Fachkatalog Baltische Länder"/>
+		<set target="sru.gbv.de/fachopac-nord" name="pz:name" value="Fachkatalog Nordische Länder"/>
+		
+		<set target="sru.gbv.de/olcssg-bal" name="pz:name" value="OLC Baltikum"/>
+		<set name="pz:allow" target="sru.gbv.de/olcssg-bal" value="1"/>
+		<set target="sru.gbv.de/olcssg-nord" name="pz:name" value="OLC Nordeuropa"/>
+		<set name="pz:allow" target="sru.gbv.de/olcssg-nord" value="1"/>
+		<set target="sru.gbv.de/olcssg-oeu" name="pz:name" value="OLC Osteuropa"/>
+		<set name="pz:allow" target="sru.gbv.de/olcssg-oeu" value="1"/>
+	</settings>
+	
+	<settings src="settings/fi-helka.xml"/>
+	<settings src="settings/ee-ester.xml"/>
+	<settings src="settings/lt-libis.xml"/>
+	<settings src="settings/no-bibsys.xml"/>
+
+	<settings src="settings/se-kb.xml"/>
+
+	<settings src="settings/hu-berlin.xml"/>
+	<settings>
+		<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:name" value="HU Berlin Skandinavistik"/>
+	</settings>
+	
+	<settings src="settings/swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
+	</settings>
+
+	<settings src="settings/hebis.xml"/>
+	<settings>
+		<set target="tolk.hebis.de:210/hebis-herder" name="pz:name" value="Herder-Institut"/>
+	</settings>
+
+	<settings src="settings/dk-kb.xml"/>
+	<settings>
+		<set target="z3950.kb.dk:2100/KGL01_BDANICA" name="pz:name" value="Bibliotheca Danica 1482-1840"/>
+		<set target="z3950.kb.dk:2100/BGF01_DHB" name="pz:name" value="Dansk Historisk Bibliografi"/>
+		<set target="z3950.kb.dk:2100/BGF01_DSB" name="pz:name" value="Dansk Sociologisk Bibliografi 1996-2004"/>
+		<set target="z3950.kb.dk:2100/MUS01" name="pz:name" value="Hele Musiksamlingen"/>
+		<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:name" value="Dansk Periodikafortegnelse"/>
+	</settings>
+	
+	
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

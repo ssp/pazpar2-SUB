@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+<!-- Length implementation at offset 22 should hold a number. Assuming 0 -->
+  <l>00912nM2.a1200337---450h</l>
+  <c001>$$aBV025094048</c001>
+  <c005>20120425212900.0</c005>
+  <d026 i1=" ">
+    <sa>BVBBV025094048</sa>
+  </d026>
+  <d027 i1=" ">
+    <sa>SC0038922</sa>
+  </d027>
+  <d030 i1=" ">
+    <sa>z1dc|zz|||||</sa>
+  </d030>
+  <d037 i1="b">
+    <sa>dan</sa>
+  </d037>
+  <d050 i1=" ">
+    <subfield xmlns="" code="|">||||ca|||||||</subfield>
+  </d050>
+  <d051 i1=" ">
+    <sm>z||z|||</sm>
+  </d051>
+  <d100 i1="b">
+    <sp>Wieth, Mogens</sp>
+    <s9>(DE-588)160283388</s9>
+  </d100>
+  <d104 i1="b">
+    <sp>Reichhardt, Poul</sp>
+    <sd>1913-1985</sd>
+    <s9>(DE-588)120645858</s9>
+  </d104>
+  <d108 i1="b">
+    <sa>Petersen, Kjeld</sa>
+  </d108>
+  <d112 i1="b">
+    <sp>Rode, Ebbe</sp>
+    <sd>1910-</sd>
+    <s9>(DE-588)119036843</s9>
+  </d112>
+  <d116 i1="b">
+    <sp>Kjer, Bodil</sp>
+    <sd>1917-</sd>
+    <s9>(DE-588)121478513</s9>
+  </d116>
+  <d331 i1=" ">
+    <sa>&lt;&lt;Den&gt;&gt; usynlige haer</sa>
+  </d331>
+  <d334 i1=" ">
+    <sa>Bildtonträger</sa>
+  </d334>
+  <d359 i1=" ">
+    <sa>Mogens Wieth ; Poul Reichhardt ; Kjeld Petersen ; Ebbe Rode ; Bodil Kjer</sa>
+  </d359>
+  <d410 i1=" ">
+    <sa>[s.l.]</sa>
+  </d410>
+  <d412 i1=" ">
+    <sa>Panorama Video</sa>
+  </d412>
+  <d425 i1=" ">
+    <sa>[ca. 1986]</sa>
+  </d425>
+  <d425 i1="a">
+    <sa>1986</sa>
+  </d425>
+  <d433 i1="c">
+    <sa>1 Videokassette</sa>
+  </d433>
+  <d434 i1="a">
+    <sa>VHS, 84 Min.</sa>
+  </d434>
+  <d434 i1="d">
+    <sa>s/w</sa>
+  </d434>
+  <d501 i1=" ">
+    <sa>Orig.: Palladium 1945</sa>
+  </d501>
+  <d700 i1="g">
+    <sa>GZ 2486</sa>
+  </d700>
+  <d080 i1=" ">
+    <sa>05</sa>
+  </d080>
+</r>

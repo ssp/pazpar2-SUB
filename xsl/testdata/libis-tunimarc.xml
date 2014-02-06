@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00606cam2a22002291  450 </l>
+  <c001>LNB069810C2</c001>
+  <c005>20041008091842.0</c005>
+  <d100 i1=" " i2=" ">
+    <sa>19980316f1900|||||||y0lity50      ba</sa>
+  </d100>
+  <d101 i1="0" i2=" ">
+    <sa>fre</sa>
+  </d101>
+  <d102 i1=" " i2=" ">
+    <sa>FR</sa>
+  </d102>
+  <d105 i1=" " i2=" ">
+    <sa>a   z   000ay</sa>
+  </d105>
+  <d106 i1=" " i2=" ">
+    <sa>r</sa>
+  </d106>
+  <d200 i1="1" i2=" ">
+    <sa>Peanuts &#x101; vendre</sa>
+    <sf>Charles M. Schulz</sf>
+  </d200>
+  <d210 i1=" " i2=" ">
+    <sa>Paris</sa>
+    <sc>Dupuis</sc>
+    <sd>[19--]</sd>
+  </d210>
+  <d215 i1=" " i2=" ">
+    <sa>128 p.</sa>
+    <sc>iliustr.</sc>
+  </d215>
+  <d225 i1="2" i2=" ">
+    <sa>Collection Gag de poche</sa>
+    <sh>28</sh>
+  </d225>
+  <d410 i1=" " i2="1">
+    <s1>001C10000394762</s1>
+  </d410>
+  <d675 i1=" " i2=" ">
+    <sa>821.133.1</sa>
+  </d675>
+  <d700 i1=" " i2="1">
+    <sa>Schulz</sa>
+    <sb>Charles M.</sb>
+    <s4>070</s4>
+  </d700>
+  <d801 i1=" " i2="0">
+    <sa>LT</sa>
+    <sb>LNB</sb>
+    <sc>19980316</sc>
+  </d801>
+  <d801 i1=" " i2="2">
+    <sa>LT</sa>
+    <sb>C1</sb>
+    <sc>20040930</sc>
+  </d801>
+  <d990 i1=" " i2=" ">
+    <sa>C1</sa>
+    <sb>VL</sb>
+    <sc>VL821/Sc-72</sc>
+    <sd>19901016000000.0</sd>
+  </d990>
+</r>

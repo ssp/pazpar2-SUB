@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="linnea1.linneanet.fi:7590/voyager" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="linnea1.linneanet.fi:7591/voyager" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
-	Helka, Finland
-	Address from Google search
+	pazpar2 settings for National Library of Finland
+	created for vifanord.
+
+	http://www.nationallibrary.fi/libraries/linnea/z3950.html
+	
+	2012-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 	<set name="pz:name" value="Helka"/>
@@ -14,12 +18,16 @@
 	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
 
 	<set name="pz:cclmap:title" value="u=4 s=al 2=102"/>
-	<set name="pz:cclmap:person" value="u=1003 s=al"/>
+	<set name="pz:cclmap:person" value="u=1 s=al"/>
 
+	<set name="pz:cclmap:journal" value="u=5 s=al"/>
 	<set name="pz:cclmap:subject" value="u=21 s=al"/>
+	<set name="pz:cclmap:date" value="u=31"/>
 	<set name="pz:cclmap:isbn" value="u=7"/>
 	<set name="pz:cclmap:issn" value="u=8"/>
 
+	<set name="pz:cclmap:ppn" value="u=12 t=r"/>
+	<set name="pz:cclmap:ddc" value="u=13 t=r"/>
 
 
 	<!-- Retrieval settings -->
@@ -30,6 +38,6 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="pazpar2-etc/tmarc.xsl,xsl/medium-strip-electronic.xsl,xsl/catalogue-url-hint+id.xsl,xsl/merge-fields.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
 
 </settings>
