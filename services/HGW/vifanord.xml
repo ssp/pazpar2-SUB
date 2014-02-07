@@ -14,14 +14,22 @@
 	
 	<settings src="settings/gbv-sru.xml"/>
 	<settings>
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog ViFa Nord"/>
+		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog vifanord"/>
+		
 		<set target="sru.gbv.de/fachopac-bal" name="pz:name" value="Fachkatalog Baltische Länder"/>
+		<set name="region" target="sru.gbv.de/fachopac-bal" value="balt"/>
+		
 		<set target="sru.gbv.de/fachopac-nord" name="pz:name" value="Fachkatalog Nordische Länder"/>
+		<set name="region" target="sru.gbv.de/fachopac-nord" value="nord"/>
 		
 		<set target="sru.gbv.de/olcssg-bal" name="pz:name" value="OLC Baltikum"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-bal" value="1"/>
+		<set name="region" target="sru.gbv.de/olcssg-bal" value="balt"/>
+		
 		<set target="sru.gbv.de/olcssg-nord" name="pz:name" value="OLC Nordeuropa"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-nord" value="1"/>
+		<set name="region" target="sru.gbv.de/olcssg-nord" value="nord"/>
+		
 		<set target="sru.gbv.de/olcssg-oeu" name="pz:name" value="OLC Osteuropa"/>
 		<set name="pz:allow" target="sru.gbv.de/olcssg-oeu" value="1"/>
 	</settings>
@@ -36,6 +44,7 @@
 	<settings src="settings/hu-berlin.xml"/>
 	<settings>
 		<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:name" value="HU Berlin Skandinavistik"/>
+		<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="region" value="nord"/>
 	</settings>
 	
 	<settings src="settings/swb.xml"/>
@@ -46,6 +55,7 @@
 	<settings src="settings/hebis.xml"/>
 	<settings>
 		<set target="tolk.hebis.de:210/hebis-herder" name="pz:name" value="Herder-Institut"/>
+		<set target="tolk.hebis.de:210/hebis-herder" name="region" value="balt"/>
 	</settings>
 
 	<settings src="settings/dk-kb.xml"/>
@@ -57,7 +67,11 @@
 		<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:name" value="Dansk Periodikafortegnelse"/>
 	</settings>
 	
-	
+
+	<metadata name="region" brief="yes" merge="unique" termlist="yes" setting="postproc"/>
+	<metadata name="subject" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="library" brief="yes" merge="unique" termlist="yes"/>
+
 	<xi:include href="../metadata/default.xml"/>
 
 </service>

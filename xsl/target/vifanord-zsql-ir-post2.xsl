@@ -5,8 +5,9 @@
 	version="1.0">
 <!--
 	Improve metadata from vifanord’s link database.
-		* add »medium« field
+		* add medium field
 		* split fields with multiple values
+		* add region field
 	
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
@@ -30,12 +31,12 @@
 	-->
 	<xsl:template match="pz:record">
 		<xsl:copy>
-			<xsl:metadata type="medium">
+			<pz:metadata type="medium">
 				<xsl:choose>
 					<xsl:when test="string-length(normalize-space(pz:metadata[@type='ezb-number'])) &gt; 0">journal</xsl:when>
 					<xsl:otherwise>website</xsl:otherwise>
 				</xsl:choose>
-			</xsl:metadata>
+			</pz:metadata>
 			
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
@@ -61,12 +62,15 @@
 		Map region information.
 	-->
 	<xsl:template match="*[@type='region']">
-		<xsl:if test=".='Baltikum' or .='Ostseeraum'">
-			<pz:metadata type="region">balt</pz:metadata>
-		</xsl:if>
-		<xsl:if test=".='Skandinaiven' or .='Finnland' or .='Ostseeraum'">
-			<pz:metadata type="region">nord</pz:metadata>
-		</xsl:if>
+		<xsl:copy>
+			<xsl:copy-of select="@*"/>
+			<xsl:if test=".='Baltikum' or .='Ostseeraum'">
+				<pz:metadata type="region">balt</pz:metadata>
+			</xsl:if>
+			<xsl:if test=".='Skandinaiven' or .='Finnland' or .='Ostseeraum'">
+				<pz:metadata type="region">nord</pz:metadata>
+			</xsl:if>
+		</xsl:copy>
 	</xsl:template>
 
 

@@ -4,9 +4,8 @@
 	xmlns:pz="http://www.indexdata.com/pazpar2/1.0"
 	version="1.0">
 <!--
-	Improve metadata from vifanord’s zSQL databases.
-	
-		* map all subject information to the »subject« field
+	Improve metadata from vifanord’s link database.
+		* map all subject information to the subject field
 	
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->

@@ -36,6 +36,9 @@
 	<set name="pz:queryencoding" value="utf-8"/>
 
 
+	<set name="region" value="nord"/>
+
+
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>

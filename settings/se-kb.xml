@@ -36,6 +36,9 @@
 	<set name="pz:piggyback" value="0"/>
 
 
+	<set name="region" value="nord"/>
+
+
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
@@ -51,7 +54,7 @@
 	<set target="z3950.libris.kb.se/libris-col" name="pz:pqf_prefix" value="@and @or @or @attr 1=5001 COL @attr 1=5001 SB17 @attr 1=5001 SOT"/>
 	<set target="z3950.libris.kb.se/libris-col" name="pz:url" value="z3950.libris.kb.se/libris"/>
 	
-	<set target="z3950.libris.kb.se/libris-shb" name="pz:name" value="Svensk historisk bibliografi (1977-) *"/>
+	<set target="z3950.libris.kb.se/libris-shb" name="pz:name" value="Svensk historisk bibliografi (1977-)"/>
 	<set target="z3950.libris.kb.se/libris-shb" name="pz:pqf_prefix" value="@and @attr 1=5001 SHB"/>
 	<set target="z3950.libris.kb.se/libris-shb" name="pz:url" value="z3950.libris.kb.se/libris"/>
 	
