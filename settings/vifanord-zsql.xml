@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="ub-baltica1.ub.uni-greifswald.de:395*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	pazpar2 settings for the databases on vifanord’s zSQL server.
+	
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<!-- Mappings for search -->
+	<set name="pz:cclmap:term" value="u=1016 t=r s=al"/>
+
+	<set name="pz:cclmap:title" value="u=4 s=al 2=102"/>
+	<set name="pz:cclmap:person" value="u=1004 t=r s=al"/>
+
+	<set name="pz:cclmap:subject" value="u=21 t=r s=al"/>
+	<set name="pz:cclmap:isbn" value="u=7"/>
+	<set name="pz:cclmap:issn" value="u=8"/>
+	<set name="pz:cclmap:date" value="u=31 t=r"/>
+
+	<!-- For internet resource databases -->
+	<set name="pz:cclmap:ddc" value="u=13 t=r"/>
+	<set name="pz:cclmap:ddc-geo" value="u=1301 t=r"/>
+	<set name="pz:cclmap:ddc-time" value="u=1302 t=r"/>
+	<set name="pz:cclmap:url" value="u=1032 t=r"/>
+
+
+	<!-- Retrieval settings -->
+	<set name="pz:requestsyntax" value="xml"/>
+	<set name="pz:elements" value="F"/>
+	<set name="pz:queryencoding" value="utf-8"/>
+
+
+	<!-- Result normalization settings -->
+	<set name="pz:nativesyntax" value="xml;utf-8"/>
+	<set name="pz:xslt" value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
+
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="Internetquellen vifanord"/>
+	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
+		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
+	
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="Friedrich-Ebert-Stiftung"/>
+	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3953/FES"
+		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="balt"/>
+	
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="Baltic Marine Environment"/>
+	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB"
+		 value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-bmeb-post.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="balt"/>
+	
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="Lettland Bücher"/>
+	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON"
+		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/book.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="balt"/>
+
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="Lettland Aufsätze"/>
+	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA"
+		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/article.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="balt"/>
+
+</settings>

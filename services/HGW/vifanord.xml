@@ -9,6 +9,9 @@
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
+	
+	<settings src="settings/vifanord-zsql.xml"/>
+	
 	<settings src="settings/gbv-sru.xml"/>
 	<settings>
 		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog ViFa Nord"/>
