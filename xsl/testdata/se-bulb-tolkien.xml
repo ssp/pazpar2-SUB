@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01506cam a22004217a 4500</l>
+  <c001>5702000</c001>
+  <c003>SE-LIBR</c003>
+  <c005>20130214123348.0</c005>
+  <c008>011211s1995    xxk           001 0 eng c</c008>
+  <d020 i1=" " i2=" ">
+    <sa>0-8057-8806-9 (inb.)</sa>
+  </d020>
+  <d020 i1=" " i2=" ">
+    <sa>0-8057-8807-7 (hft)</sa>
+  </d020>
+  <d035 i1=" " i2=" ">
+    <s9>0805788069</s9>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>Sbi</sa>
+  </d040>
+  <d042 i1=" " i2=" ">
+    <s9>BULB</s9>
+  </d042>
+  <d082 i1="0" i2="4">
+    <sa>823.912</sa>
+    <s2>23/swe</s2>
+  </d082>
+  <d084 i1=" " i2=" ">
+    <sa>G:do</sa>
+    <s2>kssb/6</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>Gz Tolkien, John Ronald Reuel</sa>
+    <s2>kssb/6</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <s5>Sbi</s5>
+    <sa>G:do</sa>
+    <s2>kssb/6</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <s5>Sbi</s5>
+    <sa>Gez Tolkien, John Ronald Reuel</sa>
+    <s2>kssb/6</s2>
+  </d084>
+  <d100 i1="1" i2=" ">
+    <sa>Green, William H.</sa>
+  </d100>
+  <d245 i1="1" i2="4">
+    <sa>The Hobbit :</sa>
+    <sb>a journey into maturity /</sb>
+    <sc>William H. Green</sc>
+  </d245>
+  <d260 i1=" " i2=" ">
+    <sa>New York :</sa>
+    <sb>Twayne Publishers,</sb>
+    <sc>cop. 1995</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>xiii, 150 s. :</sa>
+    <sb>ill. ;</sb>
+    <sc>23 cm.</sc>
+  </d300>
+  <d440 i1=" " i2="0">
+    <sa>Twayne's masterwork studies,</sa>
+    <sx>99-0904099-9 ;</sx>
+    <sv>149</sv>
+  </d440>
+  <d600 i1="1" i2="4">
+    <sa>Tolkien, J. R. R.,</sa>
+    <sd>1892-1973.</sd>
+    <st>Hobbit.</st>
+  </d600>
+  <d600 i1="1" i2="4">
+    <sa>Tolkien, J. R. R.,</sa>
+    <sd>1892-1973</sd>
+    <sx>Technique.</sx>
+  </d600>
+  <d600 i1="1" i2="4">
+    <s5>Sbi</s5>
+    <sa>Tolkien, John Ronald Reuel</sa>
+    <sd>1892-1973</sd>
+  </d600>
+  <d650 i1=" " i2="7">
+    <sa>Fantastic fiction, English</sa>
+    <sx>History and criticism</sx>
+    <s2>BNB</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <sa>Middle Earth (Imaginary place)</sa>
+    <s2>BNB</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <sa>English fiction, Children's stories</sa>
+    <s2>BNB</s2>
+  </d650>
+  <d650 i1=" " i2="4">
+    <s5>BULB</s5>
+    <sa>Litteraturpsykologi</sa>
+  </d650>
+  <d650 i1=" " i2="4">
+    <s5>Sbi</s5>
+    <sa>Litteraturpsykologi</sa>
+  </d650>
+  <d841 i1=" " i2=" ">
+    <s5>BULB</s5>
+    <sa>xa a</sa>
+    <sb>0201070u    0   4000uu   |000000</sb>
+    <se>1</se>
+  </d841>
+  <d841 i1=" " i2=" ">
+    <s5>Li</s5>
+    <sa>xa a</sa>
+    <sb>0201070u    0   4000uu   |000000</sb>
+    <se>1</se>
+  </d841>
+  <d841 i1=" " i2=" ">
+    <s5>Sbi</s5>
+    <sa>xa a</sa>
+    <sb>0201070u    0   4000uu   |000000</sb>
+    <se>1</se>
+  </d841>
+  <d852 i1=" " i2=" ">
+    <s5>BULB</s5>
+    <sb>BULB</sb>
+  </d852>
+  <d852 i1="1" i2=" ">
+    <s5>Li</s5>
+    <sb>Li</sb>
+    <sh>800 Tolkien</sh>
+  </d852>
+  <d852 i1=" " i2=" ">
+    <s5>Sbi</s5>
+    <sb>Sbi</sb>
+    <sh>Biogr</sh>
+    <sj>Tolkien</sj>
+  </d852>
+</r>

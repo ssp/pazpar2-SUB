@@ -58,6 +58,8 @@
 		<set target="tolk.hebis.de:210/hebis-herder" name="region" value="balt"/>
 	</settings>
 
+	<settings src="settings/herder-litdok.xml"/>
+
 	<settings src="settings/dk-kb.xml"/>
 	<settings>
 		<set target="z3950.kb.dk:2100/KGL01_BDANICA" name="pz:name" value="Bibliotheca Danica 1482-1840"/>
@@ -66,11 +68,12 @@
 		<set target="z3950.kb.dk:2100/MUS01" name="pz:name" value="Hele Musiksamlingen"/>
 		<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:name" value="Dansk Periodikafortegnelse"/>
 	</settings>
-	
+
 
 	<metadata name="region" brief="yes" merge="unique" termlist="yes" setting="postproc"/>
 	<metadata name="subject" brief="yes" merge="unique" termlist="yes"/>
 	<metadata name="library" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="collection" brief="yes" merge="unique" termlist="yes"/>
 
 	<xi:include href="../metadata/default.xml"/>
 

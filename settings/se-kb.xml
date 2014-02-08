@@ -12,7 +12,7 @@
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<!-- mappings for search -->
+	<!-- Search -->
 	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
 
 	<set name="pz:cclmap:title" value="u=4 s=al 2=102"/>
@@ -25,27 +25,62 @@
 
 	<set name="pz:cclmap:date" value="u=31"/>
 	<set name="pz:cclmap:ppn" value="u=5000"/>
-	<set name="pz:cclmap:part" value="u=5001"/>
+	<set name="pz:cclmap:collection" value="u=5001"/>
 
-	<!-- Retrieval settings -->
+
+	<set name="pz:limitmap:subject" value="ccl:subject"/>
+	<set name="pz:limitmap:collection" value="ccl:collection"/>
+
+
+	<!-- Retrieval -->
 	<set name="pz:requestsyntax" value="marc21"/>
 	<set name="pz:elements" value="F"/>
 	<set name="pz:queryencoding" value="utf-8"/>
-
 	<!-- Server does not support piggybacking -->
 	<set name="pz:piggyback" value="0"/>
 
 
-	<set name="region" value="nord"/>
-
-
-	<!-- Result normalization settings -->
+	<!-- Normalisation -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="pz:xslt" value="xsl/target/se-kb-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
 
+
+	<set name="region" value="nord"/>
 
 	<set name="catalogueURLHintPrefix" target="z3950.libris.kb.se/*" value="http://libris.kb.se/bib/"/>
 
+	<set target="z3950.libris.kb.se/libris" name="pz:name" value="KB Schweden"/>
+	<set target="z3950.libris.kb.se/libris" name="pz:pqf_prefix" value="
+		@and
+		@or @or @or @or @or @or @or @or @or @or @or
+		@or @or @or @or @or @or @or @or @or @or @or
+		@attr 1=5001 NB
+		@attr 1=5001 COL
+		@attr 1=5001 SB17
+		@attr 1=5001 SOT
+		@attr 1=5001 SHB
+		@attr 1=5001 SLB
+		@attr 1=5001 BIRB
+		@attr 1=5001 BULB
+		@attr 1=5001 KVIN
+		@attr 1=5001 SAMB
+		@attr 1=5001 SWAM
+		@attr 1=5001 NLT
+		@attr 1=5001 LOB
+		@attr 1=5001 DALA
+		@attr 1=5001 GOTL
+		@attr 1=5001 OSGO
+		@attr 1=5001 SAH
+		@attr 1=5001 SARB
+		@attr 1=5001 SFBB
+		@attr 1=5001 SNUB
+		@attr 1=5001 VSTM
+		@attr 1=5001 VIMO
+		@attr 1=5001 LITT
+	"/>
+	
+	
+	<!--
 	<set target="z3950.libris.kb.se/libris-nb" name="pz:name" value="Nationalbibliografin (Schweden)"/>
 	<set target="z3950.libris.kb.se/libris-nb" name="pz:pqf_prefix" value="@and @attr 1=5001 NB"/>
 	<set target="z3950.libris.kb.se/libris-nb" name="pz:url" value="z3950.libris.kb.se/libris"/>
@@ -129,6 +164,6 @@
 	<set target="z3950.libris.kb.se/libris-litt" name="pz:name" value="Litteraturbanken"/>
 	<set target="z3950.libris.kb.se/libris-litt" name="pz:pqf_prefix" value="@and @attr 1=5001 LITT"/>
 	<set target="z3950.libris.kb.se/libris-litt" name="pz:url" value="z3950.libris.kb.se/libris"/>
-	
+	-->
 </settings>
 

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="tallinn.ester.ee:210/innopac" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="tallinn.ester.ee:212/innopac" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the Estonian National library,
 	created for vifanord.
-
+	
+	http://www.elnet.ee/juhendid/Z39.50_ESTER-ISE.pdf
+	
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 

@@ -24,8 +24,7 @@
 	<metadata name="meeting-name"/>
 	<metadata name="meeting-location"/>
 	<metadata name="meeting-date"/>
-	<metadata name="date" brief="yes" sortkey="numeric" type="year"
-			merge="range" termlist="yes"/>
+	<metadata name="date" brief="yes" sortkey="numeric" type="year"	merge="range" termlist="yes"/>
 	<metadata name="title" brief="yes" sortkey="skiparticle" merge="longest"/>
 	<metadata name="title-remainder" brief="yes" merge="unique"/>
 	<metadata name="title-responsibility" brief="yes" merge="longest"/>
@@ -103,6 +102,7 @@
 	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
 	<metadata name="library"/>
 	<metadata name="shelf-mark"/>
+	<metadata name="collection"/>
 
 	<metadata name="merge-title" mergekey="required"/>
 	<metadata name="merge-author" mergekey="optional"/>
