@@ -8,7 +8,7 @@
 	https://wiki.bsz-bw.de/doku.php?id=v-team:daten:z39.50neu
 	http://swb2.bsz-bw.de/DB=2.1/XML=1.0/IKTLIST
 
-	2010-2013: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2014: Sven-S. Porst: <ssp-web@earthlingsoft.net>
 -->
 
 	<!-- unqualified search -->
@@ -24,8 +24,17 @@
 	<set name="pz:cclmap:issn" value="u=8 t=r"/>
 	<set name="pz:cclmap:date" value="u=31 s=4 r=o"/>
 
-	<!-- Freiberg classification exposed as Bib-1 Attribute 1042 -->
+	<!--
+		Classification exposed as Bib-1 Attribute 1042,
+		e.g. for Freiberg classification or WAO subjects.
+	-->
 	<set name="pz:cclmap:fbg" value="u=1042 s=pw t=r"/>
+	
+	<!--
+		Fake Search key for Göttingen classification, mapped to ISBN field.
+		Should not return any results in SWB.
+	-->
+	<set name="pz:cclmap:lkl" value="u=7 s=1 t=r"/>
 
 	<!--
 		SXN (8064) - month in which the local record was added to catalogue: Right-truncated search.
@@ -33,11 +42,6 @@
 	-->
 	<set name="pz:cclmap:nel" value="u=1011 t=1"/>
 
-	<!--
-		Fake Search key for Göttingen classification, mapped to ISBN field.
-		Should not return any results in SWB.
-	-->
-	<set name="pz:cclmap:lkl" value="u=7 s=1 t=r"/>
 
 	<!-- additional indexes -->
 	<set name="pz:cclmap:ppn" value="u=12 s=1 t=r"/>
@@ -59,6 +63,7 @@
 	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:url" value="z3950n.bsz-bw.de:20210/swb"/>
 	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
 	<set target="z3950n.bsz-bw.de:20210/freiberg" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
+	
 	<set target="z3950n.bsz-bw.de:20210/swb362" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.362/PPNSET?PPN="/>
 
 </settings>

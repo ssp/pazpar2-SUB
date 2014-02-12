@@ -64,12 +64,13 @@
 	<xsl:template match="*[@type='region']">
 		<xsl:copy>
 			<xsl:copy-of select="@*"/>
-			<xsl:if test=".='Baltikum' or .='Ostseeraum'">
-				<pz:metadata type="region">balt</pz:metadata>
-			</xsl:if>
-			<xsl:if test=".='Skandinaiven' or .='Finnland' or .='Ostseeraum'">
-				<pz:metadata type="region">nord</pz:metadata>
-			</xsl:if>
+			<pz:metadata type="region">
+				<xsl:choose>
+					<xsl:when test=".='Baltikum'">balt</xsl:when>
+					<xsl:when test=".='Skandinavien' or .='Finnland'">nord</xsl:when>
+					<xsl:when test=".='Ostseeraum'">ostsee</xsl:when>
+				</xsl:choose>
+			</pz:metadata>
 		</xsl:copy>
 	</xsl:template>
 

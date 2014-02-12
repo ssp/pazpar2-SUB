@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>02343naa a22003012  4500</l>
+  <c001>389876518</c001>
+  <c003>DE-576</c003>
+  <c005>20130709152604.0</c005>
+  <c007>tu</c007>
+  <c008>130709s2008    xx            000 0 eng c</c008>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)BSZ389876518</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>DE-576</sa>
+    <sb>ger</sb>
+    <sc>DE-576</sc>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>eng</sa>
+  </d041>
+  <d084 i1=" " i2=" ">
+    <sa>SG02.03</sa>
+    <s2>FIV</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>RA07.12</sa>
+    <s2>FIV</s2>
+  </d084>
+  <d100 i1="1" i2=" ">
+    <sa>Brosig, Malte</sa>
+    <s0>(DE-588)13190020X</s0>
+    <s0>(DE-576)256899835</s0>
+  </d100>
+  <d245 i1="1" i2="2">
+    <sa>A plan for the future? :</sa>
+    <sb>The Estonian State Integration Programme on National Minorities 2000-2007 /</sb>
+    <sc>Malte Brosig</sc>
+  </d245>
+  <d260 i1=" " i2=" ">
+    <sc>2008</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <se>Tab., Lit. S. 17-18.</se>
+  </d300>
+  <d520 i1=" " i2=" ">
+    <sa>Events surrounding the replacement of a Soviet bronze statue in spring 2007 in Tallinn and subsequent international tensions between the EU and Russia marked a low point in interethnic relations between Russian-speakers in Estonia and ethnic Estonians in recent years. This raises the question of how successful current integration efforts directed towards Russian-speakers have actually been. The paper analyses the development of the Estonian State Integration Programme (SIP) 2000-2007 from its earliest moments in the 1990s to its current form. It is argued that although its theoretical basis is well grounded, the programme does not account for minority integration needs systematically. Instead it follows a unidirectional action-plan, targeting Russian-speakers without a prior needs-assessment at grass-root level and insufficient minority participation during the drafting and implementation period. Furthermore, the paper highlights the influence the legal-resorationist concept maintains on the implementation of the SIP which partly has the effect of re-enforcing interethnic alienation. (ECMI)</sa>
+  </d520>
+  <d533 i1=" " i2=" ">
+    <sa>Online-Ausg.</sa>
+    <se>Online Ressource</se>
+  </d533>
+  <d650 i1=" " i2="4">
+    <sa>Estland</sa>
+    <sx>Minderheitenpolitik</sx>
+    <sx>Interethnische Beziehungen</sx>
+    <sx>Russen</sx>
+    <sx>Soziale Integration</sx>
+    <sx>Politische Partizipation</sx>
+    <sx>Wirtschaftliche Faktoren</sx>
+    <sx>Kulturelle Faktoren</sx>
+    <sx>Problem</sx>
+  </d650>
+  <d650 i1=" " i2="4">
+    <sa>Regionalsprache/Minderheitensprache</sa>
+    <sx>Russisch</sx>
+    <sx>Gesetzgebung</sx>
+    <sx>Staat</sx>
+    <sx>Wirkung/Auswirkung</sx>
+  </d650>
+  <d773 i1="0" i2=" ">
+    <si>In</si>
+    <sa>Journal on ethnopolitics and minority issues in Europe</sa>
+    <sd>2008</sd>
+    <sg>7(2008), 2, S. 1-19</sg>
+    <sw>(DE-576)281223386</sw>
+  </d773>
+  <d856 i1="4" i2="0">
+    <su>http://www.ecmi.de/fileadmin/downloads/publications/JEMIE/2008/2-2008-Brosig.pdf</su>
+    <sx>Aggregator</sx>
+  </d856>
+  <d935 i1=" " i2=" ">
+    <sb>cofz</sb>
+  </d935>
+  <d935 i1=" " i2=" ">
+    <sc>text</sc>
+  </d935>
+  <d936 i1="u" i2="w">
+    <sd>7</sd>
+    <sj>2008</sj>
+    <se>2</se>
+    <sh>1-19</sh>
+  </d936>
+</r>
