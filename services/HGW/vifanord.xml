@@ -93,8 +93,8 @@
 
 	<metadata name="region" brief="yes" merge="unique" termlist="yes" setting="postproc"/>
 	<metadata name="subject" brief="yes" merge="unique" termlist="yes"/>
-	<metadata name="library" brief="yes" merge="unique" termlist="yes"/>
-	<metadata name="collection" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="gbv-library" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="kb-se-collection" brief="yes" merge="unique" termlist="yes"/>
 
 	<xi:include href="../metadata/default.xml"/>
 

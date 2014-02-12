@@ -146,7 +146,7 @@
 		Extract library and shelf mark information from 900.
 	-->
 	<xsl:template match="tmarc:d900">
-		<pz:metadata type="library">
+		<pz:metadata type="gbv-library">
 			<xsl:attribute name="shelf-mark">
 				<xsl:value-of select="tmarc:sd"/>
 			</xsl:attribute>
