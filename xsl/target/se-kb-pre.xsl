@@ -53,7 +53,7 @@
 				.='VIMO' or
 				.='LITT'
 			">
-				<pz:metadata type="kb-se-collection">
+				<pz:metadata type="se-kb-collection">
 					<xsl:value-of select="."/>
 				</pz:metadata>
 			</xsl:if>
