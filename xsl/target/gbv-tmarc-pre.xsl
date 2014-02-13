@@ -39,6 +39,26 @@
 
 
 	<!--
+		Extract region information from SSG-Selektionskennzeichen.
+	-->
+	<xsl:template match="tmarc:d084[tmarc:s2='olc-ssg']">
+		<xsl:copy>
+			<xsl:apply-templates select="@*|node()"/>
+		</xsl:copy>
+		
+		<pz:metadata type="region">
+			<xsl:choose>
+				<xsl:when test="tmarc:sa = 'sca' or tmarc:sa = 'xsc'
+								or tmarc:sa = 'suo' or tmarc:sa = 'xsu'">nord</xsl:when>
+				<xsl:when test="tmarc:sa = 'bal' or tmarc:sa = 'xba'">balt</xsl:when>
+				<xsl:when test="tmarc:sa = 'vnd' or tmarc:sa = 'xvn'">ostsee</xsl:when>
+			</xsl:choose>
+		</pz:metadata>
+	</xsl:template>
+
+
+
+	<!--
 		Remove leading asterisks from classification.
 		Classification information does not include asterisks, they seem to serve
 		as some kind of indicator for the main MSC which nobody really cares for.
