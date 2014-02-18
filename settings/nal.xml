@@ -14,7 +14,7 @@
 	<set name="pz:name" value="NAL"/>
 
 	<set name="catalogueURLHintPrefix" value="http://agricola.nal.usda.gov/cgi-bin/Pwebrecon.cgi?DB=local&amp;CNT=10&amp;Search_Arg="/>
-	<set name="catalogueURLHintPostfix" value="&amp;Search_Code=CMD&amp;STARTDB=AGRIDB"/>
+	<set name="catalogueURLHintSuffix" value="&amp;Search_Code=CMD&amp;STARTDB=AGRIDB"/>
 
 
 	<!-- mappings for search -->

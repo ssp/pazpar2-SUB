@@ -99,7 +99,7 @@
 	<metadata name="country" brief="yes" termlist="yes" merge="unique"/>
 	<metadata name="source-type" brief="yes" termlist="yes" merge="unique"/>
 	<metadata name="catalogueURLHintPrefix" setting="parameter"/>
-	<metadata name="catalogueURLHintPostfix" setting="parameter"/>
+	<metadata name="catalogueURLHintSuffix" setting="parameter"/>
 	<metadata name="library"/>
 	<metadata name="shelf-mark"/>
 	<metadata name="collection"/>

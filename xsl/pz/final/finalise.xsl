@@ -16,9 +16,6 @@
 	<xsl:include href="medium-simplify.xsl"/>
 	<xsl:include href="merge-fields.xsl"/>
 
-	<xsl:param name="catalogueURLHintPrefix"/>
-	<xsl:param name="catalogueURLHintPostfix"/>
-
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 

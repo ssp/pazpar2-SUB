@@ -14,16 +14,12 @@
 
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
-	<xsl:param name="catalogueURLHintPrefix"/>
-	<xsl:param name="catalogueURLHintPostfix"/>
-
 
 	<xsl:template match="@*|node()">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
 	</xsl:template>
-
 
 
 	<!-- Delete existing ID -->

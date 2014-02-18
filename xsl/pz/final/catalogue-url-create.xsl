@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Creates the pz:metadata field of type »catalogue-url« by concatenating
-		the $catalogueURLHintPrefix and $catalogueURLHintPostfix parameters
-		with the »id« pz:metadata field.
-
+	Creates the pz:metadata field of type »catalogue-url« by building a
+		URL string from the catalogueURLHint[Pre|Suf]fix metadata fields
+		or parameters and the id field.
+	
 	2011-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 <xsl:stylesheet
@@ -14,7 +14,7 @@
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
 
 	<xsl:param name="catalogueURLHintPrefix"/>
-	<xsl:param name="catalogueURLHintPostfix"/>
+	<xsl:param name="catalogueURLHintSuffix"/>
 
 
 	<xsl:template match="@*|node()">
@@ -25,19 +25,41 @@
 
 
 	<xsl:template match="pz:metadata[@type='id'] | pz:metadata[@type='parent-id']">
-
+		
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
-
-		<xsl:if test="string-length(concat($catalogueURLHintPrefix, $catalogueURLHintPostfix)) &gt; 0">
+		
+		<xsl:variable name="prefix">
+			<xsl:choose>
+				<xsl:when test="../pz:metadata[@type='catalogueURLHintPrefix']">
+					<xsl:value-of select="../pz:metadata[@type='catalogueURLHintPrefix'][1]"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$catalogueURLHintPrefix"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		
+		<xsl:variable name="suffix">
+			<xsl:choose>
+				<xsl:when test="../pz:metadata[@type='catalogueURLHintSuffix']">
+					<xsl:value-of select="../pz:metadata[@type='catalogueURLHintSuffix'][1]"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$catalogueURLHintSuffix"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		
+		<xsl:if test="string-length(concat($prefix, $suffix)) &gt; 0">
 			<pz:metadata>
 				<xsl:attribute name="type">
 					<xsl:value-of select="concat(substring-before(@type, 'id'), 'catalogue-url')"/>
 				</xsl:attribute>
-				<xsl:value-of select="$catalogueURLHintPrefix"/>
+				<xsl:value-of select="$prefix"/>
 				<xsl:value-of select="."/>
-				<xsl:value-of select="$catalogueURLHintPostfix"/>
+				<xsl:value-of select="$suffix"/>
 			</pz:metadata>
 		</xsl:if>
 		
