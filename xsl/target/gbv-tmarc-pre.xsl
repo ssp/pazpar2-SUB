@@ -4,7 +4,6 @@
 
 	2010-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
-
 <xsl:stylesheet
 	version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -12,7 +11,7 @@
 	xmlns:tmarc="http://www.indexdata.com/turbomarc">
 
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
-	<xsl:strip-space elements="*" />
+
 
 	<xsl:template match="@*|node()">
 		<xsl:copy>
@@ -34,26 +33,6 @@
 				<xsl:apply-templates select="@*|node()"/>
 			</xsl:copy>
 		</xsl:if>
-	</xsl:template>
-
-
-
-	<!--
-		Extract region information from SSG-Selektionskennzeichen.
-	-->
-	<xsl:template match="tmarc:d084[tmarc:s2='olc-ssg']">
-		<xsl:copy>
-			<xsl:apply-templates select="@*|node()"/>
-		</xsl:copy>
-		
-		<pz:metadata type="region">
-			<xsl:choose>
-				<xsl:when test="tmarc:sa = 'sca' or tmarc:sa = 'xsc'
-								or tmarc:sa = 'suo' or tmarc:sa = 'xsu'">nord</xsl:when>
-				<xsl:when test="tmarc:sa = 'bal' or tmarc:sa = 'xba'">balt</xsl:when>
-				<xsl:when test="tmarc:sa = 'vnd' or tmarc:sa = 'xvn'">ostsee</xsl:when>
-			</xsl:choose>
-		</pz:metadata>
 	</xsl:template>
 
 
