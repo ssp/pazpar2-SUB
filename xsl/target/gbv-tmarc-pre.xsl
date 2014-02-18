@@ -121,10 +121,31 @@
 		the PPN. This rule removes all capital letters to restore the PPN.
 	-->
 	<xsl:template match="tmarc:c001">
-		<tmarc:c001>
+		<xsl:copy>
 			<xsl:value-of select="translate(substring(., 1, string-length(.)-1), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', '')"/>
 			<xsl:value-of select="substring(., string-length(.), 1)"/>
-		</tmarc:c001>
+		</xsl:copy>
+	</xsl:template>
+
+
+
+	<!--
+		The parent-id is extracted by tmarc.xsl from 773/800/810/830 $w.
+		It may begin with a catalogue designator à la »(DE-601)«.
+		Remove that to get just the PPN which can be used to link to
+		the relevant record.
+	-->
+	<xsl:template match="tmarc:d773/tmarc:sw | tmarc:d800/tmarc:sw | tmarc:d810/tmarc:sw | tmarc:d830/tmarc:sw">
+		<xsl:copy>
+			<xsl:choose>
+				<xsl:when test="contains(., ')')">
+					<xsl:value-of select="substring-after(., ')')"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="."/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:copy>
 	</xsl:template>
 
 
