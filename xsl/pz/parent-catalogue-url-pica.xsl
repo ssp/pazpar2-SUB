@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Rewrites the address in the parent-catalogue-url pz:metadata field by:
-		* replacing PPNSET by FAM
-		* removing an ID prefix in brackets for the the PPN
+	Creates a link to all related works in a Pica OPAC using the record’s
+	»parent-id« field.
 
 	Example:
-	https://opac.sub.uni-goettingen.de/DB=1/PPNSET?PPN=(DE-601)16276040X
+	parent-id: 16276040X
 	becomes: https://opac.sub.uni-goettingen.de/DB=1/FAM?PPN=16276040X
 
-	March 2012
-	Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2012-2014 Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 <xsl:stylesheet
-	version="1.0"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	xmlns:pz="http://www.indexdata.com/pazpar2/1.0">
+	xmlns:pz="http://www.indexdata.com/pazpar2/1.0"
+	version="1.0">
 
 	<xsl:output indent="yes" method="xml" version="1.0" encoding="UTF-8"/>
+
+	<xsl:param name="catalogueURLHintPrefix"/>
+
 
 	<xsl:template match="@*|node()">
 		<xsl:copy>
@@ -25,22 +26,19 @@
 	</xsl:template>
 
 
-	<xsl:template match="pz:metadata[@type='parent-catalogue-url']">
-
-		<xsl:copy>
-			<xsl:copy-of select="@type"/>
-			<xsl:value-of select="substring-before(., 'PPNSET')"/>
-			<xsl:text>FAM?PPN=</xsl:text>
-			<xsl:choose>
-				<xsl:when test="contains(., '(') and contains(., ')')">
-					<xsl:value-of select="substring-after(., ')')"/>
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:value-of select="substring-after(., 'PPN=')"/>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:copy>
-
+	<xsl:template match="pz:metadata[@type='parent-id']">
+		<xsl:choose>
+			<xsl:when test="string-length($catalogueURLHintPrefix)">
+				<pz:metadata type="parent-catalogue-url">
+					<xsl:value-of select="substring-before($catalogueURLHintPrefix, 'PPNSET?PPN=')"/>
+					<xsl:text>FAM?PPN=</xsl:text>
+					<xsl:value-of select="."/>
+				</pz:metadata>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:apply-templates select="@*|node()"/>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 </xsl:stylesheet>
