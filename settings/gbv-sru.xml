@@ -79,8 +79,9 @@
 	<set name="pz:cclmap:nea" value="u=pica.nea t=r"/>
 
 	<set name="pz:cclmap:osg" value="u=pica.osg t=r"/>
-	<set name="pz:cclmap:odi" value="u=pica.osg t=r"/>
+	<set name="pz:cclmap:odi" value="u=pica.odi t=r"/>
 
+	<set name="pz:cclmap:mak" value="u=pica.mak t=r"/>
 	<set name="pz:cclmap:bib" value="u=pica.bib t=r"/>
 	<set name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
 
