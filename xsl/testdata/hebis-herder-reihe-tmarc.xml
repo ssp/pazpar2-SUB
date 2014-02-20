@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>01996cam a2200493 c 4500</l>
+  <c001>318146096</c001>
+  <c003>DE-603</c003>
+  <c005>20130808110033.0</c005>
+  <c007>tu</c007>
+  <c008>130221s2013    xx ||||  |   |01||u|ger||</c008>
+  <d015 i1=" " i2=" ">
+    <sa>13,A14</sa>
+    <s2>dnb</s2>
+  </d015>
+  <d016 i1="7" i2=" ">
+    <s2>DE-101</s2>
+    <sa>1031156135</sa>
+  </d016>
+  <d020 i1=" " i2=" ">
+    <sa>9783447068246</sa>
+    <sc>Pp. : EUR 78.00</sc>
+    <s9>978-3-447-06824-6</s9>
+  </d020>
+  <d024 i1="3" i2=" ">
+    <sa>9783447068246</sa>
+  </d024>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)DNB1031156135</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>DE-603</sa>
+    <sb>ger</sb>
+    <sc>DE-603</sc>
+    <sd>DE-603</sd>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1=" " i2=" ">
+    <sa>ger</sa>
+    <sa>rus</sa>
+    <sa>pol</sa>
+  </d041>
+  <d082 i1="0" i2="4">
+    <s8>1\x</s8>
+    <sa>891.709352</sa>
+    <sq>DE-101</sq>
+    <s2>22/ger</s2>
+  </d082>
+  <d083 i1="0" i2=" ">
+    <s8>2\x</s8>
+    <sa>891.8509352</sa>
+    <sq>DE-101</sq>
+    <s2>22/ger</s2>
+  </d083>
+  <d084 i1=" " i2=" ">
+    <sa>890</sa>
+    <sq>DE-101</sq>
+    <s2>sdnb</s2>
+  </d084>
+  <d085 i1=" " i2=" ">
+    <s8>1\x</s8>
+    <sb>891.7</sb>
+  </d085>
+  <d085 i1=" " i2=" ">
+    <s8>1\x</s8>
+    <sz>3C</sz>
+    <ss>352</ss>
+  </d085>
+  <d085 i1=" " i2=" ">
+    <s8>2\x</s8>
+    <sb>891.85</sb>
+  </d085>
+  <d085 i1=" " i2=" ">
+    <s8>2\x</s8>
+    <sz>3C</sz>
+    <ss>352</ss>
+  </d085>
+  <d090 i1=" " i2=" ">
+    <sn>b</sn>
+    <sn>f</sn>
+  </d090>
+  <d245 i1="1" i2="0">
+    <sa>Herrscherlob und Herrscherkritik in den slawischen Literaturen</sa>
+    <sb>Festschrift f&#xFC;r Ulrike Jekutsch zum 60. Geburtstag</sb>
+    <sc>hrsg. von Britta Holtz und Ute Marggraff</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Wiesbaden</sa>
+    <sb>Harrassowitz</sb>
+    <sc>2013</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>XVI, 392 S.</sa>
+    <sb>Ill.</sb>
+    <sc>25 cm</sc>
+  </d300>
+  <d490 i1="1" i2=" ">
+    <sa>Opera slavica</sa>
+    <sv>N.F., Bd. 55</sv>
+  </d490>
+  <d504 i1=" " i2=" ">
+    <sa>Literaturangaben</sa>
+  </d504>
+  <d546 i1=" " i2=" ">
+    <sa>Beitr. teilw. dt., teilw. russ., teilw. poln.</sa>
+  </d546>
+  <d600 i1="1" i2="7">
+    <s0>(DE-588)123345340</s0>
+    <s0>(DE-603)154287695</s0>
+    <sa>Jekutsch, Ulrike</sa>
+    <sd>1950-</sd>
+    <s2>gnd</s2>
+  </d600>
+  <d648 i1=" " i2="7">
+    <sa>Geschichte</sa>
+    <s2>gnd</s2>
+  </d648>
+  <d650 i1=" " i2="7">
+    <s0>(DE-588)4051038-4</s0>
+    <s0>(DE-603)085142212</s0>
+    <sa>Russisch</sa>
+    <s2>gnd</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <s0>(DE-588)4120314-8</s0>
+    <s0>(DE-603)085383503</s0>
+    <sa>Polnisch</sa>
+    <s2>gnd</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <s0>(DE-588)4035964-5</s0>
+    <s0>(DE-603)085097128</s0>
+    <sa>Literatur</sa>
+    <s2>gnd</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <s0>(DE-588)4129073-2</s0>
+    <s0>(DE-603)08545074X</s0>
+    <sa>Panegyrikus</sa>
+    <s2>gnd</s2>
+  </d650>
+  <d651 i1="1" i2="7">
+    <s2>local</s2>
+    <sa>Greifswald &lt;2010&gt;</sa>
+  </d651>
+  <d655 i1=" " i2="7">
+    <sa>Bibliographie</sa>
+    <s2>gnd</s2>
+  </d655>
+  <d655 i1=" " i2="7">
+    <sa>Kongress</sa>
+    <s2>gnd</s2>
+  </d655>
+  <d700 i1="1" i2=" ">
+    <s0>(DE-588)1031208925</s0>
+    <s0>(DE-603)316671762</s0>
+    <sa>Holtz, Britta</sa>
+    <s4>edt</s4>
+    <se>Hrsg.</se>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <s0>(DE-588)123345340</s0>
+    <s0>(DE-603)154287695</s0>
+    <sa>Jekutsch, Ulrike</sa>
+    <sd>1950-</sd>
+    <s4>hnr</s4>
+    <st>Festschrift</st>
+  </d700>
+  <d830 i1=" " i2="0">
+    <sa>Opera slavica</sa>
+    <sv>N.F., Bd. 55</sv>
+    <sw>(DE-603)052927407</sw>
+    <sw>(DE-600)976345-4s</sw>
+    <s9>nf255</s9>
+  </d830>
+  <d856 i1="4" i2="2">
+    <sm>V:DE-603;B:DE-Mb50</sm>
+    <sq>application/pdf</sq>
+    <su>http://scans.hebis.de/HEBCGI/show.pl?31814609_toc.pdf</su>
+    <s3>Inhaltsverzeichnis</s3>
+  </d856>
+</r>
