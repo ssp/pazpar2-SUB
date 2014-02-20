@@ -6,7 +6,7 @@
 
 	http://www.hebis.de/de/1service/z3950/z39_zugang_index.php
 	
-	2012-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
   	<!-- prefix for building the catalogue link -->
@@ -30,11 +30,11 @@
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="marc21"/>
 	<set name="pz:elements" value="F"/>
-	<set name="pz:queryencoding" value="utf-8"/>
+	<set name="pz:queryencoding" value="ISO_8859-1"/>
 
 
 	<!-- Result normalization settings -->
-	<set name="pz:nativesyntax" value="txml"/>
-	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="pz:nativesyntax" value="txml;ISO_8859-1"/>
+	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/parent-id-remove-isil.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/final/finalise.xsl"/>
 
 </settings>
