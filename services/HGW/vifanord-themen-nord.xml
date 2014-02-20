@@ -3,9 +3,9 @@
 <service
 	xmlns="http://www.indexdata.com/pazpar2/1.0"
 	xmlns:xi="http://www.w3.org/2001/XInclude"
-	id="vifanord-nord">
+	id="vifanord-themen-nord">
 <!--
-	Targets for vifanord main search, nordic region.
+	Targets for vifanord subject search, nordic region.
 	http://vifanord.de
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
@@ -33,53 +33,6 @@ value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/co
 				@attr 1=pica.odi ysuo
 				@attr 1=pica.odi yxsu
 		"/>
-
-		<set target="sru.gbv.de/olc" name="pz:name" value="Artikel Nordeuropa"/>
-		<set target="sru.gbv.de/olc" name="pz:allow" value="1"/>
-		<set target="sru.gbv.de/olc" name="pz:pqf_prefix"
-			value="@and @attr 1=pica.odi wsca"/>
-	</settings>
-	
-	<settings src="settings/se-kb.xml"/>
-	<settings src="settings/no-bibsys.xml"/>
-	<settings src="settings/fi-helka.xml"/>
-
-	<settings src="settings/hu-berlin.xml"/>
-	<settings target="141.20.84.137:9991/TB_SKANDINAVISTIK">
-		<set name="pz:name" value="HU Berlin Skandinavistik"/>
-		<set name="region" value="nord"/>
-	</settings>
-		
-	<settings src="settings/swb.xml"/>
-	<settings target="z3950n.bsz-bw.de:20210/swb362">
-		<set name="pz:name" value="World Affairs Online"/>
-		<!--
-			RA03*
-				RA03 Nordeuropa
-				RA03.01 Finnland
-				RA03.02 Schweden
-				RA03.03 Norwegen
-				RA03.04 Dänemark
-				RA03.05 Island
-			RA07.1*
-				RA07.11 Baltikum
-				RA07.12 Estland
-				RA07.13 Lettland
-				RA07.14 Litauen
-			RA02.12 Ostseeraum
-		-->
-		<set name="pz:pqf_prefix"
-			value="@and @attr 5=1 @attr 1=1042 RA03
-		"/>
-	</settings>
-
-	<settings src="settings/dk-kb.xml"/>
-	<settings>
-		<set target="z3950.kb.dk:2100/KGL01_BDANICA" name="pz:name" value="Bibliotheca Danica 1482-1840"/>
-		<set target="z3950.kb.dk:2100/BGF01_DHB" name="pz:name" value="Dansk Historisk Bibliografi"/>
-		<set target="z3950.kb.dk:2100/BGF01_DSB" name="pz:name" value="Dansk Sociologisk Bibliografi 1996-2004"/>
-		<set target="z3950.kb.dk:2100/MUS01" name="pz:name" value="Hele Musiksamlingen"/>
-		<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:name" value="Dansk Periodikafortegnelse"/>
 	</settings>
 
 

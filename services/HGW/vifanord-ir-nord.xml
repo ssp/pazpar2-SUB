@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+	xmlns="http://www.indexdata.com/pazpar2/1.0"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	id="vifanord-ir-nord">
+<!--
+	Targets for vifanord internet resource search, all regions.
+	http://vifanord.de
+
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+	
+	<settings src="settings/vifanord-zsql.xml"/>
+	<settings>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
+		<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
+			value="Internetquellen Nordische Länder"/>
+		<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
+			value="@and @or @attr 1=9950 Skandinavien @attr 1=9950 Finnland"/>
+	</settings>
+	
+	<settings src="settings/gbv-sru.xml"/>
+	<settings>
+		<set target="sru.gbv.de/*" name="pz:xslt"
+value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/language/iso-639-2-to-639-2b.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/electronic-url-remove-ciando.xsl,xsl/pz/final/finalise.xsl"/>
+		
+		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog Baltikum"/>
+		<set target="sru.gbv.de/fachopac-vifanord" name="pz:pqf_prefix"
+			value="@and @and @or @or @or
+				@attr 1=pica.odi ysca
+				@attr 1=pica.odi yxsc
+				@attr 1=pica.odi ysuo
+				@attr 1=pica.odi yxsu
+				@attr 5=1 @attr 1=pica.mak O
+		"/>
+	</settings>
+
+
+
+	<metadata name="region" brief="yes" merge="unique" termlist="yes" setting="postproc"/>
+	<metadata name="subject" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="gbv-library" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="se-kb-collection" brief="yes" merge="unique" termlist="yes"/>
+
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

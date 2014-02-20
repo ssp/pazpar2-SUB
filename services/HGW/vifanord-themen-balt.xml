@@ -3,9 +3,9 @@
 <service
 	xmlns="http://www.indexdata.com/pazpar2/1.0"
 	xmlns:xi="http://www.w3.org/2001/XInclude"
-	id="vifanord-balt">
+	id="vifanord-themen-balt">
 <!--
-	Targets for vifanord main search, region Baltikum.
+	Targets for vifanord subject search, region Baltikum.
 	http://vifanord.de
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
@@ -18,11 +18,6 @@
 			value="Internetquellen Baltikum"/>
 		<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
 			value="@and @attr 1=9950 Baltikum"/>
-		
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="1"/>
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
@@ -35,45 +30,6 @@ value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/co
 			value="@and @or
 				@attr 1=pica.odi ybal
 				@attr 1=pica.odi yxba
-		"/>
-
-		<set target="sru.gbv.de/olc" name="pz:name" value="Artikel Baltikum"/>
-		<set target="sru.gbv.de/olc" name="pz:allow" value="1"/>
-		<set target="sru.gbv.de/olc" name="pz:pqf_prefix"
-			value="@and @attr 1=pica.odi wbal"/>
-	</settings>
-	
-	<settings src="settings/ee-ester.xml"/>
-	<settings src="settings/lt-libis.xml"/>
-
-	<settings src="settings/hebis.xml"/>
-	<settings target="tolk.hebis.de:210/hebis-herder">
-		<set name="pz:name" value="Herder-Institut"/>
-		<set name="region" value="balt"/>
-	</settings>
-
-	<settings src="settings/herder-litdok.xml"/>
-	
-	<settings src="settings/swb.xml"/>
-	<settings target="z3950n.bsz-bw.de:20210/swb362">
-		<set name="pz:name" value="World Affairs Online"/>
-		<!--
-			RA03*
-				RA03 Nordeuropa
-				RA03.01 Finnland
-				RA03.02 Schweden
-				RA03.03 Norwegen
-				RA03.04 Dänemark
-				RA03.05 Island
-			RA07.1*
-				RA07.11 Baltikum
-				RA07.12 Estland
-				RA07.13 Lettland
-				RA07.14 Litauen
-			RA02.12 Ostseeraum
-		-->
-		<set name="pz:pqf_prefix"
-			value="@and @attr 5=1 @attr 1=1042 RA07.1
 		"/>
 	</settings>
 
