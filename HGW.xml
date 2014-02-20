@@ -17,7 +17,7 @@
 		<proxy host="localhost" port="80"/>
 
 
-		<xi:include href="services/HGW/vifanord.xml"/>
+		<xi:include href="services/HGW/vifanord-all.xml"/>
 
 
 		<icu_chain id="relevance" locale="en">

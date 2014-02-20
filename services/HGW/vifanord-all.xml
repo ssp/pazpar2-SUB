@@ -3,14 +3,22 @@
 <service
 	xmlns="http://www.indexdata.com/pazpar2/1.0"
 	xmlns:xi="http://www.w3.org/2001/XInclude"
-	id="vifanord">
+	id="vifanord-all">
 <!--
-	Targets for vifanord: http://vifanord.de
+	Targets for vifanord main search.
+	http://vifanord.de
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 	
 	<settings src="settings/vifanord-zsql.xml"/>
+	<settings>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="1"/>
+	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
 	<settings>
@@ -42,7 +50,7 @@ value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/co
 		<set name="region" value="nord"/>
 	</settings>
 	
-	<settings src="settings/hebis.xml"/>
+	<settings id="gaga" src="settings/hebis.xml"/>
 	<settings target="tolk.hebis.de:210/hebis-herder">
 		<set name="pz:name" value="Herder-Institut"/>
 		<set name="region" value="balt"/>
