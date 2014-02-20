@@ -38,25 +38,30 @@
 	<set name="pz:xslt" value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
 
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="Internetquellen vifanord"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
 	
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="Friedrich-Ebert-Stiftung"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3953/FES"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="balt"/>
 	
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="Baltic Marine Environment"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB"
 		 value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-bmeb-post.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="balt"/>
 	
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="Lettland Bücher"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/book.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="balt"/>
 
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="Lettland Aufsätze"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/article.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="balt"/>
