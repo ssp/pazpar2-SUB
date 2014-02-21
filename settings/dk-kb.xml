@@ -67,4 +67,21 @@
 	<set name="pz:nativesyntax" value="txml;iso-8859-1"/>
 	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/title-remove-currency-sign.xsl,xsl/pz/final/finalise.xsl"/>
 
+	<!-- Catalogues -->
+	<set target="z3950.kb.dk:2100/KGL01_BDANICA" name="pz:name" value="Bibliotheca Danica"/>
+	<set target="z3950.kb.dk:2100/KGL01_BDANICA" name="pz:allow" value="0"/>
+
+	<set target="z3950.kb.dk:2100/BGF01_DHB" name="pz:name" value="Dansk Historisk Bibliografi"/>
+	<set target="z3950.kb.dk:2100/BGF01_DHB" name="pz:allow" value="0"/>
+	
+	<set target="z3950.kb.dk:2100/BGF01_DSB" name="pz:name" value="Dansk Sociologisk Bibliografi 1996-2004"/>
+	<set target="z3950.kb.dk:2100/BGF01_DSB" name="pz:allow" value="0"/>
+
+	<set target="z3950.kb.dk:2100/MUS01" name="pz:name" value="Hele Musiksamlingen"/>
+	<set target="z3950.kb.dk:2100/MUS01" name="pz:allow" value="0"/>
+
+	<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:name" value="Dansk Periodikafortegnelse"/>
+	<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:allow" value="0"/>
+
+
 </settings>
