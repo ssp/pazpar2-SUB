@@ -30,6 +30,7 @@
 	<settings src="settings/se-kb.xml"/>
 	<settings src="settings/no-bibsys.xml"/>
 	<settings src="settings/fi-helka.xml"/>
+	<settings src="settings/bonis.xml"/>
 	<settings src="settings/ee-ester.xml"/>
 	<settings src="settings/lt-libis.xml"/>
 	

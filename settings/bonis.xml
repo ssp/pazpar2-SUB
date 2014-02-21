@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="odin5-bib.sdu.dk:2200/BONIS" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	pazpar2 settings for the Bibliography of Old Norse-Icelandic Studies
+	(BONIS) database.
+	
+	https://alvis-bib.sdu.dk/uhtbin/cgisirsi/?ps=/BONIS/0/60/81/X
+	Catalogue links point to the bigger database instead of the
+	BONIS database only. It is unclear how to create proper permalinks.
+	
+	Z39.50 interface seems to be undocumented.
+	
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<set name="pz:name" value="BONIS"/>
+
+	<set name="catalogueURLHintPrefix" 
+		value="https://alvis-bib.sdu.dk/uhtbin/cgisirsi/x/0/0/5?searchdata1="/>
+
+
+	<!-- mappings for search -->
+	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
+
+	<set name="pz:cclmap:title" value="u=4 s=al 2=102"/>
+	<set name="pz:cclmap:person" value="u=1 s=al"/>
+
+	<set name="pz:cclmap:subject" value="u=21 s=al"/>
+	<set name="pz:cclmap:date" value="u=31"/>
+	<set name="pz:cclmap:isbn" value="u=7"/>
+	<set name="pz:cclmap:issn" value="u=8"/>
+
+
+
+	<!-- Retrieval -->
+	<set name="pz:requestsyntax" value="usmarc"/>
+	<set name="pz:elements" value="F"/>
+	<set name="pz:queryencoding" value="utf-8"/>
+
+
+	<set name="region" value="nord"/>
+
+
+	<!-- Result normalisation -->
+	<set name="pz:nativesyntax" value="txml;utf-8"/>
+	<set name="pz:xslt" value="xsl/target/bonis-id-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
+
+</settings>

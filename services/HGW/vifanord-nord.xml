@@ -25,7 +25,8 @@
 	<settings src="settings/se-kb.xml"/>
 	<settings src="settings/no-bibsys.xml"/>
 	<settings src="settings/fi-helka.xml"/>
-
+	<settings src="settings/bonis.xml"/>
+	
 	<settings src="settings/hu-berlin.xml"/>
 	<settings>
 		<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:allow" value="1"/>
