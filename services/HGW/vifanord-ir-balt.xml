@@ -5,29 +5,31 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	id="vifanord-ir-balt">
 <!--
-	Targets for vifanord internet resource search, all regions.
-	http://vifanord.de
+	Targets for vifanord internet resource search, Baltic region.
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt" value="1"/>
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
+	<settings src="settings/vifanord-gbv.xml"/>
 	<settings>
-		<set target="sru.gbv.de/*" name="pz:xslt"
-value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/language/iso-639-2-to-639-2b.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/electronic-url-remove-ciando.xsl,xsl/pz/final/finalise.xsl"/>
-		
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog Baltikum"/>
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:pqf_prefix"
-			value="@and @and @or
-				@attr 1=pica.odi ybal
-				@attr 1=pica.odi yxba
-				@attr 5=1 @attr 1=pica.mak O
-		"/>
+		<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:allow" value="1"/>
+		<!-- Use pqf_strftime to add MAK O* to query a pqf_prefix is already used for limiting. -->
+		<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:pqf_strftime"
+			value="@and %% @attr 5=1 @attr 1=pica.mak O"/>
+	</settings>
+	
+	<settings src="settings/swb.xml"/>
+	<settings src="settings/vifanord-swb.xml"/>
+	<settings target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt">
+		<set name="pz:allow" value="1"/>
+		<!-- Use pqf_strftime to add MAT O to query a pqf_prefix is already used for region limiting. -->
+		<set name="pz:pqf_strftime" value="@and %% @attr 1=1031 O"/>
 	</settings>
 
 

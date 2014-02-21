@@ -5,7 +5,7 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	id="vifanord-balt">
 <!--
-	Targets for vifanord main search, region Baltikum.
+	Targets for vifanord main search, Baltic region.
 	http://vifanord.de
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
@@ -13,12 +13,7 @@
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
-		<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
-			value="Internetquellen Baltikum"/>
-		<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
-			value="@and @attr 1=9950 Baltikum"/>
-		
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt" value="1"/>
 		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="1"/>
 		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="1"/>
 		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="1"/>
@@ -26,21 +21,10 @@
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
+	<settings src="settings/vifanord-gbv.xml"/>
 	<settings>
-		<set target="sru.gbv.de/*" name="pz:xslt"
-value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/language/iso-639-2-to-639-2b.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/electronic-url-remove-ciando.xsl,xsl/pz/final/finalise.xsl"/>
-		
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog Baltikum"/>
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:pqf_prefix"
-			value="@and @or
-				@attr 1=pica.odi ybal
-				@attr 1=pica.odi yxba
-		"/>
-
-		<set target="sru.gbv.de/olc" name="pz:name" value="Artikel Baltikum"/>
-		<set target="sru.gbv.de/olc" name="pz:allow" value="1"/>
-		<set target="sru.gbv.de/olc" name="pz:pqf_prefix"
-			value="@and @attr 1=pica.odi wbal"/>
+		<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:allow" value="1"/>
+		<set target="sru.gbv.de/olc-vifanord-balt" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/ee-ester.xml"/>
@@ -55,26 +39,9 @@ value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/co
 	<settings src="settings/herder-litdok.xml"/>
 	
 	<settings src="settings/swb.xml"/>
-	<settings target="z3950n.bsz-bw.de:20210/swb362">
-		<set name="pz:name" value="World Affairs Online"/>
-		<!--
-			RA03*
-				RA03 Nordeuropa
-				RA03.01 Finnland
-				RA03.02 Schweden
-				RA03.03 Norwegen
-				RA03.04 Dänemark
-				RA03.05 Island
-			RA07.1*
-				RA07.11 Baltikum
-				RA07.12 Estland
-				RA07.13 Lettland
-				RA07.14 Litauen
-			RA02.12 Ostseeraum
-		-->
-		<set name="pz:pqf_prefix"
-			value="@and @attr 5=1 @attr 1=1042 RA07.1
-		"/>
+	<settings src="settings/vifanord-swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:allow" value="1"/>
 	</settings>
 
 

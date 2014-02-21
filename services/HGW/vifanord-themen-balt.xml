@@ -5,32 +5,20 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	id="vifanord-themen-balt">
 <!--
-	Targets for vifanord subject search, region Baltikum.
-	http://vifanord.de
+	Targets for vifanord subject search, Baltic region.
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
-		<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
-			value="Internetquellen Baltikum"/>
-		<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
-			value="@and @attr 1=9950 Baltikum"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt" value="1"/>
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
+	<settings src="settings/vifanord-gbv.xml"/>
 	<settings>
-		<set target="sru.gbv.de/*" name="pz:xslt"
-value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/language/iso-639-2-to-639-2b.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/electronic-url-remove-ciando.xsl,xsl/pz/final/finalise.xsl"/>
-		
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog Baltikum"/>
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:pqf_prefix"
-			value="@and @or
-				@attr 1=pica.odi ybal
-				@attr 1=pica.odi yxba
-		"/>
+		<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:allow" value="1"/>
 	</settings>
 
 
