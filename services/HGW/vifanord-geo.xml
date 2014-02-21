@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xsl/doc/pazpar2-docs.xsl"?>
+<service
+	xmlns="http://www.indexdata.com/pazpar2/1.0"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	id="vifanord-geo">
+<!--
+	Targets for vifanord geo search, all regions.
+
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+	
+	<settings src="settings/vifanord-zsql.xml"/>
+	<settings>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="1"/>
+		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="1"/>
+	</settings>
+	
+	<settings src="settings/gbv-sru.xml"/>
+	<settings src="settings/vifanord-gbv.xml"/>
+	<settings>
+		<set target="sru.gbv.de/fachopac-vifanord" name="pz:allow" value="1"/>
+		<!-- just the Baltic region for geo search -->
+		<set target="sru.gbv.de/olc-vifanord-balt" name="pz:allow" value="1"/>
+	</settings>
+	
+	<settings src="settings/se-kb.xml"/>
+	<settings src="settings/no-bibsys.xml"/>
+	<settings src="settings/fi-helka.xml"/>
+	<settings src="settings/ee-ester.xml"/>
+	<settings src="settings/lt-libis.xml"/>
+	
+	<settings src="settings/swb.xml"/>
+	<settings src="settings/vifanord-swb.xml"/>
+	<settings>
+		<set target="z3950n.bsz-bw.de:20210/swb362-vifanord" name="pz:allow" value="1"/>
+	</settings>
+
+
+
+	<metadata name="region" brief="yes" merge="unique" termlist="yes" setting="postproc"/>
+	<metadata name="subject" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="gbv-library" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="se-kb-collection" brief="yes" merge="unique" termlist="yes"/>
+
+	<xi:include href="../metadata/default.xml"/>
+
+</service>

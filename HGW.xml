@@ -25,6 +25,10 @@
 		<xi:include href="services/HGW/vifanord-themen-balt.xml"/>
 		<xi:include href="services/HGW/vifanord-themen-nord.xml"/>
 
+		<xi:include href="services/HGW/vifanord-geo.xml"/>
+		<xi:include href="services/HGW/vifanord-geo-balt.xml"/>
+		<xi:include href="services/HGW/vifanord-geo-nord.xml"/>
+
 		<xi:include href="services/HGW/vifanord-ir.xml"/>
 		<xi:include href="services/HGW/vifanord-ir-balt.xml"/>
 		<xi:include href="services/HGW/vifanord-ir-nord.xml"/>
