@@ -39,11 +39,10 @@
 	</settings>
 	
 	<settings src="settings/hebis.xml"/>
-	<settings target="tolk.hebis.de:210/hebis-herder">
-		<set name="pz:name" value="Herder-Institut"/>
-		<set name="region" value="balt"/>
+	<settings>
+		<set target="tolk.hebis.de:210/hebis-herder" name="pz:allow" value="1"/>
 	</settings>
-
+	
 	<settings src="settings/herder-litdok.xml"/>
 	
 	<settings src="settings/swb.xml"/>

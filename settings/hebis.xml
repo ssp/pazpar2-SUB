@@ -37,4 +37,10 @@
 	<set name="pz:nativesyntax" value="txml;ISO_8859-1"/>
 	<set name="pz:xslt" value="xsl/convert/tmarc.xsl,xsl/pz/parent-id-remove-isil.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/final/finalise.xsl"/>
 
+
+	<!-- Catalogue -->
+	<set target="tolk.hebis.de:210/hebis-herder" name="pz:name" value="Katalog Herder-Institut"/>
+	<set target="tolk.hebis.de:210/hebis-herder" name="pz:allow" value="0"/>
+	<set target="tolk.hebis.de:210/hebis-herder" name="region" value="balt"/>
+	
 </settings>
