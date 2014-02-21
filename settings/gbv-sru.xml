@@ -135,7 +135,7 @@
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-ast" value="http://gso.gbv.de/DB=2.112/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-fin" value="http://gso.gbv.de/DB=2.113/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-ggo" value="http://gso.gbv.de/DB=2.114/PPNSET?PPN="/>
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-vifanord" value="http://gso.gbv.de/DB=2.119/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-vifanord*" value="http://gso.gbv.de/DB=2.119/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-nord" value="http://gso.gbv.de/DB=2.120/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/fachopac-mat" value="http://gso.gbv.de/DB=2.122/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/olcssg-oeu" value="http://gso.gbv.de/DB=2.133/PPNSET?PPN="/>

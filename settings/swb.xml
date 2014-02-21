@@ -64,6 +64,7 @@
 	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
 	<set target="z3950n.bsz-bw.de:20210/freiberg" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
 	
-	<set target="z3950n.bsz-bw.de:20210/swb362" name="catalogueURLHintPrefix" value="http://swb.bsz-bw.de/DB=2.362/PPNSET?PPN="/>
+	<set target="z3950n.bsz-bw.de:20210/swb362*" name="catalogueURLHintPrefix"
+		 value="http://swb.bsz-bw.de/DB=2.362/PPNSET?PPN="/>
 
 </settings>
