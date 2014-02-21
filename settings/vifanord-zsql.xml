@@ -61,7 +61,7 @@
 		value="@and @attr 1=9950 Baltikum"/>
 		
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
-		 value="Internetquellen Nordische Länder"/>
+		 value="Internetquellen Nordeuropa"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
 		value="0"/>
 	<set name="pz:url" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
@@ -72,7 +72,7 @@
 	<!--
 		Friedrich-Ebert-Stiftung
 	-->
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="Friedrich-Ebert-Stiftung"/>
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="Katalogauszug FES"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3953/FES"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
@@ -92,13 +92,13 @@
 		* Books
 		* Articles
 	-->
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="Lettland Bücher"/>
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="NB Lettland Bücher"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/book.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="balt"/>
 
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="Lettland Aufsätze"/>
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="NB Lettland Aufsätze"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/article.xsl,xsl/pz/final/finalise.xsl"/>

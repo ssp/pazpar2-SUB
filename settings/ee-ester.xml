@@ -9,7 +9,7 @@
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<set name="pz:name" value="Nationalbibliothek Estland"/>
+	<set name="pz:name" value="NB Estland"/>
 
 	<set name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
 

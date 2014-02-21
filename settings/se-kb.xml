@@ -49,7 +49,7 @@
 
 	<set name="catalogueURLHintPrefix" target="z3950.libris.kb.se/*" value="http://libris.kb.se/bib/"/>
 
-	<set target="z3950.libris.kb.se/libris" name="pz:name" value="KB Schweden"/>
+	<set target="z3950.libris.kb.se/libris" name="pz:name" value="NB Schweden Fachauszug"/>
 	<set target="z3950.libris.kb.se/libris" name="pz:pqf_prefix" value="
 		@and
 		@or @or @or @or @or @or @or @or @or @or @or

@@ -34,7 +34,7 @@
 	"/>
 
 	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:name"
-		value="World Affairs Online"/>
+		value="World Affairs Online Baltikum"/>
 	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:url"
 		value="z3950n.bsz-bw.de:20210/swb362"/>
 	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:allow" value="0"/>
@@ -44,7 +44,7 @@
 	"/>
 
 	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:name"
-		value="World Affairs Online"/>
+		value="World Affairs Online Nordeuropa"/>
 	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:url"
 		value="z3950n.bsz-bw.de:20210/swb362"/>
 	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:allow" value="0"/>

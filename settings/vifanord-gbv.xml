@@ -50,7 +50,7 @@
 		* vifanord-balt: bal
 		* vifanord-nord: sca
 	-->
-	<set target="sru.gbv.de/olc-vifanord" name="pz:name" value="Artikel Baltikum, Nord- und Osteuropa"/>
+	<set target="sru.gbv.de/olc-vifanord" name="pz:name" value="Aufsätze Baltikum, Nord- und Osteuropa"/>
 	<set target="sru.gbv.de/olc-vifanord" name="pz:url" value="sru.gbv.de/olc"/>
 	<set target="sru.gbv.de/olc-vifanord" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/olc-vifanord" name="pz:pqf_prefix"
@@ -60,7 +60,7 @@
 			@attr 1=pica.odi woeu
 	"/>
 	
-	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:name" value="Artikel Baltikum"/>
+	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:name" value="Aufsätze Baltikum"/>
 	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:url" value="sru.gbv.de/olc"/>
 	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:pqf_prefix"
@@ -68,7 +68,7 @@
 			@attr 1=pica.odi wbal"
 	/>
 
-	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:name" value="Artikel Nordische Länder"/>
+	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:name" value="Aufsätze Nordeuropa"/>
 	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:url" value="sru.gbv.de/olc"/>
 	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:pqf_prefix"

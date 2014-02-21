@@ -9,7 +9,7 @@
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<set name="pz:name" value="Nationalbibliothek Norwegen (BIBSYS)"/>
+	<set name="pz:name" value="NB Norwegen BIBSYS"/>
 
 	<set name="catalogueURLHintPrefix" value="http://ask.bibsys.no/ask/action/show?kid=biblio&amp;pid="/>
 

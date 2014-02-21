@@ -7,7 +7,7 @@
 	2012-2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<set name="pz:name" value="Libis"/>
+	<set name="pz:name" value="NB Litauen"/>
 
 	<set name="catalogueURLHintPrefix" value="http://libis.lt/simpleSearch.do?BI001="/>
 
