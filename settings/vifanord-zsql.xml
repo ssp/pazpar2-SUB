@@ -38,23 +38,60 @@
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
 	<set name="pz:xslt" value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
 
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="Internetquellen vifanord"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="0"/>
-	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
+	<!--
+		Internet Resources
+		* irall: complete
+		* irall-balt: limited to Baltic region
+		* irall-nord: limited to Nordic region
+	-->
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
+		value="Internetquellen vifanord"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
+		value="0"/>
+	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3950/irall*"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
 	
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
+		 value="Internetquellen Baltikum"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
+		value="0"/>
+	<set name="pz:url" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
+		value="ub-baltica1.ub.uni-greifswald.de:3950/irall"/>
+	<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
+		value="@and @attr 1=9950 Baltikum"/>
+		
+	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
+		 value="Internetquellen Nordische Länder"/>
+	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
+		value="0"/>
+	<set name="pz:url" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
+		value="ub-baltica1.ub.uni-greifswald.de:3950/irall"/>
+	<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
+		value="@and @or @attr 1=9950 Skandinavien @attr 1=9950 Finnland"/>
+	
+	<!--
+		Friedrich-Ebert-Stiftung
+	-->
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="Friedrich-Ebert-Stiftung"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3953/FES"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="balt"/>
 	
+	<!--
+		BMEB
+	-->
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="Baltic Marine Environment"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB"
 		 value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-bmeb-post.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="balt"/>
-	
+
+	<!--
+		Latvian National Library
+		* Books
+		* Articles
+	-->
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="Lettland Bücher"/>
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON"
