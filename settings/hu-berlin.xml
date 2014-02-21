@@ -36,5 +36,9 @@
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/convert/tmarc-to-tmab.xsl,xsl/convert/tmab.xsl,xsl/pz/final/finalise.xsl"/>
 
+	<!-- Catalogue -->
+	<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:name" value="HU Berlin Skandinavistik"/>
+	<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:allow" value="0"/>
+	<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="region" value="nord"/>
 
 </settings>

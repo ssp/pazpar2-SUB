@@ -27,9 +27,8 @@
 	<settings src="settings/fi-helka.xml"/>
 
 	<settings src="settings/hu-berlin.xml"/>
-	<settings target="141.20.84.137:9991/TB_SKANDINAVISTIK">
-		<set name="pz:name" value="HU Berlin Skandinavistik"/>
-		<set name="region" value="nord"/>
+	<settings>
+		<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:allow" value="1"/>
 	</settings>
 		
 	<settings src="settings/swb.xml"/>
