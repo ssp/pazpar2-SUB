@@ -2,7 +2,9 @@
 
 This repository contains the configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon.
 
-The files were created for [SUB Göttingen](http://www.sub.uni-goettingen.de) and [Universitätsbibliothek Greifswald](http://www.uni-greifswald.de/bibliothek.html)
+The files were created for [SUB Göttingen](http://www.sub.uni-goettingen.de) and [Universitätsbibliothek Greifswald](http://www.uni-greifswald.de/bibliothek.html).
+
+The configuration requires at least pazpar2 version 1.6.39 to work.
 
 
 ## Contents
@@ -10,7 +12,7 @@ The files were created for [SUB Göttingen](http://www.sub.uni-goettingen.de) an
 * `SUB.xml`: server configuration for SUB Göttingen
 * `test.xml`: test server configuration
 * `services/`: folder with service configuration files:
-	* `HGW/`: services used by Universitätsbibliothek Greifswald’ server
+	* `HGW/`: services used by Universitätsbibliothek Greifswald’s server
 	* `SUB/`: services used by SUB Göttingen’s server
 	* `test/`: test services
 	* `metadata/default.xml`: metadata configurations included by the services to avoid redundancy
