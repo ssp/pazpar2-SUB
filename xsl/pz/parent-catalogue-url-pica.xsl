@@ -36,7 +36,9 @@
 				</pz:metadata>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:apply-templates select="@*|node()"/>
+				<xsl:copy>
+					<xsl:apply-templates select="@*|node()"/>
+				</xsl:copy>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
