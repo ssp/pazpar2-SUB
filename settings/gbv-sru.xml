@@ -42,29 +42,11 @@
 	<set name="pz:cclmap:issn" value="u=pica.iss t=r"/>
 
 	<!--
-		… probably only available in opac-de-7:
-		lkl: Lokale Klassifikation (GOK)
-		brk: Bandrealkatalog
-		sst: Sonderstandort
-	-->
-	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
-	<set name="pz:cclmap:brk" value="u=pica.brk s=1 t=1"/>
-	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
-
-
-	<!--
 		Fake search key for Freiberg classification, mapped to the BKL field.
 		Should not return any results in GBV.
 	-->
 	<set name="pz:cclmap:fbg" value="u=pica.bkl s=1 t=r"/>
 
-	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
-
-	<!--
-		NEL (8064) - month in which the volume was added to the local catalogue: Right-truncated search.
-		Field content has format YYYYMM.
-	-->
-	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
 
 	<!-- Map additional Pica search keys to pazpar2. -->
 	<set name="pz:cclmap:thm" value="u=pica.thm t=r"/>
@@ -72,9 +54,10 @@
 	<set name="pz:cclmap:ddc" value="u=pica.ddc s=1 t=r"/>
 	<set name="pz:cclmap:ddc-t" value="u=pica.ddf s=1 t=r"/>
 	<set name="pz:cclmap:ddc-g" value="u=pica.ddd s=1 t=r"/>
-	<set name="pz:cclmap:lsg" value="u=pica.lsg s=1 t=r"/>
+	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl s=1 t=r"/>
 	<set name="pz:cclmap:rvk" value="u=pica.rvk s=1 t=r"/>
+	<set name="pz:cclmap:lsg" value="u=pica.lsg s=1 t=r"/>
 	<set name="pz:cclmap:language" value="u=pica.taa s=1"/>
 	<set name="pz:cclmap:url" value="u=pica.url t=r"/>
 	<set name="pz:cclmap:nea" value="u=pica.nea t=r"/>
@@ -108,6 +91,18 @@
 	<set name="pz:maxrecs" target="sru.gbv.de/opac-de-7" value="500"/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/opac-de-7" value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=40/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/proj-subgoeolr" value="https://opac.sub.uni-goettingen.de/DB=1/PPNSET?PPN="/>
+
+	<!--
+		… probably only available in opac-de-7:
+		lkl: Lokale Klassifikation (GOK)
+		brk: Bandrealkatalog
+		sst: Sonderstandort
+		nel: Neuerwerbungen (YYYYMM format for month of purchase)
+	-->
+	<set name="pz:cclmap:lkl" value="u=pica.lkl s=1 t=r"/>
+	<set name="pz:cclmap:brk" value="u=pica.brk s=1 t=1"/>
+	<set name="pz:cclmap:sst" value="u=pica.sst s=1 t=r"/>
+	<set name="pz:cclmap:nel" value="u=pica.nel t=1"/>
 
 
 	<!-- TIB Hannover catalogue URLs. -->
