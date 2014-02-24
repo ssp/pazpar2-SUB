@@ -43,8 +43,7 @@
 									or .='suo' or .='xsu'">nord</xsl:when>
 					<xsl:when test=".='bal' or .='xba'">balt</xsl:when>
 					<xsl:when test=".='vnd' or .='xvn'">ostsee</xsl:when>
-					<xsl:when test=".='oeu' or .='xoe'">osteuropa</xsl:when>
-				</xsl:choose>				
+				</xsl:choose>
 			</xsl:variable>
 			
 			<xsl:if test="$region = 'nord' or $region ='balt' or $region = 'ostsee'">
@@ -58,7 +57,6 @@
 					<xsl:choose>
 						<xsl:when test="$region='nord'">2.47</xsl:when>
 						<xsl:when test="$region='balt'">2.151</xsl:when>
-						<xsl:when test="$region='osteuropa'">2.133</xsl:when>
 					</xsl:choose>
 				</xsl:variable>
 
