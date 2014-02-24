@@ -43,11 +43,11 @@
 
 	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
 
-	<set name="pz:cclmap:title" value="u=4 s=al 2=102"/>
+	<set name="pz:cclmap:title" value="u=4 s=al"/>
 	<set name="pz:cclmap:person" value="u=1 s=al"/>
 
 	<set name="pz:cclmap:subject" value="u=21 s=al"/>
-	<set name="pz:cclmap:date" value="u=31"/>
+	<set name="pz:cclmap:date" value="u=31 t=r"/>
 	<set name="pz:cclmap:isbn" value="u=7"/>
 	<set name="pz:cclmap:issn" value="u=8"/>
 
