@@ -111,6 +111,26 @@
 	<set target="sru.gbv.de/gvk-tib" name="catalogueURLHintPrefix"  value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=70/PPNSET?PPN="/>
 
 
+	<!-- Stabi Berlin: configure for their custom index names with an x prefix -->
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:term" value="u=pica.xall s=al t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:title" value="u=pica.xtit s=al t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:person" value="u=pica.xper t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:journal" value="u=pica.xsha t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:subject" value="u=pica.xslw s=al t=r"/>
+	<!-- erj index does not need a prefix -->
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:isbn" value="u=pica.xisb t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:issn" value="u=pica.xiss t=r"/>
+	<set target="sru.gbv.de/stabikat" name="catalogueURLHintPrefix" value="http://stabikat.sbb.spk-berlin.de/DB=1/PPNSET?PPN="/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ddc" value="u=pica.ddc s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:bkl" value="u=pica.bkl s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:rvk" value="u=pica.rvk s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:language" value="u=pica.taa s=1"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:url" value="u=pica.url t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:mak" value="u=pica.mak t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
+
+
 	<!-- Central GBV catalogue URLs. -->
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natliz" value="http://gso.gbv.de/DB=1.50/PPNSET?PPN="/>
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/natlizzss" value="http://gso.gbv.de/DB=1.55/PPNSET?PPN="/>
