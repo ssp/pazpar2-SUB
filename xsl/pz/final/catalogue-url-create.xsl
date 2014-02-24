@@ -22,14 +22,19 @@
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
 	</xsl:template>
-
-
+	
+	
+	
 	<xsl:template match="pz:metadata[@type='id'] | pz:metadata[@type='parent-id']">
 		
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
 		</xsl:copy>
 		
+		<xsl:variable name="fieldName">
+			<xsl:value-of select="concat(substring-before(@type, 'id'), 'catalogue-url')"/>
+		</xsl:variable>
+				
 		<xsl:variable name="prefix">
 			<xsl:choose>
 				<xsl:when test="../pz:metadata[@type='catalogueURLHintPrefix']">
@@ -51,16 +56,19 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		
-		<xsl:if test="string-length(concat($prefix, $suffix)) &gt; 0">
+	
+		<xsl:if test="string-length(concat($prefix, $suffix)) &gt; 0
+						and not(../pz:metadata[@type=$fieldName])">
+			
 			<pz:metadata>
 				<xsl:attribute name="type">
-					<xsl:value-of select="concat(substring-before(@type, 'id'), 'catalogue-url')"/>
+					<xsl:value-of select="$fieldName"/>
 				</xsl:attribute>
 				<xsl:value-of select="$prefix"/>
 				<xsl:value-of select="."/>
 				<xsl:value-of select="$suffix"/>
 			</pz:metadata>
+			
 		</xsl:if>
 		
 	</xsl:template>
