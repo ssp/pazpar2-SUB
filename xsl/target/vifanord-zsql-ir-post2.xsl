@@ -5,9 +5,9 @@
 	version="1.0">
 <!--
 	Improve metadata from vifanord’s link database.
-		* add medium field
 		* split fields with multiple values
 		* add region field
+		* add label to electronic-url based on medium
 	
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
@@ -26,24 +26,6 @@
 
 
 	<!--
-		medium field: defaults to »website«,
-		uses »journal« if there is an ezb-number.
-	-->
-	<xsl:template match="pz:record">
-		<xsl:copy>
-			<pz:metadata type="medium">
-				<xsl:choose>
-					<xsl:when test="string-length(normalize-space(pz:metadata[@type='ezb-number'])) &gt; 0">journal</xsl:when>
-					<xsl:otherwise>website</xsl:otherwise>
-				</xsl:choose>
-			</pz:metadata>
-			
-			<xsl:apply-templates select="@*|node()"/>
-		</xsl:copy>
-	</xsl:template>
-
-
-	<!--
 		Split the fields which can contain multiple values
 		at the separator »;«.
 	-->
@@ -56,6 +38,7 @@
 			<xsl:with-param name="separator">;</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
+
 
 
 	<!--
@@ -74,5 +57,28 @@
 		</xsl:copy>
 	</xsl:template>
 
+
+
+	<!--
+		Add a label to the URL of website and electronic media types.
+	-->
+	<xsl:template match="*[@type='electronic-url']">
+		<xsl:copy>
+			<xsl:variable name="label">
+				<xsl:choose>
+					<xsl:when test="../pz:metadata[@type='medium'][1] = 'website'">Website</xsl:when>
+					<xsl:when test="../pz:metadata[@type='medium'][1] = 'electronic'">Volltext</xsl:when>
+				</xsl:choose>
+			</xsl:variable>
+			
+			<xsl:if test="string-length($label) &gt; 0">
+				<xsl:attribute name="name">
+					<xsl:value-of select="$label"/>
+				</xsl:attribute>
+			</xsl:if>
+			
+			<xsl:apply-templates select="@*|node()"/>
+		</xsl:copy>
+	</xsl:template>
 
 </xsl:stylesheet>

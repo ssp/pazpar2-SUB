@@ -49,7 +49,7 @@
 	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
 		value="0"/>
 	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3950/irall*"
-		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
 	
 	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
 		 value="Internetquellen Baltikum"/>
