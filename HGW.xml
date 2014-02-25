@@ -13,7 +13,7 @@
 	<threads number="4"/>
 
 	<server>
-		<listen host="localhost" port="9004"/>
+		<listen host="localhost" port="8004"/>
 		<proxy host="localhost" port="80"/>
 
 
