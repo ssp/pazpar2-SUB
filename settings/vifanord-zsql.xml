@@ -18,10 +18,10 @@
 	<set name="pz:cclmap:date" value="u=31 r=r t=r"/>
 
 	<!-- For internet resource databases -->
-	<set name="pz:cclmap:ddc" value="u=13 t=3"/>
-	<set name="pz:cclmap:ddc-s" value="u=1300 t=3"/>
-	<set name="pz:cclmap:ddc-g" value="u=1301 t=3"/>
-	<set name="pz:cclmap:ddc-t" value="u=1302 t=3"/>
+	<set name="pz:cclmap:ddc" value="u=13 t=r"/>
+	<set name="pz:cclmap:ddc-s" value="u=1300 t=r"/>
+	<set name="pz:cclmap:ddc-g" value="u=1301 t=r"/>
+	<set name="pz:cclmap:ddc-t" value="u=1302 t=r"/>
 	<set name="pz:cclmap:region" value="u=9950"/>
 	<set name="pz:cclmap:url" value="u=1032 t=r"/>
 	<!-- fake lsg index, should not give results when querying letterns on ISSN field-->
