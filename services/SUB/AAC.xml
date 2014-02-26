@@ -47,7 +47,7 @@
 
 	<settings src="settings/swb.xml"/>
 	<settings>
-		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
+		<set target="swb/wao" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/sub-guides-solr.xml"/>

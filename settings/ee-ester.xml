@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="tallinn.ester.ee:212/innopac" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="ee-ester/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the Estonian National library,
 	created for vifanord.
@@ -9,12 +9,8 @@
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<set name="pz:name" value="NB Estland"/>
-
-	<set name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
-
 	<!-- mappings for search -->
-	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
+	<set name="pz:cclmap:term" value="u=1016 t=r 3=3 s=al"/>
 
 	<set name="pz:cclmap:title" value="u=4 s=al"/>
 	<set name="pz:cclmap:person" value="u=1 s=al"/>
@@ -37,8 +33,20 @@
 	<set name="region" value="balt"/>
 
 
-	<!-- Result normalization settings -->
+	<!-- Result normalisation  -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
 	<set name="pz:xslt" value="xsl/target/ester-id-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
+
+
+	<!-- Databases -->
+	<set target="ee-ester/tallinn" name="pz:url" value="tartu.ester.ee:212/innopac"/>
+	<set target="ee-ester/tallinn" name="pz:name" value="NB Estland"/>
+	<set target="ee-ester/tallinn" name="pz:allow" value="0"/>
+	<set target="ee-ester/tallinn" name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
+
+	<set target="ee-ester/tartu" name="pz:url" value="tartu.ester.ee:212/innopac"/>
+	<set target="ee-ester/tartu" name="pz:name" value="UB Tartu"/>
+	<set target="ee-ester/tartu" name="pz:allow" value="0"/>
+	<set target="ee-ester/tartu" name="catalogueURLHintPrefix" value="http://tartu.ester.ee/record="/>
 
 </settings>

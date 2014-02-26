@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="z3950.libris.kb.se/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="se-kb/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the catalogues of Sweden’s national library,
 	created for vifanord.
@@ -49,10 +49,14 @@
 
 	<set name="region" value="nord"/>
 
-	<set name="catalogueURLHintPrefix" target="z3950.libris.kb.se/*" value="http://libris.kb.se/bib/"/>
+	<set name="catalogueURLHintPrefix" value="http://libris.kb.se/bib/"/>
 
-	<set target="z3950.libris.kb.se/libris" name="pz:name" value="NB Schweden Fachauszug"/>
-	<set target="z3950.libris.kb.se/libris" name="pz:pqf_prefix" value="
+	<set target="se-kb/libris*" name="pz:url" value="z3950.libris.kb.se/libris"/>
+	<set target="se-kb/libris*" name="pz:name" value="KB Schweden"/>
+	<set target="se-kb/libris*" name="pz:allow" value="0"/>
+
+	<set target="se-kb/libris-vifanord" name="pz:name" value="NB Schweden Fachauszug"/>
+	<set target="se-kb/libris-vifanord" name="pz:pqf_prefix" value="
 		@and
 		@or @or @or @or @or @or @or @or @or @or @or
 		@or @or @or @or @or @or @or @or @or @or @or

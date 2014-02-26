@@ -65,9 +65,9 @@
 	<!-- SWB -->
 	<settings src="settings/swb.xml"/>
 	<settings>
-		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:name" value="UB Freiberg und SWB"/>
-		<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:name" value="UB Freiberg"/>
-		<set target="z3950n.bsz-bw.de:20210/swb362" name="pz:name" value="World Affairs Online"/>
+		<set target="swb/swb" name="pz:allow" value="1"/>
+		<set target="swb/swb-freiberg" name="pz:allow" value="1"/>
+		<set target="swb/wao" name="pz:allow" value="1"/>
 	</settings>
 
 

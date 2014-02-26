@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="z3950n.bsz-bw.de:20210/swb362" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	vifanord specific settings for querying World Affairs Online at SWB.
 	* extract region information in preprocessing
@@ -21,37 +21,23 @@
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord" name="pz:name"
-		value="World Affairs Online"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord" name="pz:url"
-		value="z3950n.bsz-bw.de:20210/swb362"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord" name="pz:allow" value="0"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord" name="pz:pqf_prefix"
+	<set target="swb/wao-vifanord" name="pz:pqf_prefix"
 		value="@and @or @or 
 				@attr 5=1 @attr 1=1042 RA03
 				@attr 5=1 @attr 1=1042 RA07.1
 				          @attr 1=1042 RA02.12
 	"/>
 
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:name"
-		value="World Affairs Online Baltikum"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:url"
-		value="z3950n.bsz-bw.de:20210/swb362"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:allow" value="0"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:pqf_prefix"
+	<set target="swb/wao-vifanord-balt" name="pz:name" value="World Affairs Online Baltikum"/>
+	<set target="swb/wao-vifanord-balt" name="pz:pqf_prefix"
 		value="@and
 				@attr 5=1 @attr 1=1042 RA07.1
 	"/>
 
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:name"
-		value="World Affairs Online Nordeuropa"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:url"
-		value="z3950n.bsz-bw.de:20210/swb362"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:allow" value="0"/>
-	<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord" name="pz:pqf_prefix"
+	<set target="swb/wao-vifanord-nord" name="pz:name" value="World Affairs Online Nordeuropa"/>
+	<set target="swb/wao-vifanord-nord" name="pz:pqf_prefix"
 		value="@and
 				@attr 5=1 @attr 1=1042 RA03
 	"/>
-
 
 </settings>

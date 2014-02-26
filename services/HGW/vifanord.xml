@@ -13,11 +13,11 @@
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="1"/>
+		<set target="vifanord-zsql/irall" name="pz:allow" value="1"/>
+		<set target="vifanord-zsql/FES" name="pz:allow" value="1"/>
+		<set target="vifanord-zsql/BMEB" name="pz:allow" value="1"/>
+		<set target="vifanord-zsql/LETTNB-MON" name="pz:allow" value="1"/>
+		<set target="vifanord-zsql/LETTNB-ANA" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
@@ -30,32 +30,42 @@
 		<set target="sru.gbv.de/olcssg-oeu" name="pz:allow" value="1"/>
 
 		<set target="sru.gbv.de/stabikat" name="pz:name" value="Staatsbibliothek zu Berlin"/>
+		<set target="sru.gbv.de/stabikat" name="pz:url" value="sru.gbv.de/stabikat"/>
 	</settings>
 	
 	<settings src="settings/dk-kb.xml"/>
 	<settings>
-		<set target="z3950.kb.dk:2100/KGL01_BDANICA" name="pz:allow" value="1"/>
-		<set target="z3950.kb.dk:2100/BGF01_DHB" name="pz:allow" value="1"/>
-		<set target="z3950.kb.dk:2100/BGF01_DSB" name="pz:allow" value="1"/>
-		<set target="z3950.kb.dk:2100/MUS01" name="pz:allow" value="1"/>
-		<set target="z3950.kb.dk:2100/KGL01_DAPF" name="pz:allow" value="1"/>
+		<set target="dk-kb/KGL01_BDANICA" name="pz:allow" value="1"/>
+		<set target="dk-kb/BGF01_DHB" name="pz:allow" value="1"/>
+		<set target="dk-kb/BGF01_DSB" name="pz:allow" value="1"/>
+		<set target="dk-kb/MUS01" name="pz:allow" value="1"/>
+		<set target="dk-kb/KGL01_DAPF" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/se-kb.xml"/>
+	<settings>
+		<set target="se-kb/libris-vifanord" name="pz:allow" value="1"/>
+	</settings>
+	
 	<settings src="settings/no-bibsys.xml"/>
 	<settings src="settings/fi-helka.xml"/>
 	<settings src="settings/bonis.xml"/>
+	
 	<settings src="settings/ee-ester.xml"/>
+	<settings>
+		<set target="ee-ester/tartu" name="pz:allow" value="1"/>
+	</settings>
+	
 	<settings src="settings/lt-libis.xml"/>
 	
 	<settings src="settings/hu-berlin.xml"/>
 	<settings>
-		<set target="141.20.84.137:9991/TB_SKANDINAVISTIK" name="pz:allow" value="1"/>
+		<set target="hu-berlin/TB_SKANDINAVISTIK" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/hebis.xml"/>
 	<settings>
-		<set target="tolk.hebis.de:210/hebis-herder" name="pz:allow" value="1"/>
+		<set target="hebis/hebis-herder" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/herder-litdok.xml"/>
@@ -63,7 +73,7 @@
 	<settings src="settings/swb.xml"/>
 	<settings src="settings/vifanord-swb.xml"/>
 	<settings>
-		<set target="z3950n.bsz-bw.de:20210/swb362-vifanord" name="pz:allow" value="1"/>
+		<set target="swb/wao-vifanord" name="pz:allow" value="1"/>
 	</settings>
 
 

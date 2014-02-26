@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="sru.gbv.de/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	vifanord specific settings for querying GBV targets.
 	* extract region information in preprocessing
@@ -8,7 +8,7 @@
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
-	<set name="pz:xslt" 
+	<set target="sru.gbv.de/*" name="pz:xslt"
 		value="xsl/target/gbv-tmarc-pre.xsl,xsl/target/gbv-tmarc-vifanord-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/language/iso-639-2-to-639-2b.xsl,xsl/pz/parent-catalogue-url-pica.xsl,xsl/pz/electronic-url-remove-ciando.xsl,xsl/pz/final/finalise.xsl"/>
 		
 
@@ -18,12 +18,12 @@
 		* vifanord-balt: bal or xba
 		* vifanord-nord: sca or xsc or suo or xsu
 	-->
+	<set target="sru.gbv.de/fachopac-vifanord*" name="pz:url" value="sru.gbv.de/fachopac-vifanord"/>
 
 	<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog vifanord"/>
 	<set target="sru.gbv.de/fachopac-vifanord" name="pz:allow" value="0"/>
 
 	<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:name" value="Fachkatalog Baltikum"/>
-	<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:url" value="sru.gbv.de/fachopac-vifanord"/>
 	<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:pqf_prefix"
 		value="@and @or
@@ -32,7 +32,6 @@
 	"/>
 
 	<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:name" value="Fachkatalog Nordeuropa"/>
-	<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:url" value="sru.gbv.de/fachopac-vifanord"/>
 	<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:pqf_prefix"
 		value="@and @or @or @or
@@ -50,8 +49,9 @@
 		* vifanord-balt: bal
 		* vifanord-nord: sca
 	-->
+	<set target="sru.gbv.de/olc-vifanord*" name="pz:url" value="sru.gbv.de/olc"/>
+
 	<set target="sru.gbv.de/olc-vifanord" name="pz:name" value="Aufsätze Baltikum und Nordeuropa"/>
-	<set target="sru.gbv.de/olc-vifanord" name="pz:url" value="sru.gbv.de/olc"/>
 	<set target="sru.gbv.de/olc-vifanord" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/olc-vifanord" name="pz:pqf_prefix"
 		value="@and @or
@@ -60,7 +60,6 @@
 	"/>
 	
 	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:name" value="Aufsätze Baltikum"/>
-	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:url" value="sru.gbv.de/olc"/>
 	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/olc-vifanord-balt" name="pz:pqf_prefix"
 		value="@and
@@ -68,7 +67,6 @@
 	/>
 
 	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:name" value="Aufsätze Nordeuropa"/>
-	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:url" value="sru.gbv.de/olc"/>
 	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:allow" value="0"/>
 	<set target="sru.gbv.de/olc-vifanord-nord" name="pz:pqf_prefix"
 		value="@and

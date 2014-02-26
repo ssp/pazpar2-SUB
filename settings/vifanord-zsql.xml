@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="ub-baltica1.ub.uni-greifswald.de:395*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="viafnord-zsql/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the databases on vifanord’s zSQL server.
 	
@@ -36,7 +36,8 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="xml;utf-8"/>
-	<set name="pz:xslt" value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
+
+
 
 	<!--
 		Internet Resources
@@ -44,64 +45,63 @@
 		* irall-balt: limited to Baltic region
 		* irall-nord: limited to Nordic region
 	-->
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
-		value="Internetquellen vifanord"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall"
-		value="0"/>
-	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3950/irall*"
+	<set target="vifanord-zsql/irall*" name="pz:url"
+		value="ub-baltica1.ub.uni-greifswald.de:3950/irall"/>
+	<set target="vifanord-zsql/irall*" name="pz:xslt"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
 	
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
-		 value="Internetquellen Baltikum"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
-		value="0"/>
-	<set name="pz:url" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
-		value="ub-baltica1.ub.uni-greifswald.de:3950/irall"/>
-	<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt"
+	<set target="vifanord-zsql/irall" name="pz:name" value="Internetquellen vifanord"/>
+	<set target="vifanord-zsql/irall" name="pz:allow" value="0"/>
+	
+	<set target="vifanord-zsql/irall-balt" name="pz:name" value="Internetquellen Baltikum"/>
+	<set target="vifanord-zsql/irall-balt" name="pz:allow" value="0"/>
+	<set target="vifanord-zsql/irall-balt" name="pz:pqf_prefix"
 		value="@and @attr 1=9950 Baltikum"/>
 		
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
-		 value="Internetquellen Nordeuropa"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
-		value="0"/>
-	<set name="pz:url" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
-		value="ub-baltica1.ub.uni-greifswald.de:3950/irall"/>
-	<set name="pz:pqf_prefix" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord"
+	<set target="vifanord-zsql/irall-nord" name="pz:name" value="Internetquellen Nordeuropa"/>
+	<set target="vifanord-zsql/irall-nord" name="pz:allow" value="0"/>
+	<set target="vifanord-zsql/irall-nord" name="pz:pqf_prefix"
 		value="@and @or @attr 1=9950 Skandinavien @attr 1=9950 Finnland"/>
 	
 	<!--
 		Friedrich-Ebert-Stiftung
 	-->
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="Katalogauszug FES"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="0"/>
-	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3953/FES"
+	<set target="vifanord-zsql/FES" name="pz:url" value="ub-baltica1.ub.uni-greifswald.de:3953/FES"/>
+	<set target="vifanord-zsql/FES" name="region" value="balt"/>
+	<set target="vifanord-zsql/FES" name="pz:name" value="Katalogauszug FES"/>
+	<set target="vifanord-zsql/FES" name="pz:allow" value="0"/>
+	<set target="vifanord-zsql/FES" name="pz:xslt"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
-	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="balt"/>
 	
 	<!--
 		BMEB
 	-->
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="Baltic Marine Environment"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="0"/>
-	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB"
+	<set target="vifanord-zsql/BMEB" name="pz:url" value="ub-baltica1.ub.uni-greifswald.de:3954/BMEB"/>
+	<set target="vifanord-zsql/BMEB" name="region" value="balt"/>
+	<set target="vifanord-zsql/BMEB" name="pz:name" value="Baltic Marine Environment"/>
+	<set target="vifanord-zsql/BMEB" name="pz:allow" value="0"/>
+	<set target="vifanord-zsql/BMEB" name="pz:xslt"
 		 value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-bmeb-post.xsl,xsl/pz/final/finalise.xsl"/>
-	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="balt"/>
 
 	<!--
 		Latvian National Library
 		* Books
 		* Articles
 	-->
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="NB Lettland Bücher"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="0"/>
-	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON"
+	<set target="vifanord-zsql/LETTNB-MON" name="pz:url"
+		value="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON"/>
+	<set target="vifanord-zsql/LETTNB-MON" name="region" value="balt"/>
+	<set target="vifanord-zsql/LETTNB-MON" name="pz:name" value="NB Lettland Bücher"/>
+	<set target="vifanord-zsql/LETTNB-MON" name="pz:allow" value="0"/>
+	<set target="vifanord-zsql/LETTNB-MON" name="pz:xslt"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/book.xsl,xsl/pz/final/finalise.xsl"/>
-	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="balt"/>
 
-	<set name="pz:name" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="NB Lettland Aufsätze"/>
-	<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="0"/>
-	<set name="pz:xslt" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA"
+	<set target="vifanord-zsql/LETTNB-ANA" name="pz:url"
+		value="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA"/>
+	<set target="vifanord-zsql/LETTNB-ANA" name="region" value="balt"/>
+	<set target="vifanord-zsql/LETTNB-ANA" name="pz:name" value="NB Lettland Aufsätze"/>
+	<set target="vifanord-zsql/LETTNB-ANA" name="pz:allow" value="0"/>
+	<set target="vifanord-zsql/LETTNB-ANA" name="pz:xslt"
 		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/article.xsl,xsl/pz/final/finalise.xsl"/>
-	<set name="region" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="balt"/>
 
 </settings>

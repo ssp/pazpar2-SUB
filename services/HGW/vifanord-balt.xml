@@ -13,10 +13,10 @@
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-balt" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3953/FES" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3954/BMEB" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3955/LETTNB-MON" value="1"/>
+		<set name="pz:allow" target="vifanord-zsql/irall-balt" value="1"/>
+		<set name="pz:allow" target="vifanord-zsql/FES" value="1"/>
+		<set name="pz:allow" target="vifanord-zsql/BMEB" value="1"/>
+		<set name="pz:allow" target="vifanord-zsql/LETTNB-MON" value="1"/>
 		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="1"/>
 	</settings>
 	
@@ -28,11 +28,15 @@
 	</settings>
 	
 	<settings src="settings/ee-ester.xml"/>
+	<settings>
+		<set target="ee-ester/tartu" name="pz:allow" value="1"/>
+	</settings>
+	
 	<settings src="settings/lt-libis.xml"/>
 	
 	<settings src="settings/hebis.xml"/>
 	<settings>
-		<set target="tolk.hebis.de:210/hebis-herder" name="pz:allow" value="1"/>
+		<set target="hebis/hebis-herder" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/herder-litdok.xml"/>
@@ -40,7 +44,7 @@
 	<settings src="settings/swb.xml"/>
 	<settings src="settings/vifanord-swb.xml"/>
 	<settings>
-		<set target="z3950n.bsz-bw.de:20210/swb362-vifanord-balt" name="pz:allow" value="1"/>
+		<set target="swb/wao-vifanord-balt" name="pz:allow" value="1"/>
 	</settings>
 
 

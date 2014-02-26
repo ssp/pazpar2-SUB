@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<settings target="z3950n.bsz-bw.de:20210/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<settings target="swb/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
 <!--
 	pazpar2 settings for the new Z39.50 service of BSZ/SWB.
 	
@@ -60,17 +60,20 @@
 	
 
 	<!-- Catalogue URLs -->
-	<set target="z3950n.bsz-bw.de:20210/swb" name="catalogueURLHintPrefix"
+	<set target="swb/swb" name="pz:name" value="SWB"/>
+	<set target="swb/swb*" name="pz:url" value="z3950n.bsz-bw.de:20210/swb"/>
+	<set target="swb/swb*" name="pz:allow" value="0"/>
+	<set target="swb/swb*" name="catalogueURLHintPrefix"
 		value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
 
-	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:url"
-		value="z3950n.bsz-bw.de:20210/swb"/>
-	<set target="z3950n.bsz-bw.de:20210/freiberg" name="pz:pqf_prefix"
-		value="@and @attr 1=1044 105"/>
-	<set target="z3950n.bsz-bw.de:20210/freiberg" name="catalogueURLHintPrefix"
+	<set target="swb/swb-freiberg" name="pz:pqf_prefix" value="@and @attr 1=1044 105"/>
+	<set target="swb/swb-freiberg" name="catalogueURLHintPrefix"
 		value="http://swb.bsz-bw.de/DB=2.1/PRS=HOL/HILN=27/PPNSET?PPN="/>
 	
-	<set target="z3950n.bsz-bw.de:20210/swb362*" name="catalogueURLHintPrefix"
+	<set target="swb/wao*" name="pz:name" value="World Affairs Online"/>
+	<set target="swb/wao*" name="pz:allow" value="0"/>
+	<set target="swb/wao*" name="pz:url" value="z3950n.bsz-bw.de:20210/swb362"/>
+	<set target="swb/wao*" name="catalogueURLHintPrefix"
 		 value="http://swb.bsz-bw.de/DB=2.362/PPNSET?PPN="/>
 
 </settings>

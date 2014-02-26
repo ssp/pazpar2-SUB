@@ -12,7 +12,7 @@
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3950/irall-nord" value="1"/>
+		<set name="pz:allow" target="vifanord-zsql/irall-nord" value="1"/>
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
@@ -26,7 +26,7 @@
 	
 	<settings src="settings/swb.xml"/>
 	<settings src="settings/vifanord-swb.xml"/>
-	<settings target="z3950n.bsz-bw.de:20210/swb362-vifanord-nord">
+	<settings target="swb/wao-vifanord-nord">
 		<set name="pz:allow" value="1"/>
 		<!-- Use pqf_strftime to add MAK O* to query a pqf_prefix is already used for limiting. -->
 		<set name="pz:pqf_strftime" value="@and %% @attr 1=1031 O"/>

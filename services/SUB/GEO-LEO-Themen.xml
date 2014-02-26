@@ -30,7 +30,8 @@
 
 	<settings src="settings/swb.xml"/>
 	<settings>
-		<set target="z3950n.bsz-bw.de:20210/swb" name="pz:name" value="UB Freiberg und SWB"/>
+		<set target="swb/swb" name="pz:name" value="UB Freiberg und SWB"/>
+		<set target="swb/swb" name="pz:allow" value="1"/>
 	</settings>
 
 	<settings src="settings/sub-guides-solr.xml"/>
