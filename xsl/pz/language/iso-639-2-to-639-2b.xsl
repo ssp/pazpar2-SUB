@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Applies the template »iso-639-2-cleaner« from »iso-639-2-to-639-2b.xsl«
+	Applies the template »iso-639-2-cleaner« from »iso-639-2-cleaner.xsl«
 	to pz:metadata fields of type language.
 	Copies all other fields unchanged.
 
-	2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2014 Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 <xsl:stylesheet

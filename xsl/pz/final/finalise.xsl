@@ -11,6 +11,7 @@
 	xmlns:pz="http://www.indexdata.com/pazpar2/1.0"
 	version="1.0">
 
+	<xsl:include href="iso-639-2b-validator.xsl"/>
 	<xsl:include href="catalogue-url-create.xsl"/>
 	<xsl:include href="zdb-number.xsl"/>
 	<xsl:include href="medium-simplify.xsl"/>
