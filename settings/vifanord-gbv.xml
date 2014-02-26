@@ -74,4 +74,10 @@
 	/>
 
 
+	<!--
+		Online Contents Osteuropa
+	-->
+	<set target="sru.gbv.de/olcssg-oeu" name="pz:name" value="Aufsätze Osteuropa"/>
+	<set target="sru.gbv.de/olcssg-oeu" name="pz:allow" value="0"/>
+
 </settings>

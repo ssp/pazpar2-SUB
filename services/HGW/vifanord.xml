@@ -25,8 +25,6 @@
 	<settings>
 		<set target="sru.gbv.de/fachopac-vifanord" name="pz:allow" value="1"/>
 		<set target="sru.gbv.de/olc-vifanord" name="pz:allow" value="1"/>
-		
-		<set target="sru.gbv.de/olcssg-oeu" name="pz:name" value="Aufsätze Osteuropa"/>
 		<set target="sru.gbv.de/olcssg-oeu" name="pz:allow" value="1"/>
 
 		<set target="sru.gbv.de/stabikat" name="pz:name" value="Staatsbibliothek zu Berlin"/>
