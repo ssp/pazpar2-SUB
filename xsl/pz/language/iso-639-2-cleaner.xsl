@@ -3,14 +3,15 @@
 	Provides the template »iso-639-2-cleaner« with parameter »languageCode« that
 		* replaces ISO-639-2/T codes with their ISO-639-2/B equivalent
 		* replaces deprecated ISO-639-2/B codes with their current version
-		* leaves all strings noth matching ISO-639-2/T oder deprecated /B codes untouched
+		* leaves all strings not matching ISO-639-2/T or deprecated /B codes untouched
 
 	Information:
 		* http://www.loc.gov/standards/iso639-2/ascii_8bits.html
 		* http://www.loc.gov/marc/languages/
 		* http://www.loc.gov/marc/languages/language_code.html
+		* http://www.loc.gov/marc/languages/languagechg.html
 
-	2010-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2010-2014 Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 <xsl:stylesheet
 	version="1.0"
@@ -44,22 +45,24 @@
 			<xsl:when test="$languageCode = 'cym'">wel</xsl:when>
 
 			<!-- Replace deprecated ISO 639-2 language codes with current versions -->
+			<xsl:when test="$languageCode = 'cam'">khm</xsl:when>
 			<xsl:when test="$languageCode = 'esk'">kal</xsl:when>
 			<xsl:when test="$languageCode = 'esp'">epo</xsl:when>
 			<xsl:when test="$languageCode = 'eth'">gez</xsl:when>
 			<xsl:when test="$languageCode = 'far'">fao</xsl:when>
 			<xsl:when test="$languageCode = 'gae'">gla</xsl:when>
 			<xsl:when test="$languageCode = 'gag'">glg</xsl:when>
+			<xsl:when test="$languageCode = 'gal'">orm</xsl:when>
 			<xsl:when test="$languageCode = 'iri'">gle</xsl:when>
-			<xsl:when test="$languageCode = 'cam'">khm</xsl:when>
+			<xsl:when test="$languageCode = 'lan'">oci</xsl:when>
+			<xsl:when test="$languageCode = 'lap'">smi</xsl:when>
 			<xsl:when test="$languageCode = 'mla'">mlg</xsl:when>
 			<xsl:when test="$languageCode = 'max'">glv</xsl:when>
-			<xsl:when test="$languageCode = 'lan'">oci</xsl:when>
-			<xsl:when test="$languageCode = 'gal'">orm</xsl:when>
-			<xsl:when test="$languageCode = 'lap'">smi</xsl:when>
+			<xsl:when test="$languageCode = 'mol'">rum</xsl:when>
 			<xsl:when test="$languageCode = 'sao'">smo</xsl:when>
-			<xsl:when test="$languageCode = 'sho'">sna</xsl:when>
 			<xsl:when test="$languageCode = 'scc'">srp</xsl:when>
+			<xsl:when test="$languageCode = 'scr'">hrv</xsl:when>
+			<xsl:when test="$languageCode = 'sho'">sna</xsl:when>
 			<xsl:when test="$languageCode = 'snh'">sin</xsl:when>
 			<xsl:when test="$languageCode = 'swz'">ssw</xsl:when>
 			<xsl:when test="$languageCode = 'taj'">tgk</xsl:when>
