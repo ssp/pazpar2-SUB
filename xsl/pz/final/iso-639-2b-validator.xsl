@@ -559,7 +559,6 @@
 		
 		<xsl:choose>
 			<xsl:when test="function-available('exsl:node-set')">
-				<xsl:message>gaga</xsl:message>
 				<xsl:if test="count(exsl:node-set($languages)/pz:metadata[@type='language']) = 0">
 					<pz:metadata type="language">zzz</pz:metadata>
 				</xsl:if>
