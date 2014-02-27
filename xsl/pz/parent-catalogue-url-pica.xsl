@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Creates a link to all related works in a Pica OPAC using the record’s
-	»parent-id« field.
+	»parent-id« field and the catalogueURLHintPrefix parameter.
 
 	Example:
 	parent-id: 16276040X
@@ -29,10 +29,22 @@
 	<xsl:template match="pz:metadata[@type='parent-id']">
 		<xsl:choose>
 			<xsl:when test="string-length($catalogueURLHintPrefix)">
+				<xsl:variable name="uptoDB">
+					<xsl:value-of select="substring-before($catalogueURLHintPrefix, 'DB=')"/>
+					<xsl:text>DB=</xsl:text>
+				</xsl:variable>
+				<xsl:variable name="afterDB">
+					<xsl:value-of select="substring-after($catalogueURLHintPrefix, 'DB=')"/>
+				</xsl:variable>
+				<xsl:variable name="DBNumber">
+					<xsl:value-of select="substring-before($afterDB , '/')"/>
+				</xsl:variable>
+
 				<pz:metadata type="parent-catalogue-url">
-					<xsl:value-of select="substring-before($catalogueURLHintPrefix, 'PPNSET?PPN=')"/>
-					<xsl:text>FAM?PPN=</xsl:text>
-					<xsl:value-of select="."/>
+					<xsl:value-of select="$uptoDB"/>
+					<xsl:value-of select="$DBNumber"/>
+					<xsl:text>/FAM?PPN=</xsl:text>
+					<xsl:value-of select="./text()"/>
 				</pz:metadata>
 			</xsl:when>
 			<xsl:otherwise>
