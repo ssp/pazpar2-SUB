@@ -17,7 +17,7 @@
 		<set name="pz:allow" target="vifanord-zsql/FES" value="1"/>
 		<set name="pz:allow" target="vifanord-zsql/BMEB" value="1"/>
 		<set name="pz:allow" target="vifanord-zsql/LETTNB-MON" value="1"/>
-		<set name="pz:allow" target="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA" value="1"/>
+		<set name="pz:allow" target="vifanord-zsql/LETTNB-ANA" value="1"/>
 	</settings>
 	
 	<settings src="settings/gbv-sru.xml"/>
