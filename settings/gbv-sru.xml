@@ -89,8 +89,10 @@
 
 	<!-- SUB Göttingen OPAC. -->
 	<set name="pz:maxrecs" target="sru.gbv.de/opac-de-7" value="500"/>
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/opac-de-7" value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=40/PPNSET?PPN="/>
-	<set name="catalogueURLHintPrefix" target="sru.gbv.de/proj-subgoeolr" value="https://opac.sub.uni-goettingen.de/DB=1/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/opac-de-7"
+		value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=40/PPNSET?PPN="/>
+	<set name="catalogueURLHintPrefix" target="sru.gbv.de/proj-subgoeolr"
+		value="https://opac.sub.uni-goettingen.de/DB=1/PPNSET?PPN="/>
 
 	<!--
 		… probably only available in opac-de-7:
@@ -108,7 +110,8 @@
 	<!-- TIB Hannover catalogue URLs. -->
 	<set target="sru.gbv.de/gvk-tib" name="pz:url" value="sru.gbv.de/gvk"/>
 	<set target="sru.gbv.de/gvk-tib" name="pz:pqf_strftime" value="@not @and %% @attr 1=pica.bib 0089 @attr 1=pica.bib 0007"/>
-	<set target="sru.gbv.de/gvk-tib" name="catalogueURLHintPrefix"  value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=70/PPNSET?PPN="/>
+	<set target="sru.gbv.de/gvk-tib" name="catalogueURLHintPrefix"
+		value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=70/PPNSET?PPN="/>
 
 
 	<!-- Stabi Berlin: configure for their custom index names with an x prefix -->
@@ -175,7 +178,9 @@
 
 	<set name="catalogueURLHintPrefix" target="sru.gbv.de/proj-ssgpol" value="http://gso.gbv.de/DB=1.28/PPNSET?PPN="/>
 
+
 	<!-- Set up database restrictions. -->
 	<set name="pz:allow" target="sru.gbv.de/zdb-1-pio" value="0"/>
 	<set name="pz:allow" target="sru.gbv.de/olc*" value="0"/>
+	
 </settings>
