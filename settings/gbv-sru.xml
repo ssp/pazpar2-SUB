@@ -114,7 +114,11 @@
 		value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=70/PPNSET?PPN="/>
 
 
-	<!-- Stabi Berlin: configure for their custom index names with an x prefix -->
+	<!--
+		Stabi Berlin:
+		* configure a basic set of index names with their custom »x« prefix
+		* configure as GVK search with bib filter
+	-->
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:term" value="u=pica.xall s=al t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:title" value="u=pica.xtit s=al t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:person" value="u=pica.xper t=r"/>
@@ -132,6 +136,14 @@
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:url" value="u=pica.url t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:mak" value="u=pica.mak t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
+	
+	<set target="sru.gbv.de/gvk-stabikat" name="pz:url" value="sru.gbv.de/gvk"/>
+	<set target="sru.gbv.de/gvk-stabikat" name="pz:name" value="Staatsbibliothek zu Berlin"/>
+	<set target="sru.gbv.de/gvk-stabikat" name="pz:allow" value="0"/>
+	<set target="sru.gbv.de/gvk-stabikat" name="pz:pqf_prefix" value="@and @attr 1=pica.bib 0001"/>
+	<set target="sru.gbv.de/gvk-stabikat" name="catalogueURLHintPrefix"
+		value="http://gso.gbv.de/DB=2.1/PRS=HOL/HILN=11/PPNSET?PPN="/>
+
 
 
 	<!-- Central GBV catalogue URLs. -->
