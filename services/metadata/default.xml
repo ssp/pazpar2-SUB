@@ -10,9 +10,21 @@
 	2010-2014 Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 	
-	<metadata name="medium" brief="yes" merge="unique" termlist="yes" limitmap="local:" limitcluster="medium" setting="parameter"/>
-	
-	<metadata name="language" brief="yes" merge="unique" termlist="yes"/>
+	<metadata name="medium"
+		brief="yes" merge="unique"
+		termlist="yes"
+		limitmap="local:"
+		limitcluster="medium"
+		setting="parameter"
+	/>
+
+	<metadata name="language"
+		brief="yes"
+		merge="unique"
+		termlist="yes"
+		limitmap="local:,ccl:language"
+	/>
+
 	<!-- numbers -->
 	<metadata name="id" brief="yes"/>
 	<metadata name="lccn" merge="unique"/>
@@ -48,8 +60,15 @@
 	<metadata name="meeting-location"/>
 	<metadata name="meeting-date"/>
 	
-	<metadata name="date" brief="yes" sortkey="numeric" type="year"	merge="range" termlist="yes"/>
-	
+	<!-- year -->
+	<metadata name="date"
+		type="year"
+		brief="yes"
+		merge="range"
+		sortkey="numeric"
+		termlist="yes"
+		limitmap="ccl:date"
+	/>
 	
 	<!-- edition and publisher -->
 	<metadata name="edition" brief="yes"/>

@@ -30,9 +30,6 @@
 	<set name="pz:cclmap:collection" value="u=5001"/>
 
 
-	<set name="pz:limitmap:subject" value="ccl:subject"/>
-	<set name="pz:limitmap:collection" value="ccl:collection"/>
-
 
 	<!-- Retrieval -->
 	<set name="pz:requestsyntax" value="marc21"/>

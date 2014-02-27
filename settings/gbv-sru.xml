@@ -70,11 +70,8 @@
 	<set name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
 
 
-
-	<!-- Set up limit maps for our facets where possible. -->
-	<!--	<set name="pz:limitmap:medium" value="local:medium"/> -->
-	<set name="pz:limitmap:language" value="rpn:@attr 1=pica.taa"/>
-	<set name="pz:limitmap:date" value="rpn:@attr 1=pica.jah"/>
+	<!-- Faceting -->
+	<set name="pz:limitmap:date" value="ccl:date"/>
 
 
 	<!-- SRU schema: Request turbomarc format. -->

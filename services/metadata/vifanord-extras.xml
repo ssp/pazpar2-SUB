@@ -5,7 +5,27 @@
 
 	2014 Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
-	<metadata name="region" brief="yes" merge="unique" termlist="yes" setting="postproc"/>
-	<metadata name="gbv-library" brief="yes" merge="unique" termlist="yes"/>
-	<metadata name="se-kb-collection" brief="yes" merge="unique" termlist="yes"/>
+
+	<metadata name="subject" brief="yes" merge="unique"/>
+
+
+	<metadata name="region"
+		merge="unique"
+		termlist="yes"
+		limitmap="local:"
+		setting="postproc"
+	/>
+	
+	<metadata name="gbv-library"
+		merge="unique"
+		termlist="yes"
+		limitmap="local:,ccl:bib"
+	/>
+	
+	<metadata name="se-kb-collection"
+		merge="unique"
+		termlist="yes"
+		limitmap="local:,ccl:collection"
+	/>
+
 </metadata>
