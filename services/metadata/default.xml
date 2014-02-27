@@ -32,8 +32,8 @@
 	<metadata name="title-remainder" brief="yes" merge="unique"/>
 	<metadata name="title-responsibility" brief="yes" merge="longest"/>
 	<metadata name="title-dates" brief="yes" merge="longest"/>
-	<metadata name="title-medium" brief="yes" merge="longest"/>
-	<metadata name="title-number-section" brief="yes" sortkey="skiparticle" merge="unique"/>
+	<metadata name="title-medium" merge="longest"/>
+	<metadata name="title-number-section" brief="yes" merge="unique"/>
 	<metadata name="title-complete"/>
 
 	<!-- creators, people, organisations -->
