@@ -53,7 +53,7 @@
 	<set name="pz:cclmap:sww" value="u=pica.sww t=r"/>
 	<set name="pz:cclmap:ddc" value="u=pica.ddc s=1 t=r"/>
 	<set name="pz:cclmap:ddc-t" value="u=pica.ddf s=1 t=r"/>
-	<set name="pz:cclmap:ddc-g" value="u=pica.ddd s=1 t=r"/>
+	<set name="pz:cclmap:ddc-g" value="u=pica.ddg s=1 t=r"/>
 	<set name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
 	<set name="pz:cclmap:bkl" value="u=pica.bkl s=1 t=r"/>
 	<set name="pz:cclmap:rvk" value="u=pica.rvk s=1 t=r"/>
