@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	General settings inserted in all vifanord services.
+	
+	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<set name="pz:maxrecs" value="500"/>
+	<set name="pz:maxrecs" target="sru.gbv.de/*" value="1000"/>
+	<set name="pz:maxrecs" target="vifanord-zsql/*" value="1000"/>
+
+</settings>

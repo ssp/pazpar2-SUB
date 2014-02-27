@@ -10,6 +10,8 @@
 
 	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
+
+	<settings src="settings/vifanord-general.xml"/>
 	
 	<settings src="settings/vifanord-zsql.xml"/>
 	<settings>
