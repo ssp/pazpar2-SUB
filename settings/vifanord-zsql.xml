@@ -28,14 +28,14 @@
 		url: URL field
 		lsg: »fake« index, match in ISSN field to get 0 results for queries containing letters
 	-->
-	<set name="pz:cclmap:ddc" value="u=13 t=r"/>
-	<set name="pz:cclmap:ddc-ir" value="u=13 t=r"/>
-	<set name="pz:cclmap:ddc-s" value="u=1300 t=r"/>
-	<set name="pz:cclmap:ddc-g" value="u=1301 t=r"/>
-	<set name="pz:cclmap:ddc-t" value="u=1302 t=r"/>
-	<set name="pz:cclmap:region" value="u=9950"/>
-	<set name="pz:cclmap:url" value="u=1032 t=r"/>
-	<set name="pz:cclmap:lsg" value="u=8 t=r"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:ddc" value="u=13 t=3"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:ddc-ir" value="u=1300 t=3"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:ddc-s" value="u=1300 t=3"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:ddc-g" value="u=1301 t=3"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:ddc-t" value="u=1302 t=3"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:region" value="u=9950"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:url" value="u=1032 t=r"/>
+	<set target="vifanord-zsql/irall*" name="pz:cclmap:lsg" value="u=8 t=r"/>
 
 
 	<!-- Retrieval settings -->
