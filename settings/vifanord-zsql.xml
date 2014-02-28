@@ -17,14 +17,24 @@
 	<set name="pz:cclmap:issn" value="u=8"/>
 	<set name="pz:cclmap:date" value="u=31 r=r t=r"/>
 
-	<!-- For internet resource databases -->
+	<!--
+		For internet resource databases.
+		ddc: standard DDC
+		ddc-ir: standard DDC, specific to IR databases (not matching in other targets)
+		ddc-s: subject part of DDC
+		ddc-g: geographical part of DDC, t2
+		ddc-t: time part of DDC, t1
+		region: query Baltikum, Skandinavien, Finnland, Ostseeraum
+		url: URL field
+		lsg: »fake« index, match in ISSN field to get 0 results for queries containing letters
+	-->
 	<set name="pz:cclmap:ddc" value="u=13 t=r"/>
+	<set name="pz:cclmap:ddc-ir" value="u=13 t=r"/>
 	<set name="pz:cclmap:ddc-s" value="u=1300 t=r"/>
 	<set name="pz:cclmap:ddc-g" value="u=1301 t=r"/>
 	<set name="pz:cclmap:ddc-t" value="u=1302 t=r"/>
 	<set name="pz:cclmap:region" value="u=9950"/>
 	<set name="pz:cclmap:url" value="u=1032 t=r"/>
-	<!-- fake lsg index, should not give results when querying letterns on ISSN field-->
 	<set name="pz:cclmap:lsg" value="u=8 t=r"/>
 
 

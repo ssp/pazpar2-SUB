@@ -20,6 +20,13 @@
 	-->
 	<set target="sru.gbv.de/fachopac-vifanord*" name="pz:url" value="sru.gbv.de/fachopac-vifanord"/>
 
+	<!--
+		Add fake »ddc-ir« index to catch DDC queries which should go to the
+		IR-ZSQL databases only.
+	-->
+	<set target="sru.gbv.de/fachopac-vifanord*" name="pz:cclmap:ddc-ir" value="u=pica.mat s=1 t=r"/>
+
+
 	<set target="sru.gbv.de/fachopac-vifanord" name="pz:name" value="Fachkatalog vifanord"/>
 	<set target="sru.gbv.de/fachopac-vifanord" name="pz:allow" value="0"/>
 
