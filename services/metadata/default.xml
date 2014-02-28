@@ -14,7 +14,6 @@
 		brief="yes" merge="unique"
 		termlist="yes"
 		limitmap="local:"
-		limitcluster="medium"
 		setting="parameter"
 	/>
 
