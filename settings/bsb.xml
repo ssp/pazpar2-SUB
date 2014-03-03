@@ -48,7 +48,7 @@
 
 	<!-- Result normalization settings -->
 	<set name="pz:nativesyntax" value="txml"/>
-	<set name="pz:xslt" value="xsl/convert/tunimarc.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="pz:xslt" value="xsl/convert/tunimarc.xsl,xsl/pz/medium/unknown.xsl,xsl/pz/final/finalise.xsl"/>
 
 
 	<!-- Catalogues -->
