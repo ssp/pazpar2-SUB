@@ -74,6 +74,12 @@
 		<set target="swb/wao-vifanord" name="pz:allow" value="1"/>
 	</settings>
 
+	<xi:include href="../../settings/secrets/hgw-bsb.xml"/>
+	<settings src="settings/bsb.xml"/>
+	<settings>
+		<set target="bsb/sisis-ost" name="pz:allow" value="1"/>
+	</settings>
+
 
 
 	<xi:include href="../metadata/vifanord-extras.xml"/>

@@ -10,3 +10,5 @@
 [submodule "pazpar2-access"]
 	path = pazpar2-access
 	url = git://github.com/subugoe/pazpar2-access.git
+[submodule "secrets"]
+	path = settings/secrets
