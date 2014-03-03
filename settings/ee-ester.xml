@@ -35,12 +35,18 @@
 
 	<!-- Result normalisation  -->
 	<set name="pz:nativesyntax" value="txml;utf-8"/>
-	<set name="pz:xslt" value="xsl/target/ester-id-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
+	<set name="pz:xslt"
+		value="xsl/target/ester-id-pre.xsl,xsl/convert/tmarc.xsl,xsl/pz/final/finalise.xsl"/>
 
 
 	<!-- Databases -->
-	<set target="ee-ester/tallinn" name="pz:url" value="tartu.ester.ee:212/innopac"/>
+	<set target="ee-ester/tallinn" name="pz:url" value="tallinn.ester.ee:212/innopac"/>
 	<set target="ee-ester/tallinn" name="pz:name" value="NB Estland"/>
+	<set target="ee-ester/tallinn" name="pz:allow" value="0"/>
+	<set target="ee-ester/tallinn" name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
+
+	<set target="ee-ester/tallinn" name="pz:url" value="tallinn.ester.ee:212/jrnl"/>
+	<set target="ee-ester/tallinn" name="pz:name" value="NB Estland Artikel"/>
 	<set target="ee-ester/tallinn" name="pz:allow" value="0"/>
 	<set target="ee-ester/tallinn" name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
 
