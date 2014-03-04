@@ -114,25 +114,24 @@
 	<!--
 		Stabi Berlin:
 		* configure a basic set of index names with their custom »x« prefix
+			* no »x« prefix required for erj (date) and taa (language) indexes
 		* configure as GVK search with bib filter
 	-->
+	<set target="sru.gbv.de/stabikat" name="catalogueURLHintPrefix" value="http://stabikat.sbb.spk-berlin.de/DB=1/PPNSET?PPN="/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:term" value="u=pica.xall s=al t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:title" value="u=pica.xtit s=al t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:person" value="u=pica.xper t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:journal" value="u=pica.xsha t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:subject" value="u=pica.xslw s=al t=r"/>
-	<!-- erj index does not need a prefix -->
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:isbn" value="u=pica.xisb t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:issn" value="u=pica.xiss t=r"/>
-	<set target="sru.gbv.de/stabikat" name="catalogueURLHintPrefix" value="http://stabikat.sbb.spk-berlin.de/DB=1/PPNSET?PPN="/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ddc" value="u=pica.ddc s=1 t=r"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:msc" value="u=pica.msc s=1 t=r"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:bkl" value="u=pica.bkl s=1 t=r"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:rvk" value="u=pica.rvk s=1 t=r"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:language" value="u=pica.taa s=1"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:url" value="u=pica.url t=r"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:mak" value="u=pica.mak t=r"/>
-	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ppn" value="u=pica.ppn t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:isbn" value="u=pica.xisb t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ddc" value="u=pica.xddc s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:msc" value="u=pica.xmsc s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:bkl" value="u=pica.xbkl s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:rvk" value="u=pica.xrvk s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:url" value="u=pica.xurl t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:mak" value="u=pica.xmak t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ppn" value="u=pica.xppn t=r"/>
 	
 	<set target="sru.gbv.de/gvk-stabikat" name="pz:url" value="sru.gbv.de/gvk"/>
 	<set target="sru.gbv.de/gvk-stabikat" name="pz:name" value="Staatsbibliothek zu Berlin"/>
