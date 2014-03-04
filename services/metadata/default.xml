@@ -52,9 +52,11 @@
 	<metadata name="other-person" brief="yes" merge="unique"/>
 	<metadata name="author-title"/>
 	<metadata name="author-date"/>
+	<metadata name="corporate" brief="yes" merge="unique"/>
 	<metadata name="corporate-name"/>
 	<metadata name="corporate-location"/>
 	<metadata name="corporate-date"/>
+	<metadata name="meeting" brief="yes" merge="unique"/>
 	<metadata name="meeting-name"/>
 	<metadata name="meeting-location"/>
 	<metadata name="meeting-date"/>

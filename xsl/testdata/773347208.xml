@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>xxxxxnam a22yyyyy c 4500</l>
+  <c001>773347208</c001>
+  <c003>DE-601</c003>
+  <c005>20140228143606.0</c005>
+  <c008>131203s2013    gw            000 0 rus d</c008>
+  <d020 i1=" " i2=" ">
+    <sa>9783860063965</sa>
+  </d020>
+  <d024 i1="8" i2=" ">
+    <sa>BVBTBV041438588</sa>
+  </d024>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-604)BV041438588</sa>
+  </d035>
+  <d035 i1=" " i2=" ">
+    <sa>(DE-599)BVBBV041438588</sa>
+  </d035>
+  <d040 i1=" " i2=" ">
+    <sa>GBVCP</sa>
+    <sb>ger</sb>
+    <se>rakwb</se>
+  </d040>
+  <d041 i1="0" i2=" ">
+    <sa>rus</sa>
+  </d041>
+  <d082 i1="0" i2="0">
+    <sa>491.8</sa>
+  </d082>
+  <d082 i1="0" i2="9">
+    <sa>491.8</sa>
+  </d082>
+  <d084 i1=" " i2=" ">
+    <sa>18.50</sa>
+    <s9>Slawische Sprachen und Literaturen: Allgemeines</s9>
+    <s2>bcl</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>KD 1047</sa>
+    <s2>rvk</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>KD 2480</sa>
+    <s2>rvk</s2>
+  </d084>
+  <d084 i1=" " i2=" ">
+    <sa>7,39</sa>
+    <s2>ssgn</s2>
+  </d084>
+  <d245 i1="0" i2="0">
+    <sa>Nationales und Internationales in der slawischen Phraseologie :</sa>
+    <sb>XV Mezdunarodnyj Sʺezd Slavistov 20 - 27 avgusta 2013 g., Minsk, Belarusʹ = Nacionalʹnoe i internacionalʹnoe v slavjanskoj frazeologii</sb>
+    <sc>Internationales Slawistenkomitee, Phraseologische Kommission. Harry Walter, Valerij M. Mokienko (Hrsg.)</sc>
+  </d245>
+  <d260 i1="3" i2=" ">
+    <sa>Greifswald</sa>
+    <sb>Univ., Inst. für Slawistik</sb>
+    <sc>2013</sc>
+  </d260>
+  <d300 i1=" " i2=" ">
+    <sa>VIII, 276 S.</sa>
+    <sb>Ill.</sb>
+  </d300>
+  <d650 i1=" " i2="7">
+    <s0>(DE-601)105779377</s0>
+    <s0>(DE-588)4120036-6</s0>
+    <sa>Slawische Sprachen</sa>
+    <s2>gbv</s2>
+  </d650>
+  <d650 i1=" " i2="7">
+    <s0>(DE-601)106083740</s0>
+    <s0>(DE-588)4076108-3</s0>
+    <sa>Phraseologie</sa>
+    <s2>gbv</s2>
+  </d650>
+  <d653 i1=" " i2="7">
+    <sa>Kongress</sa>
+    <s2>gbv</s2>
+  </d653>
+  <d653 i1=" " i2="7">
+    <sa>Minsk &lt;2013&gt;</sa>
+    <s2>gbv</s2>
+  </d653>
+  <d700 i1="1" i2=" ">
+    <sa>Walter, Harry</sa>
+    <s0>(DE-601)082145466</s0>
+    <s0>(DE-588)122770730</s0>
+  </d700>
+  <d700 i1="1" i2=" ">
+    <sa>Mokienko, Valerij M.</sa>
+    <s0>(DE-601)188926240</s0>
+    <s0>(DE-588)122770765</s0>
+  </d700>
+  <d710 i1="2" i2=" ">
+    <sa>Institut für Slawistik</sa>
+    <sg>Greifswald</sg>
+    <s0>(DE-601)101680724</s0>
+    <s0>(DE-588)2121373-2</s0>
+  </d710>
+  <d710 i1="2" i2=" ">
+    <sa>International Slavistic Committee</sa>
+    <sb>Phraseologische Kommission</sb>
+    <s0>(DE-601)770975828</s0>
+    <s0>(DE-588)1043833927</s0>
+  </d710>
+  <d711 i1="2" i2=" ">
+    <sa>Mezdunarodnyj Sʺezd Slavistov</sa>
+    <sn>(15</sn>
+    <sd>2013.08.20-27</sd>
+    <sc>Minsk)</sc>
+  </d711>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>UB Greifswald &lt;9&gt;</sb>
+    <sd>!FB 334! 334/KD 1047-15 W2</sd>
+    <sx>L</sx>
+    <sz>LC</sz>
+  </d900>
+  <d900 i1=" " i2=" ">
+    <sa>GBV</sa>
+    <sb>LBMV Schwerin &lt;33&gt;</sb>
+    <sd>49 A 3429</sd>
+    <sx>L</sx>
+    <sz>LC</sz>
+    <sd>49 A 3429 a</sd>
+    <sx>L</sx>
+    <sz>LC</sz>
+  </d900>
+  <d951 i1=" " i2=" ">
+    <sa>KD 1047</sa>
+    <s2>69</s2>
+  </d951>
+  <d954 i1=" " i2=" ">
+    <sa>69</sa>
+    <sb>1450062202</sb>
+    <sc>01</sc>
+    <sf>FB 334</sf>
+    <sd>334/KD 1047-15 W2</sd>
+    <se>b</se>
+    <sx>0009</sx>
+  </d954>
+  <d954 i1=" " i2=" ">
+    <sa>92</sa>
+    <sb>1449462596</sb>
+    <sc>01</sc>
+    <sd>49 A 3429</sd>
+    <se>d</se>
+    <sx>0033</sx>
+  </d954>
+  <d954 i1=" " i2=" ">
+    <sa>92</sa>
+    <sb>1449462626</sb>
+    <sc>02</sc>
+    <sd>49 A 3429 a</sd>
+    <se>u</se>
+    <sx>0033</sx>
+  </d954>
+</r>
