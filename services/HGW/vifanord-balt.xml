@@ -27,6 +27,8 @@
 	<settings>
 		<set target="sru.gbv.de/fachopac-vifanord-balt" name="pz:allow" value="1"/>
 		<set target="sru.gbv.de/olc-vifanord-balt" name="pz:allow" value="1"/>
+		<set target="sru.gbv.de/olcssg-oeu" name="pz:allow" value="1"/>
+		<set target="sru.gbv.de/gvk-stabikat" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/ee-ester.xml"/>
@@ -49,6 +51,11 @@
 		<set target="swb/wao-vifanord-balt" name="pz:allow" value="1"/>
 	</settings>
 
+	<xi:include href="../../settings/secrets/hgw-bsb.xml"/>
+	<settings src="settings/bsb.xml"/>
+	<settings>
+		<set target="bsb/sisis-ost" name="pz:allow" value="1"/>
+	</settings>
 
 
 	<xi:include href="../metadata/vifanord-extras.xml"/>
