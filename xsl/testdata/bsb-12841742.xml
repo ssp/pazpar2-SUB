@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--
+  CD with leader »nam« (book).
+  https://opacplus.bsb-muenchen.de/metaopac/search?id=12841742
+  2014-03-05
+-->
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00737nam0a2200217   450 </l>
+  <c001>12841742</c001>
+  <d101 i1=" " i2=" ">
+    <sa>hun</sa>
+  </d101>
+  <d110 i1=" " i2=" ">
+    <sa>m</sa>
+  </d110>
+  <d200 i1="0" i2=" ">
+    <sa>Hunyadi La&#x301;szlo&#x301;</sa>
+    <sb>Tontra&#x308;ger</sb>
+    <se>opera ; in three acts</se>
+    <sg>Ferenc Erkel. Libretto by Be&#x301;ni Egressy. The music has been restored for the present recording, by Amade&#x301; Ne&#x301;meth</sg>
+  </d200>
+  <d210 i1=" " i2=" ">
+    <sa>Budapest</sa>
+    <sc>Hungaroton</sc>
+    <sd>1985</sd>
+  </d210>
+  <d215 i1=" " i2=" ">
+    <sa>3 CDs in Box : stereo, digital</sa>
+    <se>Beih.</se>
+  </d215>
+  <d700 i1=" " i2=" ">
+    <sa>Erkel</sa>
+    <sb>Ferenc</sb>
+  </d700>
+  <d701 i1=" " i2=" ">
+    <sa>Egressy</sa>
+    <sb>Be&#x301;ni</sb>
+  </d701>
+  <d701 i1=" " i2=" ">
+    <sa>Ne&#x301;meth</sa>
+    <sb>Amade&#x301;</sb>
+  </d701>
+  <d711 i1=" " i2=" ">
+    <sa>Ungarn</sa>
+    <sb>Ne&#x301;phadsereg</sb>
+    <s0>(DE-588)1215314-X</s0>
+  </d711>
+  <d711 i1=" " i2=" ">
+    <s0>(DE-588)1212748-6</s0>
+  </d711>
+  <d711 i1=" " i2=" ">
+    <s0>(DE-588)1213196-9</s0>
+  </d711>
+  <d801 i1=" " i2=" ">
+    <sa>DE</sa>
+    <sb>BVB</sb>
+  </d801>
+  <d900 i1=" " i2=" ">
+    <sa>BAY</sa>
+    <sb>12</sb>
+    <sd>Mus.CD 2013.946</sd>
+    <se>1</se>
+  </d900>
+  <d901 i1=" " i2=" ">
+    <sa>99991218159</sa>
+    <sb>Mus.CD 2013.946</sb>
+    <sd>0</sd>
+    <se>0</se>
+    <sf/>
+    <sg>63</sg>
+    <sh/>
+  </d901>
+  <d930 i1=" " i2=" ">
+    <sa>BV006059934</sa>
+  </d930>
+</r>

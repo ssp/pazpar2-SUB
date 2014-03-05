@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+  Presumably a journal with leader »nam« (book).
+  https://opacplus.bsb-muenchen.de/metaopac/search?id=12285902
+  2014-03-05
+-->
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00640nam0a2200193   450 </l>
+  <c001>12285902</c001>
+  <d011 i1=" " i2=" ">
+    <sa>1725-3209</sa>
+  </d011>
+  <d101 i1=" " i2=" ">
+    <sa>eng</sa>
+  </d101>
+  <d102 i1=" " i2=" ">
+    <sa>XA-BE</sa>
+  </d102>
+  <d110 i1=" " i2=" ">
+    <sa>r</sa>
+  </d110>
+  <d200 i1="0" i2=" ">
+    <sa>European economy</sa>
+    <sb>Elektronische Ressource</sb>
+    <sg>European Commission, Directorate-General for Economic and Financial Affairs</sg>
+    <sh>Occasional papers [Elektronische Ressource]</sh>
+  </d200>
+  <d207 i1=" " i2=" ">
+    <sa>Nr. 1.2003 -</sa>
+  </d207>
+  <d210 i1=" " i2=" ">
+    <sa>Brussels</sa>
+  </d210>
+  <d517 i1=" " i2=" ">
+    <sa>Occasional papers</sa>
+  </d517>
+  <d532 i1=" " i2=" ">
+    <sa>European economy &lt;Luxembourg&gt; / Occasional papers</sa>
+  </d532>
+  <d686 i1=" " i2=" ">
+    <sa>330</sa>
+  </d686>
+  <d711 i1=" " i2=" ">
+    <sa>Europa&#x308;ische Kommission</sa>
+    <sb>Generaldirektion Wirtschaft und Finanzen</sb>
+    <s0>(DE-588)2140595-5</s0>
+  </d711>
+  <d801 i1=" " i2=" ">
+    <sa>DE</sa>
+    <sb>BVB</sb>
+  </d801>
+  <d930 i1=" " i2=" ">
+    <sa>BV019707987</sa>
+  </d930>
+</r>

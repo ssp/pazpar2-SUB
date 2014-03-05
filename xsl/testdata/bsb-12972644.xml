@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+  Book with leader »nkm« (image).
+  https://opacplus.bsb-muenchen.de/metaopac/search?id=12972644
+  2014-03-05
+-->
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00783nkm0a2200217   450 </l>
+  <c001>12972644</c001>
+  <d010 i1=" " i2=" ">
+    <sa>978-2-7541-0712-9</sa>
+    <sd>40,00 EUR</sd>
+  </d010>
+  <d010 i1=" " i2=" ">
+    <sa>978-2-35433-132-0</sa>
+  </d010>
+  <d101 i1=" " i2=" ">
+    <sa>fre</sa>
+  </d101>
+  <d102 i1=" " i2=" ">
+    <sa>FR</sa>
+  </d102>
+  <d110 i1=" " i2=" ">
+    <sa>m</sa>
+  </d110>
+  <d200 i1="0" i2=" ">
+    <sa>Allegro barbaro</sa>
+    <se>Be&#x301;la Barto&#x301;k et la modernite&#x301; hongroise, 1905 - 1920 ; [exposition, Paris, Muse&#x301;e d'Orsay, 14 octobre 2013- 5 janvier 2014]</se>
+    <sg>[commissariat Claire Bernardi ...]</sg>
+  </d200>
+  <d210 i1=" " i2=" ">
+    <sa>Paris</sa>
+    <sc>Hazan [u.a.]</sc>
+    <sd>2013</sd>
+  </d210>
+  <d215 i1=" " i2=" ">
+    <sa>272 S.</sa>
+    <sd>25 cm</sd>
+  </d215>
+  <d686 i1=" " i2=" ">
+    <sa>2.1</sa>
+    <sa>G:hu S:gm Z:41</sa>
+    <sa>G:hu S:nb Z:41</sa>
+  </d686>
+  <d701 i1=" " i2=" ">
+    <sa>Bernardi</sa>
+    <sb>Claire</sb>
+  </d701>
+  <d711 i1=" " i2=" ">
+    <sa>Etablissement Public des Muse&#x301;es d'Orsay et de l'Orangerie (Paris)</sa>
+    <s0>(DE-588)16337590-2</s0>
+  </d711>
+  <d801 i1=" " i2=" ">
+    <sa>DE</sa>
+    <sb>BVB</sb>
+  </d801>
+  <d900 i1=" " i2=" ">
+    <sa>BAY</sa>
+    <sb>12</sb>
+    <sd>4 2013.7593</sd>
+    <se>1</se>
+  </d900>
+  <d901 i1=" " i2=" ">
+    <sa>99991293155</sa>
+    <sb>4 2013.7593</sb>
+    <sd>4</sd>
+    <se>0</se>
+    <sf/>
+    <sg>1</sg>
+    <sh/>
+  </d901>
+  <d930 i1=" " i2=" ">
+    <sa>BV041598691</sa>
+  </d930>
+</r>

@@ -44,10 +44,10 @@
 	<!-- Retrieval settings -->
 	<set name="pz:requestsyntax" value="unimarc"/>
 	<set name="pz:elements" value="F"/>
-	<set name="pz:queryencoding" value="utf-8"/>
+	<set name="pz:queryencoding" value="marc8"/>
 
 	<!-- Result normalization settings -->
-	<set name="pz:nativesyntax" value="txml"/>
+	<set name="pz:nativesyntax" value="txml;iso5426"/>
 	<set name="pz:xslt" value="xsl/convert/tunimarc.xsl,xsl/pz/medium/unknown.xsl,xsl/pz/final/finalise.xsl"/>
 
 
