@@ -6,42 +6,42 @@
 ## Einrichtung
 Auf dem Server ist aus dem Paketen von Index Data pazpar2 installiert. Es wird mindestens pazpar2 1.6.39 mit yaz 5.0.18 benötigt. pazpar2 installiert ein fertiges init Skript, mit dem der Dienst gestartet und beendet werden kann.
 
-Die Konfigurationsdateien liegen in `/etc/pazpar2`. Zu diesem Ordner ist dieses Repository mit Subrepositories als Ordner `vifanord-config` hinzugefügt. Weiterhin sind einige Symlinks hinzugefügt, bzw. Dateien ersetzt.
+Die Konfigurationsdateien liegen in `/etc/pazpar2`. Zu diesem Ordner ist dieses Repository mit Subrepositories als Ordner `vifanord-config` hinzugefügt. Weiterhin sind die Symlinks `server.xml`, `services`, `settings`, `xsl` hinzugefügt, ersetzt.
 
-   > ls -l /etc/pazpar2/
+	> ls -l /etc/pazpar2/
 
-   -rw-r--r--  1 itvifa itvifa   182 Okt 28 16:55 ap2pazpar2.cfg
-   -rw-r--r--  1 itvifa itvifa   229 Jan 18  2013 ap2pazpar2-js.cfg
-   -rw-r--r--  1 itvifa itvifa  3272 Aug 13  2013 cf.xsl
-   drwxr-xr-x 11 itvifa itvifa  4096 Jan 29  2013 conf
-   -rw-r--r--  1 itvifa itvifa  6682 Jan 18  2013 dads-pz2.xsl
-   -rw-r--r--  1 itvifa itvifa  8516 Jan 18  2013 danmarc2.xsl
-   -rw-r--r--  1 itvifa itvifa  2084 Jan 18  2013 dc.xsl
-   -rw-r--r--  1 root   root    2588 Jan  7 14:04 dkabm.xsl
-   -rw-r--r--  1 itvifa itvifa   646 Jan 18  2013 marc21-ourl.xsl
-   -rw-r--r--  1 itvifa itvifa 16259 Jan 18  2013 marc21.xsl
-   -rw-r--r--  1 itvifa itvifa  9991 Jan 18  2013 marc22.xsl
-   -rw-r--r--  1 itvifa itvifa  2776 Jan 18  2013 MarcXML2TurboMarc.xsl
-   -rw-r--r--  1 itvifa itvifa  1995 Jan 18  2013 oai_dc.xsl
-   -rw-r--r--  1 itvifa itvifa  1695 Apr 26  2013 opac_turbomarc.xsl
-   -rw-r--r--  1 itvifa itvifa  1693 Apr 26  2013 opac.xsl
-   -rw-r--r--  1 itvifa itvifa   885 Jan 18  2013 pp2out-to-carrot2.xsl
-   -rw-r--r--  1 itvifa itvifa  5185 Jan 18  2013 primo-pz2.xsl
-   -rw-r--r--  1 itvifa itvifa  4875 Jan 18  2013 pz2-ourl-base.xsl
-   -rw-r--r--  1 itvifa itvifa  2895 Jan 18  2013 pz2-ourl-marc21.xsl
-   -rw-r--r--  1 itvifa itvifa   648 Jan 18  2013 pz2-solr.xsl
-   -rw-r--r--  1 itvifa itvifa  1788 Jan 18  2013 server-status-nagios.xsl
-   lrwxrwxrwx  1 itvifa itvifa    23 Mär  3 11:31 __server.xml -> vifanord-config/HGW.xml__
-   lrwxrwxrwx  1 itvifa itvifa    24 Mär  3 11:31 __services -> vifanord-config/services__
-   drwxr-xr-x  2 itvifa itvifa  4096 Feb 20 10:35 services-available
-   drwxr-xr-x  2 itvifa itvifa    25 Jan 29  2013 services-enabled
-   lrwxrwxrwx  1 itvifa itvifa    25 Mär  3 11:31 __settings -> vifanord-config/settings/__
-   -rw-r--r--  1 itvifa itvifa  1790 Aug 30  2013 solr-pz2.xsl
-   -rw-r--r--  1 itvifa itvifa 26719 Aug 13  2013 tmarc.xsl
-   -rw-r--r--  1 itvifa itvifa  3002 Jan 18  2013 unimarc.xsl
-   -rw-r--r--  1 itvifa itvifa   358 Jan 18  2013 usmarc.xsl
-   drwxr-xr-x 11 itvifa itvifa  4096 Feb 28 11:45 __vifanord-config__
-   lrwxrwxrwx  1 itvifa itvifa    20 Mär  3 11:31 __xsl -> vifanord-config/xsl/__
+	-rw-r--r--  1 itvifa itvifa   182 Okt 28 16:55 ap2pazpar2.cfg
+	-rw-r--r--  1 itvifa itvifa   229 Jan 18  2013 ap2pazpar2-js.cfg
+	-rw-r--r--  1 itvifa itvifa  3272 Aug 13  2013 cf.xsl
+	drwxr-xr-x 11 itvifa itvifa  4096 Jan 29  2013 conf
+	-rw-r--r--  1 itvifa itvifa  6682 Jan 18  2013 dads-pz2.xsl
+	-rw-r--r--  1 itvifa itvifa  8516 Jan 18  2013 danmarc2.xsl
+	-rw-r--r--  1 itvifa itvifa  2084 Jan 18  2013 dc.xsl
+	-rw-r--r--  1 root   root    2588 Jan  7 14:04 dkabm.xsl
+	-rw-r--r--  1 itvifa itvifa   646 Jan 18  2013 marc21-ourl.xsl
+	-rw-r--r--  1 itvifa itvifa 16259 Jan 18  2013 marc21.xsl
+	-rw-r--r--  1 itvifa itvifa  9991 Jan 18  2013 marc22.xsl
+	-rw-r--r--  1 itvifa itvifa  2776 Jan 18  2013 MarcXML2TurboMarc.xsl
+	-rw-r--r--  1 itvifa itvifa  1995 Jan 18  2013 oai_dc.xsl
+	-rw-r--r--  1 itvifa itvifa  1695 Apr 26  2013 opac_turbomarc.xsl
+	-rw-r--r--  1 itvifa itvifa  1693 Apr 26  2013 opac.xsl
+	-rw-r--r--  1 itvifa itvifa   885 Jan 18  2013 pp2out-to-carrot2.xsl
+	-rw-r--r--  1 itvifa itvifa  5185 Jan 18  2013 primo-pz2.xsl
+	-rw-r--r--  1 itvifa itvifa  4875 Jan 18  2013 pz2-ourl-base.xsl
+	-rw-r--r--  1 itvifa itvifa  2895 Jan 18  2013 pz2-ourl-marc21.xsl
+	-rw-r--r--  1 itvifa itvifa   648 Jan 18  2013 pz2-solr.xsl
+	-rw-r--r--  1 itvifa itvifa  1788 Jan 18  2013 server-status-nagios.xsl
+	lrwxrwxrwx  1 itvifa itvifa    23 Mär  3 11:31 server.xml -> vifanord-config/HGW.xml
+	lrwxrwxrwx  1 itvifa itvifa    24 Mär  3 11:31 services -> vifanord-config/services
+	drwxr-xr-x  2 itvifa itvifa  4096 Feb 20 10:35 services-available
+	drwxr-xr-x  2 itvifa itvifa    25 Jan 29  2013 services-enabled
+	lrwxrwxrwx  1 itvifa itvifa    25 Mär  3 11:31 settings -> vifanord-config/settings/
+	-rw-r--r--  1 itvifa itvifa  1790 Aug 30  2013 solr-pz2.xsl
+	-rw-r--r--  1 itvifa itvifa 26719 Aug 13  2013 tmarc.xsl
+	-rw-r--r--  1 itvifa itvifa  3002 Jan 18  2013 unimarc.xsl
+	-rw-r--r--  1 itvifa itvifa   358 Jan 18  2013 usmarc.xsl
+	drwxr-xr-x 11 itvifa itvifa  4096 Feb 28 11:45 vifanord-config
+	lrwxrwxrwx  1 itvifa itvifa    20 Mär  3 11:31 xsl -> vifanord-config/xsl/
 
 
 Die Struktur des Repositories `vifanord-config` ist in dessen Readme beschrieben. Das Folgende bezieht sich auf seinen Inhalt.
