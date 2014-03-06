@@ -58,5 +58,6 @@
 	<set target="bsb/sisis-ost" name="pz:name" value="BSB Osteuropasammlung"/>
 	<set target="bsb/sisis-ost" name="pz:allow" value="0"/>
 	<set target="bsb/sisis-ost" name="pz:pqf_prefix" value="@and @attr 1=5054 oe"/>
+	<set target="bsb/sisis-ost" name="region" value="balt"/>
 	
 </settings>

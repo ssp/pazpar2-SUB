@@ -86,5 +86,12 @@
 	-->
 	<set target="sru.gbv.de/olcssg-oeu" name="pz:name" value="Aufsätze Osteuropa"/>
 	<set target="sru.gbv.de/olcssg-oeu" name="pz:allow" value="0"/>
+	<set target="sru.gbv.de/olcssg-oeu" name="region" value="balt"/>
+	
+	
+	<!--
+		Stabi Berlin
+	-->
+	<set target="sru.gbv.de/gvk-stabikat" name="region" value="balt"/>
 
 </settings>
