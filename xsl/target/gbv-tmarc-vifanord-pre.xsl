@@ -30,7 +30,7 @@
 		* create the region field
 		* choose an appropriate OLC subdatabase when working with OLC
 	-->
-	<xsl:template match="tmarc:d084[tmarc:s2='olc-ssg' or tmarc:s2='ssgn'
+	<xsl:template match="tmarc:d084[tmarc:s2='olc-ssg'
 							or (tmarc:s2='z' and tmarc:sq='DE-601')]">
 		<xsl:copy>
 			<xsl:apply-templates select="@*|node()"/>
