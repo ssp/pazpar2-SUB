@@ -1,6 +1,6 @@
 # pazpar2 configuration files
 
-This repository contains the configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon.
+This repository contains configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon.
 
 The files were created for [SUB Göttingen](http://www.sub.uni-goettingen.de) and [Universitätsbibliothek Greifswald](http://www.uni-greifswald.de/bibliothek.html).
 
@@ -51,4 +51,3 @@ The configuration requires at least pazpar2 1.6.39 with yaz 5.0.18 to work.
 
 ## Contact
 In case you have questions or need help creating a pazpar2 service, please [get in touch with Sven-S. Porst](mailto:ssp-web@earthlingsoft.net?subject=pazpar2).
-
