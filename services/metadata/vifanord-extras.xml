@@ -19,13 +19,13 @@
 	<metadata name="gbv-library"
 		merge="unique"
 		termlist="yes"
-		limitmap="local:,ccl:bib"
+		limitmap="local:"
 	/>
 	
 	<metadata name="se-kb-collection"
 		merge="unique"
 		termlist="yes"
-		limitmap="local:,ccl:collection"
+		limitmap="local:"
 	/>
 
 </metadata>
