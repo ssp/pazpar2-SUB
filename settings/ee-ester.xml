@@ -40,19 +40,9 @@
 
 
 	<!-- Databases -->
-	<set target="ee-ester/tallinn" name="pz:url" value="tallinn.ester.ee:212/innopac"/>
-	<set target="ee-ester/tallinn" name="pz:name" value="NB Estland"/>
-	<set target="ee-ester/tallinn" name="pz:allow" value="0"/>
-	<set target="ee-ester/tallinn" name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
-
-	<set target="ee-ester/tallinn" name="pz:url" value="tallinn.ester.ee:212/jrnl"/>
-	<set target="ee-ester/tallinn" name="pz:name" value="NB Estland Artikel"/>
-	<set target="ee-ester/tallinn" name="pz:allow" value="0"/>
-	<set target="ee-ester/tallinn" name="catalogueURLHintPrefix" value="http://tallinn.ester.ee/record="/>
-
-	<set target="ee-ester/tartu" name="pz:url" value="tartu.ester.ee:212/innopac"/>
-	<set target="ee-ester/tartu" name="pz:name" value="UB Tartu"/>
+	<set target="ee-ester/tartu" name="pz:url" value="193.40.4.242:212/innopac"/>
+	<set target="ee-ester/tartu" name="pz:name" value="Estnischer Verbundkatalog ESTER"/>
 	<set target="ee-ester/tartu" name="pz:allow" value="0"/>
-	<set target="ee-ester/tartu" name="catalogueURLHintPrefix" value="http://tartu.ester.ee/record="/>
+	<set target="ee-ester/tartu" name="catalogueURLHintPrefix" value="http://193.40.4.242/record="/>
 
 </settings>
