@@ -6,7 +6,7 @@
 	<!--
 		Metasearch configuration for vifanord.
 		
-		2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+		2014-2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
 	-->
 
 	<!-- non-zero to enable threaded operation -->
@@ -17,21 +17,21 @@
 		<proxy host="localhost" port="80"/>
 
 
-		<xi:include href="services/HGW/vifanord.xml"/>
-		<xi:include href="services/HGW/vifanord-balt.xml"/>
-		<xi:include href="services/HGW/vifanord-nord.xml"/>
+		<xi:include href="services/CAU/vifanord.xml"/>
+		<xi:include href="services/CAU/vifanord-balt.xml"/>
+		<xi:include href="services/CAU/vifanord-nord.xml"/>
 
-		<xi:include href="services/HGW/vifanord-themen.xml"/>
-		<xi:include href="services/HGW/vifanord-themen-balt.xml"/>
-		<xi:include href="services/HGW/vifanord-themen-nord.xml"/>
+		<xi:include href="services/CAU/vifanord-themen.xml"/>
+		<xi:include href="services/CAU/vifanord-themen-balt.xml"/>
+		<xi:include href="services/CAU/vifanord-themen-nord.xml"/>
 
-		<xi:include href="services/HGW/vifanord-geo.xml"/>
-		<xi:include href="services/HGW/vifanord-geo-balt.xml"/>
-		<xi:include href="services/HGW/vifanord-geo-nord.xml"/>
+		<xi:include href="services/CAU/vifanord-geo.xml"/>
+		<xi:include href="services/CAU/vifanord-geo-balt.xml"/>
+		<xi:include href="services/CAU/vifanord-geo-nord.xml"/>
 
-		<xi:include href="services/HGW/vifanord-ir.xml"/>
-		<xi:include href="services/HGW/vifanord-ir-balt.xml"/>
-		<xi:include href="services/HGW/vifanord-ir-nord.xml"/>
+		<xi:include href="services/CAU/vifanord-ir.xml"/>
+		<xi:include href="services/CAU/vifanord-ir-balt.xml"/>
+		<xi:include href="services/CAU/vifanord-ir-nord.xml"/>
 
 
 		<icu_chain id="relevance" locale="en">

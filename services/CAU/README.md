@@ -4,7 +4,7 @@
 
 
 ## Einrichtung
-Auf dem Server ist aus dem Paketen von Index Data pazpar2 installiert. Es wird mindestens pazpar2 1.6.39 mit yaz 5.0.18 benötigt. pazpar2 installiert ein fertiges init Skript, mit dem der Dienst gestartet und beendet werden kann.
+pazpar2 Installation aus den Paketen von Index Data. Es wird und mindestens pazpar2 1.8.6 mit yaz 5.10.2 empfohlen (minimum ist pazpar2 1.6.39 mit yaz 5.0.18 benötigt, ). pazpar2 installiert ein fertiges init Skript, mit dem der Dienst gestartet und beendet werden kann.
 
 Die Konfigurationsdateien liegen in `/etc/pazpar2`. Zu diesem Ordner ist dieses Repository mit Subrepositories als Ordner `vifanord-config` hinzugefügt. Weiterhin sind die Symlinks `server.xml`, `services`, `settings`, `xsl` hinzugefügt, ersetzt.
 
@@ -31,7 +31,7 @@ Die Konfigurationsdateien liegen in `/etc/pazpar2`. Zu diesem Ordner ist dieses 
 	-rw-r--r--  1 itvifa itvifa  2895 Jan 18  2013 pz2-ourl-marc21.xsl
 	-rw-r--r--  1 itvifa itvifa   648 Jan 18  2013 pz2-solr.xsl
 	-rw-r--r--  1 itvifa itvifa  1788 Jan 18  2013 server-status-nagios.xsl
-	lrwxrwxrwx  1 itvifa itvifa    23 Mär  3 11:31 server.xml -> vifanord-config/HGW.xml
+	lrwxrwxrwx  1 itvifa itvifa    23 Mär  3 11:31 server.xml -> vifanord-config/CAU.xml
 	lrwxrwxrwx  1 itvifa itvifa    24 Mär  3 11:31 services -> vifanord-config/services
 	drwxr-xr-x  2 itvifa itvifa  4096 Feb 20 10:35 services-available
 	drwxr-xr-x  2 itvifa itvifa    25 Jan 29  2013 services-enabled
@@ -49,7 +49,7 @@ Die Struktur des Repositories `vifanord-config` ist in dessen Readme beschrieben
 
 ## Server
 
-Der pazpar2 Server lädt standardmäßig die Datei `/etc/pazpar2/server.xml`, also die Datei `vifanord-config/HGW.xml`. Sie bindet die Konfigurationsdateien für die verschiedenen pazpar2 Services für vifanord ein.
+Der pazpar2 Server lädt standardmäßig die Datei `/etc/pazpar2/server.xml`, also die Datei `vifanord-config/CAU.xml`. Sie bindet die Konfigurationsdateien für die verschiedenen pazpar2 Services für vifanord ein.
 
 [Dokumentation der pazpar2 Konfigurationsdateien](http://www.indexdata.com/pazpar2/doc/pazpar2_conf.html)
 
@@ -57,22 +57,22 @@ Der pazpar2 Server lädt standardmäßig die Datei `/etc/pazpar2/server.xml`, al
 
 Pazpar2 bietet verschiedene Dienste (Services) an. Ein solcher Dienst ist eine vorkonfigurierte Metasuche, bestehend aus der Konfiguration der abzufragenden Server und des internen Metadatenmodells.
 
-Die Dienstkonfigurationen für vifanord liegen im Ordner `services/HGW`. Es gibt für jeden der 12 vifanord Sucheinstiege einen Dienst mit Namen `vifanord[-themen|geo|ir][-balt|-nord]`.
+Die Dienstkonfigurationen für vifanord liegen im Ordner `services/CAU`. Es gibt für jeden der drei vifanord Sucheinstiege einen Dienst mit Namen `vifanord[-themen|geo|ir]`.
 
-Die Dienste binden vorkonfigurierte Einstellunge für die verschiedenen Server ein, die im Ordner `settings` liegen. So können die Konfigurationen wiederverwendet werden.
+Die Dienste binden vorkonfigurierte Einstellungen für die verschiedenen Server ein, die im Ordner `settings` liegen. So können die Konfigurationen wiederverwendet werden.
 
-Das Metadatenmodell beschreibt die von pazpar2 genutzten Felder und konfiguriert die gelieferten Facetten sowie die Deduplizierung. Es ist hauptsächlich durch `metadata/default.xml` beschrieben, mit spezifischen Anpassungen für vifanord in `metadata/vifanord-extras.xml`. Da bei pazpar2s Metadatenkonfiguration der zuerst eingelesene Wert gilt, ist es wichtig, daß diese Datei _vor_ der allgemeinen eingebunden wird.
+Das Metadatenmodell beschreibt die von pazpar2 genutzten Felder und konfiguriert die gelieferten Facetten sowie die Deduplizierung. Es ist hauptsächlich durch `metadata/default.xml` beschrieben, mit spezifischen Anpassungen für vifanord in `metadata/vifanord-extras.xml`. Da bei pazpar2s Metadatenkonfiguration der zuerst eingelesene Wert gilt, ist es wichtig, dass diese Datei _vor_ der allgemeinen eingebunden wird.
 
 
 ## Einstellungen
 
 Im Ordner `settings` sind die Server Konfigurationen möglichst generisch abgelegt. Intern identifiziert pazpar2 die Einstellungen über das `target` Attribut. Es kann mit einem `*` enden, um eine Einstellung auf alle Targets, die gleich beginnen anzuwenden. Dieses Attribut wird auch verwendet, um die lokalisierten Namen zur Anzeige zu erzeugen (siehe `facet-xtargets` in  [pazpar2-vifanord.js](https://github.com/ssp/vifanord-pazpar2-typo3/blob/master/pazpar2-vifanord.js)).
 
-Um von pazpar2 genutzt zu werden, muß für ein Target die `pz:name` Einstellung gesetzt sein. Mit der `pz:allow` Einstellung kann das Target durch den Wert 0/1 deaktiviert/aktiviert werden.
+Um von pazpar2 genutzt zu werden, muss für ein Target die `pz:name` Einstellung gesetzt sein. Mit der `pz:allow` Einstellung kann das Target durch den Wert 0/1 deaktiviert/aktiviert werden.
 
 Die generelle Konfiguration ist in der [pazpar2 Dokumentation](http://www.indexdata.com/pazpar2/doc/pazpar2_conf.html) beschrieben. Über die Verbindung zur Server hinaus besonders wichtige Felder für uns sind:
 
-* `pz:cclmap:*`: Konfiguration der pazpar2 CCL Abfrageschlüssel durch Angabe der zugehörigen Serverabfrage. Für die vifanord Oberfläche erwarten wir, daß `term`, `title`, `person`, `subject`, `date` konfiguriert sind. Für die thematische Suche nutzen wir (in den zugehörigen Targets) zusätzlich `ddc-ir`, `ddc-t`, `ddc-g` und `lsg`.
+* `pz:cclmap:*`: Konfiguration der pazpar2 CCL Abfrageschlüssel durch Angabe der zugehörigen Serverabfrage. Für die vifanord Oberfläche erwarten wir, dass `term`, `title`, `person`, `subject`, `date` konfiguriert sind. Für die thematische Suche nutzen wir (in den zugehörigen Targets) zusätzlich `ddc-ir`, `ddc-t`, `ddc-g` und `lsg`.
 * `pz:limitmap:*`: (selten) falls die Möglichkeit besteht bei Auswahl einer Facette, die Suche auf dem Server verfeinert neu zu starten, kann hier für den Facettennamen angegeben werden, welche Abfragebedingung hinzugefügt werden soll.
 * `pz:maxrecs`: Maximale Anzahl der vom Server zu ladenden Treffer.
 * `pz:allow`: Wird das Target in die Suche eingebunden (1) oder nicht (0)
