@@ -56,7 +56,7 @@
 	<set target="vifanord-zsql/irall*" name="pz:url"
 		value="ub-baltica1.ub.uni-greifswald.de:3950/irall"/>
 	<set target="vifanord-zsql/irall*" name="pz:xslt"
-		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-ir-post1.xsl,xsl/target/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/fields.xsl,xsl/unused/vifanord-zsql-ir-post1.xsl,xsl/unused/vifanord-zsql-ir-post2.xsl,xsl/pz/final/finalise.xsl"/>
 	
 	<set target="vifanord-zsql/irall" name="pz:name" value="Internetquellen vifanord"/>
 	<set target="vifanord-zsql/irall" name="pz:allow" value="0"/>
@@ -79,7 +79,7 @@
 	<set target="vifanord-zsql/FES" name="pz:name" value="Katalogauszug FES"/>
 	<set target="vifanord-zsql/FES" name="pz:allow" value="0"/>
 	<set target="vifanord-zsql/FES" name="pz:xslt"
-		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/fields.xsl,xsl/unused/vifanord-zsql-fes-post.xsl,xsl/pz/final/finalise.xsl"/>
 	
 	<!--
 		BMEB
@@ -89,7 +89,7 @@
 	<set target="vifanord-zsql/BMEB" name="pz:name" value="Baltic Marine Environment"/>
 	<set target="vifanord-zsql/BMEB" name="pz:allow" value="0"/>
 	<set target="vifanord-zsql/BMEB" name="pz:xslt"
-		 value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-bmeb-post.xsl,xsl/pz/final/finalise.xsl"/>
+		 value="xsl/convert/fields.xsl,xsl/unused/vifanord-zsql-bmeb-post.xsl,xsl/pz/final/finalise.xsl"/>
 
 	<!--
 		Latvian National Library
@@ -102,7 +102,7 @@
 	<set target="vifanord-zsql/LETTNB-MON" name="pz:name" value="NB Lettland Bücher"/>
 	<set target="vifanord-zsql/LETTNB-MON" name="pz:allow" value="0"/>
 	<set target="vifanord-zsql/LETTNB-MON" name="pz:xslt"
-		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/book.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/fields.xsl,xsl/unused/vifanord-zsql-lett-post.xsl,xsl/pz/medium/book.xsl,xsl/pz/final/finalise.xsl"/>
 
 	<set target="vifanord-zsql/LETTNB-ANA" name="pz:url"
 		value="ub-baltica1.ub.uni-greifswald.de:3956/LETTNB-ANA"/>
@@ -110,6 +110,6 @@
 	<set target="vifanord-zsql/LETTNB-ANA" name="pz:name" value="NB Lettland Aufsätze"/>
 	<set target="vifanord-zsql/LETTNB-ANA" name="pz:allow" value="0"/>
 	<set target="vifanord-zsql/LETTNB-ANA" name="pz:xslt"
-		value="xsl/convert/fields.xsl,xsl/target/vifanord-zsql-lett-post.xsl,xsl/pz/medium/article.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/fields.xsl,xsl/unused/vifanord-zsql-lett-post.xsl,xsl/pz/medium/article.xsl,xsl/pz/final/finalise.xsl"/>
 
 </settings>
