@@ -3,7 +3,7 @@
 	Swedish national library:
 		* extract sub-database ID
 
-	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+	2014-2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 <xsl:stylesheet
@@ -23,11 +23,12 @@
 
 
 	<!--
-		Extract sub-database/collection ID from 852 $5,
+		Extract sub-database/collection ID from 852 $5 or 042 $9.
 		only keep the databases we know and create the collection field.
 	-->
-	<xsl:template match="tmarc:d852">
-		<xsl:for-each select="tmarc:s5">
+	<xsl:template match="tmarc:d852|tmarc:d042">
+		<xsl:copy-of select="."/>
+		<xsl:for-each select="tmarc:s5[parent::tmarc:d852]|tmarc:s9[parent::tmarc:d042]">
 			<xsl:if test="
 				.='NB' or
 				.='COL' or
