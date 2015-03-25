@@ -57,7 +57,7 @@ Der pazpar2 Server lädt standardmäßig die Datei `/etc/pazpar2/server.xml`, al
 
 Pazpar2 bietet verschiedene Dienste (Services) an. Ein solcher Dienst ist eine vorkonfigurierte Metasuche, bestehend aus der Konfiguration der abzufragenden Server und des internen Metadatenmodells.
 
-Die Dienstkonfigurationen für vifanord liegen im Ordner `services/CAU`. Es gibt für jeden der drei vifanord Sucheinstiege einen Dienst mit Namen `vifanord[-themen|geo|ir]`.
+Die Dienstkonfigurationen für vifanord liegen im Ordner `services/CAU`. Es gibt für jeden der drei vifanord Sucheinstiege einen Dienst mit Namen `vifanord[-themen|-geo]`.
 
 Die Dienste binden vorkonfigurierte Einstellungen für die verschiedenen Server ein, die im Ordner `settings` liegen. So können die Konfigurationen wiederverwendet werden.
 

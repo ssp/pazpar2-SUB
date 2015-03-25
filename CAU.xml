@@ -18,20 +18,8 @@
 
 
 		<xi:include href="services/CAU/vifanord.xml"/>
-		<xi:include href="services/CAU/vifanord-balt.xml"/>
-		<xi:include href="services/CAU/vifanord-nord.xml"/>
-
 		<xi:include href="services/CAU/vifanord-themen.xml"/>
-		<xi:include href="services/CAU/vifanord-themen-balt.xml"/>
-		<xi:include href="services/CAU/vifanord-themen-nord.xml"/>
-
 		<xi:include href="services/CAU/vifanord-geo.xml"/>
-		<xi:include href="services/CAU/vifanord-geo-balt.xml"/>
-		<xi:include href="services/CAU/vifanord-geo-nord.xml"/>
-
-		<xi:include href="services/CAU/vifanord-ir.xml"/>
-		<xi:include href="services/CAU/vifanord-ir-balt.xml"/>
-		<xi:include href="services/CAU/vifanord-ir-nord.xml"/>
 
 
 		<icu_chain id="relevance" locale="en">

@@ -5,30 +5,19 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	id="vifanord">
 <!--
-	Targets for vifanord main search, all regions.
+	Targets for vifanord main search.
 	http://vifanord.de
 
-	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+	2014-2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 	<settings src="settings/vifanord-general.xml"/>
 	
-	<settings src="settings/vifanord-zsql.xml"/>
-	<settings>
-		<set target="vifanord-zsql/irall" name="pz:allow" value="1"/>
-		<set target="vifanord-zsql/FES" name="pz:allow" value="1"/>
-		<set target="vifanord-zsql/BMEB" name="pz:allow" value="1"/>
-		<set target="vifanord-zsql/LETTNB-MON" name="pz:allow" value="1"/>
-		<set target="vifanord-zsql/LETTNB-ANA" name="pz:allow" value="1"/>
-	</settings>
-	
 	<settings src="settings/gbv-sru.xml"/>
 	<settings src="settings/vifanord-gbv.xml"/>
 	<settings>
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:allow" value="1"/>
-		<set target="sru.gbv.de/olc-vifanord" name="pz:allow" value="1"/>
-		<set target="sru.gbv.de/olcssg-oeu" name="pz:allow" value="1"/>
-		<set target="sru.gbv.de/gvk-stabikat" name="pz:allow" value="1"/>
+		<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:allow" value="1"/>
+		<set target="sru.gbv.de/olc-vifanord-nord" name="pz:allow" value="1"/>
 	</settings>
 	
 	<settings src="settings/dk-kb.xml"/>
@@ -49,35 +38,15 @@
 	<settings src="settings/fi-helka.xml"/>
 	<settings src="settings/bonis.xml"/>
 	
-	<settings src="settings/ee-ester.xml"/>
-	<settings>
-		<set target="ee-ester/tartu" name="pz:allow" value="1"/>
-	</settings>
-	
-	<settings src="settings/lt-libis.xml"/>
-	
 	<settings src="settings/hu-berlin.xml"/>
 	<settings>
 		<set target="hu-berlin/TB_SKANDINAVISTIK" name="pz:allow" value="1"/>
 	</settings>
 	
-	<settings src="settings/hebis.xml"/>
-	<settings>
-		<set target="hebis/hebis-herder" name="pz:allow" value="1"/>
-	</settings>
-	
-	<settings src="settings/herder-litdok.xml"/>
-	
 	<settings src="settings/swb.xml"/>
 	<settings src="settings/vifanord-swb.xml"/>
 	<settings>
-		<set target="swb/wao-vifanord" name="pz:allow" value="1"/>
-	</settings>
-
-	<xi:include href="../../settings/secrets/hgw-bsb.xml"/>
-	<settings src="settings/bsb.xml"/>
-	<settings>
-		<set target="bsb/sisis-ost" name="pz:allow" value="1"/>
+		<set target="swb/wao-vifanord-nord" name="pz:allow" value="1"/>
 	</settings>
 
 

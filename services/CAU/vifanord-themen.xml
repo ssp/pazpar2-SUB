@@ -5,22 +5,18 @@
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	id="vifanord-themen">
 <!--
-	Targets for vifanord subject search, all regions.
-
-	2014: Sven-S. Porst <ssp-web@earthlingsoft.net>
+	Targets for vifanord subject search.
+	http://www.vifanord.de/index.php?id=15
+	
+	2014-2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 	<settings src="settings/vifanord-general.xml"/>
 	
-	<settings src="settings/vifanord-zsql.xml"/>
-	<settings>
-		<set name="pz:allow" target="vifanord-zsql/irall" value="1"/>
-	</settings>
-	
 	<settings src="settings/gbv-sru.xml"/>
 	<settings src="settings/vifanord-gbv.xml"/>
 	<settings>
-		<set target="sru.gbv.de/fachopac-vifanord" name="pz:allow" value="1"/>
+		<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:allow" value="1"/>
 	</settings>
 
 
