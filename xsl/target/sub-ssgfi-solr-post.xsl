@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-	Post-processes records coming from the ssgfi1 Solr index after
+	Post-processes records coming from the SSG-FI Solr index after
 	they are processed by solr-pz2.xsl.
 
 	2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>

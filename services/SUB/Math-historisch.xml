@@ -9,7 +9,7 @@
 	http://vifamath.de/historische-mathematik/
 	http://vifamath.de/historical-mathematics/?L=1
 
-	* SUB Solr Indexes (SSGFI1):
+	* SUB Solr Indexes (SSGFI):
 		* Digitalisate
 	* FIZ Karlsruhe (SRU):
 		* ElibM
@@ -17,10 +17,10 @@
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/sub-guides-solr.xml"/>
+	<settings src="settings/sub-ssgfi-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Digitalisate"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:maxrecs" value="250"/>
+		<set target="ssgfi/digreg" name="pz:allow" value="1"/>
+		<set target="ssgfi/digreg" name="pz:maxrecs" value="250"/>
 	</settings>
 
 	<settings src="settings/fiz-elibm.xml"/>

@@ -58,13 +58,13 @@
 
 	<!-- Default: Guide Databases, set the medium to website for all records -->
 	<set name="pz:xslt"
-		value="xsl/convert/solr.xsl,xsl/target/sub-guide-solr-post.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/solr.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
 	<!-- DigReg: create journal-subpart field from the metadata -->
 	<set name="pz:xslt" target="sru.sub.uni-goettingen.de/ssgfi/math-digreg"
-		value="xsl/convert/solr.xsl,xsl/target/sub-guide-solr-post.xsl,xsl/pz/journal-subpart-create.xsl,xsl/pz/electronic-url-fulltext.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/solr.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/journal-subpart-create.xsl,xsl/pz/electronic-url-fulltext.xsl,xsl/pz/final/finalise.xsl"/>
 	<!-- JfM -->
 	<set name="pz:xslt" target="sru.sub.uni-goettingen.de/ssgfi/jfm"
-		value="xsl/convert/solr.xsl,xsl/target/jfm-id-post.xsl,xsl/target/sub-guide-solr-post.xsl,xsl/pz/final/finalise.xsl"/>
+		value="xsl/convert/solr.xsl,xsl/target/jfm-id-post.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/final/finalise.xsl"/>
 	<set name="catalogueURLHintPrefix" target="sru.sub.uni-goettingen.de/ssgfi/jfm"
 		value="http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&amp;maxdocs=1&amp;type=html&amp;format=complete&amp;an="/>
 		

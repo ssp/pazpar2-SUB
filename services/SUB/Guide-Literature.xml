@@ -9,15 +9,15 @@
 	http://aac.sub.uni-goettingen.de/literatur/guide/
 	http://aac.sub.uni-goettingen.de/en/literature/guide/
 
-	* SUB Solr Indexes (SSGFI1):
+	* SUB Solr Indexes (SSGFI):
 		* Literature Guide
 
 	2011-2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
-	<settings src="settings/sub-guides-solr.xml"/>
+	<settings src="settings/sub-ssgfi-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/lit" name="pz:name" value="Literature Guide"/>
+		<set target="ssgfi/lit" name="pz:allow" value="1"/>
 	</settings>
 
 

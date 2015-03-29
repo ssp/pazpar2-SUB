@@ -14,7 +14,7 @@
 		* TIB Hannover (technically: GVK restricted to TIB Hannover minus books available in Göttingen)
 		* Fachkatalog Mathematik without books available in Göttingen or Hannover
 		* Online Contents Mathematik
-	* SUB Solr Indexes (SSGFI1):
+	* SUB Solr Indexes (SSGFI):
 		* Math Guide
 		* Digitalisate
 		* Jahrbuch-Datenbank
@@ -43,13 +43,13 @@
 	</settings>
 
 
-	<settings src="settings/sub-guides-solr.xml"/>
+	<settings src="settings/sub-ssgfi-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/*" name="pz:maxrecs" value="100"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/digreg" name="pz:name" value="Digitalisate"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/mathdiss" name="pz:name" value="Dissertationen"/>
+		<set target="ssgfi/*" name="pz:maxrecs" value="100"/>
+		<set target="ssgfi/math" name="pz:allow" value="1"/>
+		<set target="ssgfi/digreg" name="pz:name" value="1"/>
+		<set target="ssgfi/jfm" name="pz:allow" value="1"/>
+		<set target="ssgfi/mathdiss" name="pz:allow" value="1"/>
 	</settings>
 
 

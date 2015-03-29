@@ -11,7 +11,7 @@
 
 	* GBV Databases (SRU):
 		* Göttingen Opac
-	* SUB Solr Indexes (SSGFI1):
+	* SUB Solr Indexes (SSGFI):
 		* Math Guide
 
 	2012: Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
@@ -22,9 +22,9 @@
 		<set target="sru.gbv.de/opac-de-7" name="pz:name" value="SUB Göttingen (GBV)"/>
 	</settings>
 
-	<settings src="settings/sub-guides-solr.xml"/>
+	<settings src="settings/sub-ssgfi-solr.xml"/>
 	<settings>
-		<set target="ssgfi1.sub.uni-goettingen.de:8081/solr/math" name="pz:name" value="Math Guide"/>
+		<set target="ssgfi/math" name="pz:allow" value="1"/>
 	</settings>
 
 

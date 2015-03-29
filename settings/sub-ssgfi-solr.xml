@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="ssgfi/*" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	pazpar2 configuration for SUB Göttingen SSG-FI Solr server.
+	
+	2011-2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<set name="pz:sru" value="solr"/>
+	<set name="pz:sru_version" value="1.4"/>
+
+	<set name="pz:maxrecs" value="1000"/>
+
+
+	<set name="pz:cclmap:term" value="s=al t=r"/>
+
+	<!-- full-text search; maps to unqualified search if it doesn’t exist -->
+	<set name="pz:cclmap:fulltext" value="s=al t=r"/>
+
+
+	<set name="pz:cclmap:title" value="1=Title s=al t=r"/>
+	<set name="pz:cclmap:person" value="1=pers t=r"/>
+	<!--
+		The Keywords field may not be the best for searches as interesting subject
+		titles may be present in LCSH and MSCverbal fields as well.
+	-->
+	<set name="pz:cclmap:subject" value="1=Keywords s=al t=r"/>
+
+	<set name="pz:cclmap:date" value="1=GOK s=1"/>
+
+	<!--
+		There is no reasonable publication date information for website records.
+		<set name="pz:cclmap:date" value="1=Published"/>
+	-->
+	<set name="pz:cclmap:isbn" value="1=ISBN t=r"/>
+	<set name="pz:cclmap:issn" value="1=ISSN t=r"/>
+
+
+	<!-- Date added -->
+	<set name="pz:cclmap:nel" value="1=Revised t=1"/>
+
+	<!-- GOK local classification subject search: Right-truncated phrase search -->
+	<set name="pz:cclmap:lkl" value="1=GOK s=1 t=r"/>
+	<set name="pz:cclmap:ddc" value="1=DDC s=1 t=r"/>
+	<set name="pz:cclmap:bkl" value="1=BK s=1 t=r"/>
+	<set name="pz:cclmap:msc" value="1=MSC s=1 t=r"/>
+	<!-- Fake search key for Freiberg classification. Should not return results. -->
+	<set name="pz:cclmap:fbg" value="1=BK s=1 t=r"/>
+
+	<!-- Allegro Format Key and Format field -->
+	<set name="pz:cclmap:fky" value="1=Source_Type s=1 t=1"/>
+
+	<!-- Passed to solr as the fl parameter: all fields we want solr to return. -->
+	<set name="pz:elements" value="*"/>
+
+	<!-- Result normalisation settings -->
+	<set name="pz:nativesyntax" value="xml;utf-8"/>
+
+
+	<!-- Deactivate all by default, pz:allow needs to be set to 1 for each database to be used in a service. -->
+	<set name="pz:allow" value="0"/>
+
+	<!-- Default: Guide Databases, set the medium to website for all records -->
+	<set name="pz:xslt"
+		value="xsl/convert/solr.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/medium/website.xsl,xsl/pz/final/finalise.xsl"/>
+	
+	<set target="ssgfi/hist" name="pz:name" value="History-Guide"/>
+	<set target="ssgfi/hist" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/hist"/>
+	<set target="ssgfi/lit" name="pz:name" value="Literature-Guide"/>
+	<set target="ssgfi/lit" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/lit"/>
+	<set target="ssgfi/geo" name="pz:name" value="Geo-Guide"/>
+	<set target="ssgfi/geo" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/geo"/>
+	<set target="ssgfi/math" name="pz:name" value="Math-Guide"/>
+	<set target="ssgfi/math" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/math"/>
+	<set target="ssgfi/forst" name="pz:name" value="Forestry-Guide"/>
+	<set target="ssgfi/forst" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/forst"/>
+	<set target="ssgfi/finnug" name="pz:name" value="Finnougristik-Guide"/>
+	<set target="ssgfi/finnug" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/finnug"/>
+
+	<!-- German Mathematics Theses: make all records electronic fulltexts -->
+	<set target="ssgfi/mathdiss" name="pz:name" value="Dissertationen"/>
+	<set target="ssgfi/mathdiss" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/mathdiss"/>
+	<set name="pz:xslt" target="ssgfi/mathdiss"
+		value="xsl/convert/solr.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/medium/electronic.xsl,xsl/pz/electronic-url-fulltext.xsl,xsl/pz/final/finalise.xsl"/>
+
+	<!-- DigReg: create journal-subpart field from the metadata -->
+	<set target="ssgfi/digreg" name="pz:name" value="Digitalisate"/>
+	<set target="ssgfi/digreg" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/digreg"/>
+	<set target="ssgfi/digreg" name="pz:xslt"
+		value="xsl/convert/solr.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/journal-subpart-create.xsl,xsl/pz/electronic-url-fulltext.xsl,xsl/pz/final/finalise.xsl"/>
+
+	<!-- JfM -->
+	<set target="ssgfi/jfm" name="pz:name" value="Jahrbuch-Datenbank"/>
+	<set target="ssgfi/jfm" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/mathdiss"/>
+	<set target="ssgfi/jfm" name="catalogueURLHintPrefix"
+		value="http://www.emis.de/cgi-bin/jfmen/MATH/JFM/quick.html?first=1&amp;maxdocs=1&amp;type=html&amp;format=complete&amp;an="/>
+	<set target="ssgfi/jfm" name="pz:xslt"
+		value="xsl/convert/solr.xsl,xsl/target/jfm-id-post.xsl,xsl/target/sub-ssgfi-solr-post.xsl,xsl/pz/final/finalise.xsl"/>
+	
+</settings>

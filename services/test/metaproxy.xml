@@ -16,7 +16,7 @@
 		<set target="vlib.sub.uni-goettingen.de/sru/dspace/geo-leo" name="pz:name" value="GEO-LEO e-docs"/>		
 	</settings>
 
-	<settings src="settings/sub-guides-solr-mp.xml"/>
+	<settings src="settings/sub-ssgfi-solr-mp.xml"/>
 	<settings>
 		<set target="sru.sub.uni-goettingen.de/ssgfi/history-guide" name="pz:name" value="History-Guide"/>
 		<set target="sru.sub.uni-goettingen.de/ssgfi/literature-guide" name="pz:name" value="Literature-Guide"/>
