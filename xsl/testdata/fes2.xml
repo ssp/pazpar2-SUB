@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00846nmm0a2200157   450 </l>
+  <c001>7718992</c001>
+  <d101 i1=" " i2=" ">
+    <sa>ger</sa>
+  </d101>
+  <d102 i1=" " i2=" ">
+    <sa>XA-DE</sa>
+  </d102>
+  <d200 i1="0" i2=" ">
+    <sa>F&#xC9;uhrer und Schriften des Rheinischen Freilichtmuseums und Landesmuseums f&#xC9;ur Volkskunde in Kommern</sa>
+  </d200>
+  <d210 i1=" " i2=" ">
+    <sa>K&#xC9;oln</sa>
+    <sc>Rheinland-Verl.</sc>
+  </d210>
+  <d300 i1=" " i2=" ">
+    <sa>Bis 1971 u.d.T.: Rheinisches Freilichtmuseum und Landesmuseum f&#xC9;ur Volkskunde &lt;Kommern, Veytal&gt;: F&#xC9;uhrer und Schriften des Rheinischen Freilichtmuseums und Landesmuseums in Kommern</sa>
+  </d300>
+  <d312 i1=" " i2=" ">
+    <sa>NST: Schriften des Rheinischen Freilichtmuseums - Landesmuseum f&#xC9;ur Volkskunde</sa>
+  </d312>
+  <d701 i1=" " i2=" ">
+    <sa>Lijn</sa>
+    <sb>Jai&#x308;r &#x98;van der&#x9C;</sb>
+  </d701>
+  <d710 i1=" " i2=" ">
+    <sa>Rheinisches Freilichtmuseum und Landesmuseum f&#xC9;ur Volkskunde</sa>
+    <s0>(DE-588)5173745-0</s0>
+  </d710>
+  <d711 i1=" " i2=" ">
+    <s3>(DE-588)5173745-0</s3>
+  </d711>
+  <d719 i1=" " i2=" ">
+    <sa>Freilichtmuseum und Landesmuseum f&#xC9;ur Volkskunde</sa>
+    <sa>Landesmuseum f&#xC9;ur Volkskunde &lt;Mechernich&gt;</sa>
+    <sa>Freilichtmuseum &lt;Mechernich&gt;</sa>
+    <s0>(DE-588)5173745-0</s0>
+  </d719>
+  <d801 i1=" " i2=" ">
+    <sa>DE</sa>
+    <sb>BVB</sb>
+  </d801>
+</r>

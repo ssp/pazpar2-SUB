@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<r xmlns="http://www.indexdata.com/turbomarc">
+  <l>00928nkm0a2200169   450 </l>
+  <c001>17273</c001>
+  <d200 i1="0" i2=" ">
+    <sa>Reichstarif und Lohn- und Arbeitstarif f&#xC9;ur das Baugewerbe im Freistaat Braunschweig</sa>
+  </d200>
+  <d210 i1=" " i2=" ">
+    <sa>[Braunschweig]</sa>
+    <sd>[1929]</sd>
+  </d210>
+  <d215 i1=" " i2=" ">
+    <sa>48 S.</sa>
+  </d215>
+  <d711 i1=" " i2=" ">
+    <sa>Deutscher Baugewerksbund</sa>
+    <s0>(DE-588)118016-2</s0>
+  </d711>
+  <d711 i1=" " i2=" ">
+    <sa>Zentralverband der Zimmerer und Verwandter Berufsgenossen Deutschlands</sa>
+    <s0>(DE-588)210293-6</s0>
+  </d711>
+  <d711 i1=" " i2=" ">
+    <sa>Zentralverband Christlicher Bauarbeiter Deutschlands</sa>
+    <s0>(DE-588)124903-4</s0>
+  </d711>
+  <d719 i1=" " i2=" ">
+    <sa>Baugewerksbund &lt;Deutschland, Deutsches Reich&gt;</sa>
+    <s0>(DE-588)118016-2</s0>
+  </d719>
+  <d719 i1=" " i2=" ">
+    <sa>Zentralverband der Zimmerer und Verwandten Berufsgenossen Deutschlands</sa>
+    <sa>Zentralverband der Zimmerer Deutschlands</sa>
+    <sa>Zentralverband der Zimmerer und Verw. Berufsgenossen</sa>
+    <sa>Centralverband der Zimmerer und Verwandter Berufsgenossen Deutschlands</sa>
+    <s0>(DE-588)210293-6</s0>
+  </d719>
+  <d801 i1=" " i2=" ">
+    <sa>DE</sa>
+    <sb>BVB</sb>
+  </d801>
+  <d900 i1=" " i2=" ">
+    <sa>hbz</sa>
+    <sb>bo133</sb>
+    <sd>A 80-5254</sd>
+    <se>1</se>
+  </d900>
+  <d901 i1=" " i2=" ">
+    <sa>TEMP101618</sa>
+    <sb>A 80-5254</sb>
+    <sc>MAG</sc>
+    <sd>0</sd>
+    <se>0</se>
+    <sf/>
+    <sh/>
+  </d901>
+</r>

@@ -64,7 +64,7 @@
 					<xsl:when test="$typeofrecord = 'g'">audio-visual</xsl:when>
 					<xsl:when test="contains('ij', $typeofrecord)">recording</xsl:when>
 					<xsl:when test="$typeofrecord = 'k'">image</xsl:when>
-					<xsl:when test="$typeofrecord = 'l'">electronic</xsl:when>
+					<xsl:when test="contains('lm', $typeofrecord)">electronic</xsl:when>
 					<xsl:when test="$typeofrecord = 'o'">multiple</xsl:when>
 					<xsl:otherwise>other</xsl:otherwise>
 				</xsl:choose>

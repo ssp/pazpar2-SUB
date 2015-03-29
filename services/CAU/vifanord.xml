@@ -48,6 +48,8 @@
 	<settings>
 		<set target="swb/wao-vifanord-nord" name="pz:allow" value="1"/>
 	</settings>
+	
+	<settings src="settings/fes.xml"/>
 
 
 

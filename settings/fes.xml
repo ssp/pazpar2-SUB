@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings target="library.fes.de" xmlns="http://www.indexdata.com/pazpar2/1.0">
+<!--
+	pazpar2 settings for Friedrich-Ebert-Stiftung’s Z39.50 server
+	created for vifanord.
+
+	2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
+-->
+
+	<set name="pz:name" value="Friedrich-Ebert-Stiftung"/>
+	<set name="catalogueURLHintPrefix" value="http://library.fes.de/opac/id/"/>
+
+	<!-- Query fields -->
+	<set name="pz:cclmap:term" value="u=1016 t=l,r s=al"/>
+
+	<set name="pz:cclmap:title" value="u=4 s=al"/>
+	<set name="pz:cclmap:person" value="u=1 s=al"/>
+
+	<set name="pz:cclmap:subject" value="u=21 s=al"/>
+	<set name="pz:cclmap:date" value="u=31"/>
+	<set name="pz:cclmap:isbn" value="u=7"/>
+	<set name="pz:cclmap:issn" value="u=8"/>
+
+
+
+	<!-- Retrieval settings -->
+	<set name="pz:requestsyntax" value="unimarc"/>
+	<set name="pz:elements" value="F"/>
+	<set name="pz:queryencoding" value="marc8"/>
+
+
+	<!-- Result normalisation settings -->
+	<set name="pz:nativesyntax" value="txml;iso5426"/>
+	<set name="pz:xslt" value="xsl/target/fes-pre.xsl,xsl/convert/tunimarc.xsl,xsl/pz/final/finalise.xsl"/>
+
+</settings>
