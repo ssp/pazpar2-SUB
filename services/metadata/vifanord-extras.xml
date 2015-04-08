@@ -8,14 +8,6 @@
 
 	<metadata name="subject" brief="yes" merge="unique"/>
 
-
-	<metadata name="region"
-		merge="unique"
-		termlist="yes"
-		limitmap="local:"
-		setting="postproc"
-	/>
-	
 	<metadata name="gbv-library"
 		merge="unique"
 		termlist="yes"
