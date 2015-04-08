@@ -8,6 +8,5 @@
 
 	<set name="pz:maxrecs" value="500"/>
 	<set name="pz:maxrecs" target="sru.gbv.de/*" value="1000"/>
-	<set name="pz:maxrecs" target="vifanord-zsql/*" value="1000"/>
 
 </settings>
