@@ -3,7 +3,7 @@
 	Post-processes records coming from the SSG-FI Solr index after
 	they are processed by solr-pz2.xsl.
 
-	2011-2012 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+	2011-2015 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
 -->
 
 <xsl:stylesheet
@@ -74,6 +74,12 @@
 		</pz:metadata>
 	</xsl:template>
 
+	<xsl:template match="pz:metadata[@type='Corp._Author']">
+		<pz:metadata type="corporation">
+			<xsl:value-of select="."/>
+		</pz:metadata>
+	</xsl:template>
+
 	<xsl:template match="pz:metadata[@type='Publisher']">
 		<xsl:variable name="db">
 			<xsl:value-of select="../pz:metadata[@type='db']"/>
@@ -96,6 +102,13 @@
 
 	<xsl:template match="pz:metadata[@type='Editor']">
 		<pz:metadata type="other-person">
+			<xsl:value-of select="."/>
+			<xsl:text> (Ed.)</xsl:text>
+		</pz:metadata>
+	</xsl:template>
+
+	<xsl:template match="pz:metadata[@type='Corp._Editor']">
+		<pz:metadata type="corporate">
 			<xsl:value-of select="."/>
 			<xsl:text> (Ed.)</xsl:text>
 		</pz:metadata>
@@ -202,7 +215,10 @@
 
 
 	<!-- Classification information, mapped to the respective classification fields. -->
-	<xsl:template match="pz:metadata[@type='DDC']">
+	<xsl:template match="pz:metadata[@type='DDC']
+							| pz:metadata[@type='DDC_geo']
+							| pz:metadata[@type='DDC_space']
+							| pz:metadata[@type='DDC_time']">
 		<pz:metadata type="classification-ddc">
 			<xsl:value-of select="."/>
 		</pz:metadata>
@@ -215,34 +231,25 @@
 	</xsl:template>
 
 	<!-- Textual subject information, all mapped to 'subject'. -->
-	<xsl:template match="pz:metadata[@type='MSCverbal']
+	<xsl:template match="pz:metadata[@type='Subject']
 							| pz:metadata[@type='Keywords']
 							| pz:metadata[@type='LCSH']
-							| pz:metadata[@type='Subject']">
+							| pz:metadata[@type='MSCverbal']
+							| pz:metadata[@type='Keyw._en']
+							| pz:metadata[@type='Keyw._fi']">
 		<pz:metadata type="subject">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
 
-	<xsl:template match="pz:metadata[@type='Keywords'] ">
-		<pz:metadata type="subject">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<xsl:template match="pz:metadata[@type='LCSH']">
-		<pz:metadata type="subject">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<!-- Description fields, populated from:
-			* Translated (English titles for texts, e.g. from RusDML)
-			* Description
-			* Notes
-			* Size/Quality
-	-->
-	<xsl:template match="pz:metadata[@type='Translated']">
+	<!-- Description fields -->
+	<xsl:template match="pz:metadata[@type='Description']
+							| pz:metadata[@type='Translated']
+							| pz:metadata[@type='Notes']
+							| pz:metadata[@type='Alt._Title']
+							| pz:metadata[@type='Title_de']
+							| pz:metadata[@type='Size/Quality']
+							| pz:metadata[@type='Grantor']">
 		<pz:metadata type="description">
 			<xsl:value-of select="."/>
 		</pz:metadata>
@@ -250,30 +257,6 @@
 
 	<xsl:template match="pz:metadata[@type='Abstract_(de)'] | pz:metadata[@type='Abstract_(en)']">
 		<pz:metadata type="abstract">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<xsl:template match="pz:metadata[@type='Description']">
-		<pz:metadata type="description">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<xsl:template match="pz:metadata[@type='Notes']">
-		<pz:metadata type="description">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<xsl:template match="pz:metadata[@type='Size/Quality']">
-		<pz:metadata type="description">
-			<xsl:value-of select="."/>
-		</pz:metadata>
-	</xsl:template>
-
-	<xsl:template match="pz:metadata[@type='Grantor']">
-		<pz:metadata type="description">
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
@@ -291,7 +274,6 @@
 			<xsl:value-of select="."/>
 		</pz:metadata>
 	</xsl:template>
-
 
 	<!-- Data origin information. -->
 	<xsl:template match="pz:metadata[@type='Data_Source']">

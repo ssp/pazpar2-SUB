@@ -18,6 +18,11 @@
 	<settings>
 		<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:allow" value="1"/>
 	</settings>
+	
+	<settings src="settings/sub-ssgfi-solr.xml"/>
+	<settings>
+		<set target="ssgfi/finnug" name="pz:allow" value="1"/>
+	</settings>
 
 
 

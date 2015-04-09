@@ -42,6 +42,8 @@
 	<!-- GOK local classification subject search: Right-truncated phrase search -->
 	<set name="pz:cclmap:lkl" value="1=GOK s=1 t=r"/>
 	<set name="pz:cclmap:ddc" value="1=DDC s=1 t=r"/>
+	<set name="pz:cclmap:ddc-t" value="1=DDC_time s=1 t=r"/>
+	<set name="pz:cclmap:ddc-g" value="1=DDC_geo s=1 t=r"/>
 	<set name="pz:cclmap:bkl" value="1=BK s=1 t=r"/>
 	<set name="pz:cclmap:msc" value="1=MSC s=1 t=r"/>
 	<!-- Fake search key for Freiberg classification. Should not return results. -->
@@ -76,6 +78,7 @@
 	<set target="ssgfi/forst" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/forst"/>
 	<set target="ssgfi/finnug" name="pz:name" value="Finnougristik-Guide"/>
 	<set target="ssgfi/finnug" name="pz:url" value="ssgfi.sub.uni-goettingen.de:8080/solr/finnug"/>
+	<set target="ssgfi/finnug" name="pz:pqf_strftime" value="@not %% @attr 1=Region HU"/>
 
 	<!-- German Mathematics Theses: make all records electronic fulltexts -->
 	<set target="ssgfi/mathdiss" name="pz:name" value="Dissertationen"/>

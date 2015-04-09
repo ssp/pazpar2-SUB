@@ -31,6 +31,11 @@
 	<settings>
 		<set target="swb/wao-vifanord-nord" name="pz:allow" value="1"/>
 	</settings>
+	
+	<settings src="settings/sub-ssgfi-solr.xml"/>
+	<settings>
+		<set target="ssgfi/finnug" name="pz:allow" value="1"/>
+	</settings>
 
 
 
