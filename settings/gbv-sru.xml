@@ -58,7 +58,7 @@
 	<set name="pz:cclmap:bkl" value="u=pica.bkl s=1 t=r"/>
 	<set name="pz:cclmap:rvk" value="u=pica.rvk s=1 t=r"/>
 	<set name="pz:cclmap:lsg" value="u=pica.lsg s=1 t=r"/>
-	<set name="pz:cclmap:language" value="u=pica.taa s=1"/>
+	<set name="pz:cclmap:language" value="u=pica.spr s=1"/>
 	<set name="pz:cclmap:url" value="u=pica.url t=r"/>
 	<set name="pz:cclmap:nea" value="u=pica.nea t=r"/>
 
@@ -114,7 +114,7 @@
 	<!--
 		Stabi Berlin:
 		* configure a basic set of index names with their custom »x« prefix
-			* no »x« prefix required for erj (date) and taa (language) indexes
+			* no »x« prefix required for erj (date) index
 		* configure as GVK search with bib filter
 	-->
 	<set target="sru.gbv.de/stabikat" name="catalogueURLHintPrefix" value="http://stabikat.sbb.spk-berlin.de/DB=1/PPNSET?PPN="/>
@@ -129,6 +129,7 @@
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:msc" value="u=pica.xmsc s=1 t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:bkl" value="u=pica.xbkl s=1 t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:rvk" value="u=pica.xrvk s=1 t=r"/>
+	<set target="sru.gbv.de/stabikat" name="pz:cclmap:language" value="u=pica.xspr s=1"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:url" value="u=pica.xurl t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:mak" value="u=pica.xmak t=r"/>
 	<set target="sru.gbv.de/stabikat" name="pz:cclmap:ppn" value="u=pica.xppn t=r"/>
