@@ -1,18 +1,18 @@
 # pazpar2 configuration files
 
-This repository contains configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) metasearch daemon.
+This repository contains configuration files for Index Data’s [pazpar2](http://www.indexdata.com/pazpar2/) bibliographic metasearch software.
 
-The files were created for [SUB Göttingen](http://www.sub.uni-goettingen.de) and [Universitätsbibliothek Greifswald](http://www.uni-greifswald.de/bibliothek.html).
+The files were created for the subject search services at [SUB Göttingen](http://www.sub.uni-goettingen.de) and the [vifanord](http://vifanord.de) site at [CAU Kiel](http://www.ub.uni-kiel.de).
 
-The configuration requires at least pazpar2 1.6.39 with yaz 5.0.18 to work.
+The configuration has been tested with pazpar2 1.8.6 and yaz 5.10.2.
 
 
 ## Contents
-* `HGW.xml`: server configuration for Universitätsbibliothek Greifswald
+* `CAU.xml`: server configuration for vifanord
 * `SUB.xml`: server configuration for SUB Göttingen
 * `test.xml`: test server configuration
 * `services/`: folder with service configuration files:
-	* `HGW/`: folder with service configurations used by Universitätsbibliothek Greifswald’s server
+	* `CAU/`: folder with service configurations used by the vifanord server
 	* `SUB/`: folder with service configurations used by SUB Göttingen’s server
 	* `test/`: folder with test services
 	* `metadata/`: folder with metadata configurations, included by the services to avoid redundancy; `default.xml` pre-configures the typical fields we expect for use with `tmarc.xsl` and with the [JavaScript client](https://github.com/ssp/pazpar2-js-client).
