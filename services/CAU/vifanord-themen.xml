@@ -7,21 +7,16 @@
 <!--
 	Targets for vifanord subject search.
 	http://www.vifanord.de/index.php?id=15
-	
+
 	2014-2015: Sven-S. Porst <ssp-web@earthlingsoft.net>
 -->
 
 	<settings src="settings/vifanord-general.xml"/>
-	
+
 	<settings src="settings/gbv-sru.xml"/>
 	<settings src="settings/vifanord-gbv.xml"/>
 	<settings>
 		<set target="sru.gbv.de/fachopac-vifanord-nord" name="pz:allow" value="1"/>
-	</settings>
-	
-	<settings src="settings/sub-ssgfi-solr.xml"/>
-	<settings>
-		<set target="ssgfi/finnug" name="pz:allow" value="1"/>
 	</settings>
 
 
